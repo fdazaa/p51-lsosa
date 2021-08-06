@@ -1,0 +1,24 @@
+uuid: 2fc7a5e3-f3b6-4dad-9c60-75121f1f6e42
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.group_content.empresas-group_membership.group_roles
+    - group.content_type.empresas-group_membership
+id: group_content.empresas-group_membership.default
+targetEntityType: group_content
+bundle: empresas-group_membership
+mode: default
+content:
+  group_roles:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: false
+    weight: -4
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  uid: true

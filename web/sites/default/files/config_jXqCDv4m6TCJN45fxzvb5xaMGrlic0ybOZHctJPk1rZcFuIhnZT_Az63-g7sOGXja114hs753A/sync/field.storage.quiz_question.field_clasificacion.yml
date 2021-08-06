@@ -1,0 +1,20 @@
+uuid: ffacda44-0f31-404d-b2d3-f3e718a5fa31
+langcode: es
+status: true
+dependencies:
+  module:
+    - quiz
+    - taxonomy
+id: quiz_question.field_clasificacion
+field_name: field_clasificacion
+entity_type: quiz_question
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

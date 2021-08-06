@@ -1,0 +1,17 @@
+uuid: c7dd8f6a-2c0c-4397-bff0-6cd746dff7d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.ventas
+id: empresas-524c22816
+label: Ventas
+weight: 6
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

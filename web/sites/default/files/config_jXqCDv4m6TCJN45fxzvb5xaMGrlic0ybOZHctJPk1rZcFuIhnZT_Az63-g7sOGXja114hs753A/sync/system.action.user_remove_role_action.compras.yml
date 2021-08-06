@@ -1,0 +1,14 @@
+uuid: 6ebeac39-0e39-4cb5-83f3-c9d016722901
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.compras
+  module:
+    - user
+id: user_remove_role_action.compras
+label: 'Elimina el rol Compras al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: compras

@@ -1,0 +1,50 @@
+uuid: 7cd3ede7-7c16-4fa6-bef5-9e0abb831b60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.quiz_question.multichoice.alternatives
+    - field.field.quiz_question.multichoice.choice_boolean
+    - field.field.quiz_question.multichoice.choice_multi
+    - field.field.quiz_question.multichoice.choice_random
+    - field.field.quiz_question.multichoice.field_categoria_proceso
+    - field.field.quiz_question.multichoice.field_clasificacion
+    - field.field.quiz_question.multichoice.field_pilar_segen_group
+    - field.field.quiz_question.multichoice.field_tipo
+    - quiz.question.type.multichoice
+  enforced:
+    module:
+      - quiz_multichoice
+  module:
+    - text
+_core:
+  default_config_hash: Ch-V7tJVZokGMeGkj8wWu7oyqgrVY3wwNZuYv4sLG9I
+id: quiz_question.multichoice.default
+targetEntityType: quiz_question
+bundle: multichoice
+mode: default
+content:
+  body:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_pilar_segen_group:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  alternatives: true
+  choice_boolean: true
+  choice_multi: true
+  choice_random: true
+  field_categoria_proceso: true
+  field_choices: true
+  field_clasificacion: true
+  field_tipo: true

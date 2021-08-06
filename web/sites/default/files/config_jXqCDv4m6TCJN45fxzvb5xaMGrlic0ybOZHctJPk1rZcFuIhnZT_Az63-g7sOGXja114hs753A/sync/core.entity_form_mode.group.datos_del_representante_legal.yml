@@ -1,0 +1,10 @@
+uuid: 942b2da7-09f6-4144-b1e1-6630daac77c0
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.datos_del_representante_legal
+label: 'Datos del Representante Legal'
+targetEntityType: group
+cache: true

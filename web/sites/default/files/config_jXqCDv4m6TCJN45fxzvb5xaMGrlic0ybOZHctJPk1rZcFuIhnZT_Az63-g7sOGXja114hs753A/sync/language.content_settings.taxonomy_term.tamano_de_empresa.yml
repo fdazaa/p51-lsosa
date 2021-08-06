@@ -1,0 +1,11 @@
+uuid: 0a4be944-0855-4ec2-a592-e7ae112025ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tamano_de_empresa
+id: taxonomy_term.tamano_de_empresa
+target_entity_type_id: taxonomy_term
+target_bundle: tamano_de_empresa
+default_langcode: site_default
+language_alterable: false

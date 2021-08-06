@@ -1,0 +1,31 @@
+uuid: 0be94e9f-a448-473d-b880-ecad0e80f9f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.clasificacion.field_id_estatico_terms
+    - taxonomy.vocabulary.clasificacion
+  module:
+    - options
+    - text
+id: taxonomy_term.clasificacion.default
+targetEntityType: taxonomy_term
+bundle: clasificacion
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_id_estatico_terms:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,29 @@
+uuid: 252f9755-fb25-4374-87bf-30e07f790c6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_categoria_proceso
+    - paragraphs.paragraphs_type.categoria_procesos_y_criticidad
+    - taxonomy.vocabulary.categorias_procesos
+id: paragraph.categoria_procesos_y_criticidad.field_categoria_proceso
+field_name: field_categoria_proceso
+entity_type: paragraph
+bundle: categoria_procesos_y_criticidad
+label: 'Categoría - Proceso'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_procesos: categorias_procesos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

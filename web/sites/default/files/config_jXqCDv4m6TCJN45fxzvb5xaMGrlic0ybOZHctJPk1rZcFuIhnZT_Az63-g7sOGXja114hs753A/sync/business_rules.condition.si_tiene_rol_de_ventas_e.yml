@@ -1,0 +1,36 @@
+uuid: 1b13cb01-3d59-4b15-96b8-f31dace6bfa0
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.action.asignar_rol_de_ventas
+    - business_rules.action.asignar_rol_le
+    - business_rules.condition.si_tiene_rol_de_ventas_t
+id: si_tiene_rol_de_ventas_e
+label: 'Si tiene Rol de Ventas E'
+type: user_has_role_group
+reverse: false
+description: 'Si tiene Rol de Ventas E'
+target_entity_type: null
+target_bundle: null
+success_items:
+  asignar_rol_de_ventas:
+    id: asignar_rol_de_ventas
+    type: action
+    weight: -9
+  asignar_rol_le:
+    id: asignar_rol_le
+    type: action
+    weight: -8
+fail_items:
+  si_tiene_rol_de_ventas_t:
+    id: si_tiene_rol_de_ventas_t
+    type: condition
+    weight: -9
+tags: {  }
+settings:
+  group_id: '1'
+  role_id: empresas-ventas_estrategico
+  user_key: userid
+  user_name: null
+  user_id: '[current-user:uid]'

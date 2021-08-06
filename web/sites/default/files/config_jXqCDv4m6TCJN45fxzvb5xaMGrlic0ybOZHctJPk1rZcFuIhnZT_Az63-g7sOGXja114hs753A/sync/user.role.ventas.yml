@@ -1,0 +1,11 @@
+uuid: 5e743177-120b-43cc-af52-5027e7112c64
+langcode: es
+status: true
+dependencies: {  }
+id: ventas
+label: Ventas
+weight: 6
+is_admin: null
+permissions:
+  - 'view own field_tamano_de_empresa'
+  - 'view own field_tipo'

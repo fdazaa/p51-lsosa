@@ -1,0 +1,15 @@
+uuid: 0458c3cc-f135-439c-948f-86e1409f3181
+langcode: es
+status: true
+dependencies: {  }
+id: asignar_rol_de_ventas
+label: 'Asignar Rol de Ventas'
+description: 'Asignar Rol de Ventas'
+settings:
+  user_container: current
+  roles:
+    ventas: ventas
+tags: {  }
+type: add_user_role
+target_entity_type: null
+target_bundle: null

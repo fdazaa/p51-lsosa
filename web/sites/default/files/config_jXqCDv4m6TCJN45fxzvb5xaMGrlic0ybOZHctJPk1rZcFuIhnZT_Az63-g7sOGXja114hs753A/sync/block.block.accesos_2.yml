@@ -1,0 +1,25 @@
+uuid: 9cb0685e-488d-4800-8ea1-7d00c9a59db5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.accesos-
+  module:
+    - system
+  theme:
+    - tietheme
+id: accesos_2
+theme: tietheme
+region: header_menumovil
+weight: 0
+provider: null
+plugin: 'system_menu_block:accesos-'
+settings:
+  id: 'system_menu_block:accesos-'
+  label: 'Accesos '
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

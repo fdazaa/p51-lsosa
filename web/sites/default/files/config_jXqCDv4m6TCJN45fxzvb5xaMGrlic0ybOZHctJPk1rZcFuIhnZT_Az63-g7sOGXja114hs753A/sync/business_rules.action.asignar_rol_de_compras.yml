@@ -1,0 +1,15 @@
+uuid: 3b97f784-c726-4040-aae4-e89c617f6ae7
+langcode: es
+status: true
+dependencies: {  }
+id: asignar_rol_de_compras
+label: 'Asignar Rol de Compras'
+description: 'Asignar Rol de Compras'
+settings:
+  user_container: current
+  roles:
+    compras: compras
+tags: {  }
+type: add_user_role
+target_entity_type: null
+target_bundle: null

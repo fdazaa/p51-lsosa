@@ -1,0 +1,22 @@
+uuid: 5401d505-15af-43e3-b907-b181a0829b1b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tietheme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: tietheme_messages
+theme: tietheme
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

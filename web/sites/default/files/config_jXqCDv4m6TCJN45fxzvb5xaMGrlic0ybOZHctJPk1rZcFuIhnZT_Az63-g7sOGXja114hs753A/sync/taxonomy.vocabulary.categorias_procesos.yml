@@ -1,0 +1,8 @@
+uuid: 82ed7cad-31e5-4736-86a7-9dff9268780f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categorías - Procesos'
+vid: categorias_procesos
+description: 'Contiene las categorías y procesos con dependencias '
+weight: 0

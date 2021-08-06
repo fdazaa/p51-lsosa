@@ -1,0 +1,66 @@
+uuid: 06071e9d-8d96-4fba-9363-f4e7d24913a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.clasificacion.field_id_estatico_terms
+    - taxonomy.vocabulary.clasificacion
+  module:
+    - path
+    - text
+id: taxonomy_term.clasificacion.default
+targetEntityType: taxonomy_term
+bundle: clasificacion
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_id_estatico_terms:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  revision_log_message:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+hidden: {  }

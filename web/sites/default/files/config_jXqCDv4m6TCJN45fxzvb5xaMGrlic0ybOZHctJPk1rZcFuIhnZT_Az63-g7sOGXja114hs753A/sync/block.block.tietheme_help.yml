@@ -1,0 +1,22 @@
+uuid: d02719dd-434e-460f-a78b-257b86fd6451
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - tietheme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: tietheme_help
+theme: tietheme
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: 000bbad0-cc84-4117-b399-4bb9ba3c8f48
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.cmp_default_store_products
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__cmp_default_store_products_all_store_products
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:cmp_default_store_products-all_store_products'
+settings:
+  id: 'views_block:cmp_default_store_products-all_store_products'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/store/*'
+    negate: false

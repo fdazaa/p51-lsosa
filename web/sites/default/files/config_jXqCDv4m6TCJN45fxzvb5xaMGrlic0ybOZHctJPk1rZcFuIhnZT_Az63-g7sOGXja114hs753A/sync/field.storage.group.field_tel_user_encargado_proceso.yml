@@ -1,0 +1,19 @@
+uuid: 47577415-2736-4b32-a8b3-e1bf05f180be
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - telephone
+id: group.field_tel_user_encargado_proceso
+field_name: field_tel_user_encargado_proceso
+entity_type: group
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

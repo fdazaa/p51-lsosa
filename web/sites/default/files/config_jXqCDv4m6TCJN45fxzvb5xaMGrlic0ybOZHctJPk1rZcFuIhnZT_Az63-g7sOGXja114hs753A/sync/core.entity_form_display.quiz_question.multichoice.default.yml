@@ -1,0 +1,106 @@
+uuid: b34c4f72-c707-44f5-9ee8-4ea8e7e5c15a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.quiz_question.multichoice.alternatives
+    - field.field.quiz_question.multichoice.choice_boolean
+    - field.field.quiz_question.multichoice.choice_multi
+    - field.field.quiz_question.multichoice.choice_random
+    - field.field.quiz_question.multichoice.field_categoria_proceso
+    - field.field.quiz_question.multichoice.field_clasificacion
+    - field.field.quiz_question.multichoice.field_pilar_segen_group
+    - field.field.quiz_question.multichoice.field_tipo
+    - quiz.question.type.multichoice
+  enforced:
+    module:
+      - quiz_multichoice
+  module:
+    - cshs
+    - paragraphs
+    - text
+_core:
+  default_config_hash: MNDI7e0g4EYDdRj9C7kOwCNgYPZIpG9YK81wtD25Bco
+id: quiz_question.multichoice.default
+targetEntityType: quiz_question
+bundle: multichoice
+mode: default
+content:
+  alternatives:
+    type: entity_reference_paragraphs
+    weight: 7
+    region: content
+    settings:
+      title: alternative
+      title_plural: Respuestas
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: multichoice
+    third_party_settings: {  }
+  body:
+    type: text_textarea
+    region: content
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  choice_random:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_categoria_proceso:
+    weight: 3
+    settings:
+      parent: null
+      hierarchy_depth: '0'
+      required_depth: '0'
+      save_lineage: '1'
+      level_labels: ''
+      none_label: '- Please select -'
+      force_deepest: false
+    third_party_settings: {  }
+    type: cshs
+    region: content
+  field_clasificacion:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_pilar_segen_group:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tipo:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  revision_log:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  title:
+    type: string_textfield
+    region: content
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  choice_boolean: true
+  choice_multi: true
+  feedback: true

@@ -1,0 +1,14 @@
+uuid: f62fb04e-0fc5-4fbd-82e2-2a2a28338550
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.lt
+  module:
+    - user
+id: user_add_role_action.lt
+label: 'Añade el rol LT al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lt

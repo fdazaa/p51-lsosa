@@ -1,0 +1,20 @@
+uuid: f7f14f7f-050b-4561-a9d4-d40c55e52d5e
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_epayco
+id: epayco_epayco
+label: EPAYCO
+weight: null
+plugin: epayco_onepage_checkout
+configuration:
+  display_label: 'ePayco (One page checkout)'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  factory: segen_epayco
+  auto_open: true
+conditions: {  }
+conditionOperator: AND

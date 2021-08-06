@@ -1,0 +1,31 @@
+uuid: 21eb191d-cb50-43d9-a3b5-229bc3e3747f
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.action.asignar_rol_de_direccion
+    - business_rules.action.asignar_rol_lo
+id: si_tiene_rol_de_direccion_o
+label: 'Si tiene Rol de Dirección O'
+type: user_has_role_group
+reverse: false
+description: 'Si tiene Rol de Dirección O'
+target_entity_type: null
+target_bundle: null
+success_items:
+  asignar_rol_de_direccion:
+    id: asignar_rol_de_direccion
+    type: action
+    weight: -9
+  asignar_rol_lo:
+    id: asignar_rol_lo
+    type: action
+    weight: -8
+fail_items: {  }
+tags: {  }
+settings:
+  group_id: '1'
+  role_id: empresas-direccion_operativo
+  user_key: userid
+  user_name: null
+  user_id: '[current-user:uid]'

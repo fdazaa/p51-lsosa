@@ -1,0 +1,11 @@
+uuid: d0067aeb-59c6-4d63-8937-ace53fb77de7
+langcode: es
+status: true
+dependencies: {  }
+id: compras
+label: Compras
+weight: 7
+is_admin: null
+permissions:
+  - 'view own field_tamano_de_empresa'
+  - 'view own field_tipo'

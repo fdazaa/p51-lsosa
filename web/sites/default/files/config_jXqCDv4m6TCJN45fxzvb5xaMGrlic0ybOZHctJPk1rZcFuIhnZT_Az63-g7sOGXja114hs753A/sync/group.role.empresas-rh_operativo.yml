@@ -1,0 +1,14 @@
+uuid: a3659594-cad8-4ac5-be2f-a57a73022e88
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-rh_operativo
+label: 'RH - Operativo'
+weight: 26
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

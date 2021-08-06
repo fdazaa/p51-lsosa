@@ -1,0 +1,14 @@
+uuid: ce417598-171f-48fb-b83a-4c2cd9740098
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: true
+permissions: {  }

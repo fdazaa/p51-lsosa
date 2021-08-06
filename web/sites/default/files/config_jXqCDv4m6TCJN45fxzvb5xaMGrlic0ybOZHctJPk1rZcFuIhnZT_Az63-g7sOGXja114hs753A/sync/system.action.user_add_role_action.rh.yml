@@ -1,0 +1,14 @@
+uuid: c3426abf-22c2-4033-b90f-965ab875e0eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.rh
+  module:
+    - user
+id: user_add_role_action.rh
+label: 'Añade el rol RH al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: rh

@@ -1,0 +1,19 @@
+uuid: 194a5393-0f22-45fa-96b4-69e03be0865c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_apellidos_rep_legal
+    - group.type.empresas
+id: group.empresas.field_apellidos_rep_legal
+field_name: field_apellidos_rep_legal
+entity_type: group
+bundle: empresas
+label: 'Apellidos Representante Legal'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

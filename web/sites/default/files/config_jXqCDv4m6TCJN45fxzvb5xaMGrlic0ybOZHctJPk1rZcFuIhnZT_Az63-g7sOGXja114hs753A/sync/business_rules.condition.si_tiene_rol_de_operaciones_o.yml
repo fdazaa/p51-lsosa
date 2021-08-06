@@ -1,0 +1,31 @@
+uuid: ac448a32-259c-464b-bb25-54c086c7d857
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.action.asignar_rol_de_operaciones
+    - business_rules.action.asignar_rol_lo
+id: si_tiene_rol_de_operaciones_o
+label: 'Si tiene Rol de Operaciones O'
+type: user_has_role_group
+reverse: false
+description: 'Si tiene Rol de Operaciones O'
+target_entity_type: null
+target_bundle: null
+success_items:
+  asignar_rol_de_operaciones:
+    id: asignar_rol_de_operaciones
+    type: action
+    weight: -9
+  asignar_rol_lo:
+    id: asignar_rol_lo
+    type: action
+    weight: -8
+fail_items: {  }
+tags: {  }
+settings:
+  group_id: '1'
+  role_id: empresas-operaciones_operativo
+  user_key: userid
+  user_name: null
+  user_id: '[current-user:uid]'

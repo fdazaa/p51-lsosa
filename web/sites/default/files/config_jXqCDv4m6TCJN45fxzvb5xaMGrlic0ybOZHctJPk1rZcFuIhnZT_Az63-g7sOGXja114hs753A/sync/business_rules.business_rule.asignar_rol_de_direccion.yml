@@ -1,0 +1,19 @@
+uuid: e266e7d4-ac9c-4906-8318-84e818a8b5ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.condition.si_el_pago_fue_completado
+description: 'Si el usuario completo el pago del producto se activa'
+id: asignar_rol_de_direccion
+label: 'Asignar Rol de Direccion'
+enabled: null
+reacts_on: user_login
+items:
+  si_el_pago_fue_completado:
+    id: si_el_pago_fue_completado
+    type: condition
+    weight: -8
+tags: {  }
+target_bundle: user
+target_entity_type: user

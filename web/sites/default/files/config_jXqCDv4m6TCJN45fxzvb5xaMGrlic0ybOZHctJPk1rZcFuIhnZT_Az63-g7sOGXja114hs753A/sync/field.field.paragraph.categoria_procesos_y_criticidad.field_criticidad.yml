@@ -1,0 +1,29 @@
+uuid: fa2fc254-54f9-4e0a-8e71-219679329509
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_criticidad
+    - paragraphs.paragraphs_type.categoria_procesos_y_criticidad
+    - taxonomy.vocabulary.criticidad
+id: paragraph.categoria_procesos_y_criticidad.field_criticidad
+field_name: field_criticidad
+entity_type: paragraph
+bundle: categoria_procesos_y_criticidad
+label: Criticidad
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      criticidad: criticidad
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

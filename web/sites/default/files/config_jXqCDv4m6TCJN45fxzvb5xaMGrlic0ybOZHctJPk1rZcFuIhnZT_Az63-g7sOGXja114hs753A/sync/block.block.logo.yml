@@ -1,0 +1,25 @@
+uuid: c2455ec3-71ec-409e-aed5-7f4b3eb39584
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2167c007-7706-4593-93f2-f70a2323b20d'
+  module:
+    - block_content
+  theme:
+    - tietheme
+id: logo
+theme: tietheme
+region: header_logo
+weight: 0
+provider: null
+plugin: 'block_content:2167c007-7706-4593-93f2-f70a2323b20d'
+settings:
+  id: 'block_content:2167c007-7706-4593-93f2-f70a2323b20d'
+  label: Logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: 443a4179-2965-476d-835c-1350ef3b5e7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-finanzas_tactico
+label: 'Finanzas - Táctico'
+weight: 22
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

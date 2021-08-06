@@ -1,0 +1,23 @@
+uuid: add14406-f445-43a2-a4d4-a835d171b2d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_valor
+    - taxonomy.vocabulary.criticidad
+id: taxonomy_term.criticidad.field_valor
+field_name: field_valor
+entity_type: taxonomy_term
+bundle: criticidad
+label: Valor
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

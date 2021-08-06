@@ -1,0 +1,17 @@
+uuid: 07c2b0b6-d3c2-4450-bcf8-13f4c4cc146f
+langcode: es
+status: true
+dependencies: {  }
+id: operaciones
+label: Operaciones
+weight: 9
+is_admin: null
+permissions:
+  - 'access quiz overview'
+  - 'create quiz quiz'
+  - 'view any quiz quiz'
+  - 'view own field_tamano_de_empresa'
+  - 'view own field_tipo'
+  - 'view own quiz'
+  - 'view own quiz quiz'
+  - 'view results for own quiz'

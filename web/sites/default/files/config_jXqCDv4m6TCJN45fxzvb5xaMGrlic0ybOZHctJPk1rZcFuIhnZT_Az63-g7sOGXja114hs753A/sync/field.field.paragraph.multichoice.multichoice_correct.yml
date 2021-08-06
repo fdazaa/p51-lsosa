@@ -1,0 +1,28 @@
+uuid: de5b364f-ccd2-4dbf-920c-bc113d6fd49f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.multichoice_correct
+    - paragraphs.paragraphs_type.multichoice
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: 6tmRd0sTCK-oMVLR09mRHVOhnH_7_97XbQPRABt7EH4
+id: paragraph.multichoice.multichoice_correct
+field_name: multichoice_correct
+entity_type: paragraph
+bundle: multichoice
+label: 'Activación Obligatoria'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

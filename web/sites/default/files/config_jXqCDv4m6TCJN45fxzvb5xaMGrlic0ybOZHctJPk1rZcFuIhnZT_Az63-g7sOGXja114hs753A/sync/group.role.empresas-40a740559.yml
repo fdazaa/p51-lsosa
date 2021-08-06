@@ -1,0 +1,17 @@
+uuid: 7a3f08e6-bd29-428b-a0c9-f83d7db3188d
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.rh
+id: empresas-40a740559
+label: RH
+weight: 11
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

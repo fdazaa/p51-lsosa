@@ -1,0 +1,36 @@
+uuid: e0c2af60-18f0-48a0-8ed1-961b8928e1b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.action.asignar_rol_de_direccion
+    - business_rules.action.asignar_rol_le
+    - business_rules.condition.si_tiene_rol_de_direccion_t
+id: si_tiene_rol_de_direccion_e
+label: 'Si tiene Rol de Dirección E'
+type: user_has_role_group
+reverse: false
+description: 'Si tiene Rol de Dirección E'
+target_entity_type: null
+target_bundle: null
+success_items:
+  asignar_rol_de_direccion:
+    id: asignar_rol_de_direccion
+    type: action
+    weight: -9
+  asignar_rol_le:
+    id: asignar_rol_le
+    type: action
+    weight: -8
+fail_items:
+  si_tiene_rol_de_direccion_t:
+    id: si_tiene_rol_de_direccion_t
+    type: condition
+    weight: -7
+tags: {  }
+settings:
+  group_id: '1'
+  role_id: empresas-direccion_estrategico
+  user_key: userid
+  user_name: null
+  user_id: '[current-user:uid]'

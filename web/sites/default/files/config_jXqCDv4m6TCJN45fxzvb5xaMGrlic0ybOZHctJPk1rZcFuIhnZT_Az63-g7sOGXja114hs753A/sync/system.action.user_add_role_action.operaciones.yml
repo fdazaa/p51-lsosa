@@ -1,0 +1,14 @@
+uuid: 26507983-542a-45ab-998d-c97dd2dc2902
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.operaciones
+  module:
+    - user
+id: user_add_role_action.operaciones
+label: 'Añade el rol Operaciones al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: operaciones

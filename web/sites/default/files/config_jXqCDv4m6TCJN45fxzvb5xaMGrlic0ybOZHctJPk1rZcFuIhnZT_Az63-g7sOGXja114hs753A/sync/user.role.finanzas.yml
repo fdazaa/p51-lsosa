@@ -1,0 +1,11 @@
+uuid: 38b30907-5b75-45e8-885b-28bbaaa4e4f5
+langcode: es
+status: true
+dependencies: {  }
+id: finanzas
+label: Finanzas
+weight: 10
+is_admin: null
+permissions:
+  - 'view own field_tamano_de_empresa'
+  - 'view own field_tipo'

@@ -1,0 +1,11 @@
+uuid: 4c246e6f-ffbc-410e-82ce-872961edb308
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz
+_core:
+  default_config_hash: D5M8FS_5FtdcS2LDKgyVjYD0J3yxIXu__c_Hs0LYtmQ
+id: quiz_result
+label: 'Respuestas de Formularios'

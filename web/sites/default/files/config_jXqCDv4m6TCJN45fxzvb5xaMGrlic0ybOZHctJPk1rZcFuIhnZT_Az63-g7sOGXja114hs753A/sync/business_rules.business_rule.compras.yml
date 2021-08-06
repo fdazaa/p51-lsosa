@@ -1,0 +1,19 @@
+uuid: 6e6dfbc5-0561-4d6a-8225-f742797012b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.condition.si_tiene_rol_de_compras_e
+description: Compras
+id: compras
+label: Compras
+enabled: null
+reacts_on: user_login
+items:
+  si_tiene_rol_de_compras_e:
+    id: si_tiene_rol_de_compras_e
+    type: condition
+    weight: -9
+tags: {  }
+target_bundle: user
+target_entity_type: user

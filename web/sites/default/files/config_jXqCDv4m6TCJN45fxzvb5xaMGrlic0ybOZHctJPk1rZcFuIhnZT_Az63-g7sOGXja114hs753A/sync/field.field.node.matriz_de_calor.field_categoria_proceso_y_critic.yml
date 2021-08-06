@@ -1,0 +1,40 @@
+uuid: b39f1beb-9625-4c83-88c9-251426cb363c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria_proceso_y_critic
+    - node.type.matriz_de_calor
+    - paragraphs.paragraphs_type.categoria_procesos_y_criticidad
+  module:
+    - entity_reference_revisions
+id: node.matriz_de_calor.field_categoria_proceso_y_critic
+field_name: field_categoria_proceso_y_critic
+entity_type: node
+bundle: matriz_de_calor
+label: 'Categoría, Proceso y Criticidad'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      categoria_procesos_y_criticidad: categoria_procesos_y_criticidad
+    target_bundles_drag_drop:
+      categoria_procesos_y_criticidad:
+        enabled: true
+        weight: 5
+      multichoice:
+        weight: 6
+        enabled: false
+      quiz_question_term_pool:
+        weight: 7
+        enabled: false
+      quiz_result_feedback:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

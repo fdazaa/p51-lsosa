@@ -1,0 +1,12 @@
+uuid: ca124260-8f06-44ff-b0fb-5c94c7a5d3eb
+langcode: es
+status: true
+dependencies: {  }
+id: segen_epayco
+label: 'Segen Epayco'
+client_id: '534438'
+client_key: c853757c21b0c1b42090dd851b737c692f928519
+api_public_key: 87690373fbae3636dba458120a478213
+api_private_key: d115b5ab48810dd3ac7b68ae9ccabf6a
+language_code: ES
+mode: true

@@ -1,0 +1,14 @@
+uuid: 88bbf874-0562-4fc6-8980-0801c338b1d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.lo
+  module:
+    - user
+id: user_add_role_action.lo
+label: 'Añade el rol LO al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lo

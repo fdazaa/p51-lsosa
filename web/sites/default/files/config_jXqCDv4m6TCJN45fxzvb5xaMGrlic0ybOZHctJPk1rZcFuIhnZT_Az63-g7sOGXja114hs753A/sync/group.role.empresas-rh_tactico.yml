@@ -1,0 +1,14 @@
+uuid: dca93628-f3b7-41b1-8fb0-9c6e1268405e
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-rh_tactico
+label: 'RH - Táctico'
+weight: 25
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

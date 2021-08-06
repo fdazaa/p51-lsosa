@@ -1,0 +1,8 @@
+uuid: f3c087b1-1cf1-4ced-8c1f-37f08a341d6f
+langcode: es
+status: true
+dependencies: {  }
+name: 'Naturaleza del formulario'
+vid: naturaleza_del_formulario
+description: 'Selecciona clasificación (Naturaleza) LE, LT o LO del tipo de formulario'
+weight: 0

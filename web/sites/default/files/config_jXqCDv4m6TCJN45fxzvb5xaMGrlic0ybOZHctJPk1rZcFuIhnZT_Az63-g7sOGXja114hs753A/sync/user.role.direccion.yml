@@ -1,0 +1,23 @@
+uuid: 38529fba-78c9-4b9a-aaf9-cdf26d91cf67
+langcode: es
+status: true
+dependencies: {  }
+id: direccion
+label: Dirección
+weight: 8
+is_admin: null
+permissions:
+  - 'access group overview'
+  - 'access quiz overview'
+  - 'create empresas group'
+  - 'create field_tamano_de_empresa'
+  - 'create field_tipo'
+  - 'create quiz quiz'
+  - 'view any quiz quiz'
+  - 'view field_tamano_de_empresa'
+  - 'view field_tipo'
+  - 'view own field_tamano_de_empresa'
+  - 'view own field_tipo'
+  - 'view own quiz'
+  - 'view own quiz quiz'
+  - 'view results for own quiz'

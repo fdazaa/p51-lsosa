@@ -1,0 +1,15 @@
+uuid: 345fadb4-1db5-4a8d-a170-1560b7e05acf
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz
+_core:
+  default_config_hash: 7uE6Cyxvdkz-E8DsQ7zk5VlIzLAMhXOf0Tu5axozb18
+id: quiz_result_feedback
+label: 'Cometarios de resultado del formulario'
+icon_uuid: null
+icon_default: null
+description: 'Configuration for Quiz result feedback'
+behavior_plugins: {  }

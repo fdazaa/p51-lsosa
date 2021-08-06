@@ -1,0 +1,19 @@
+uuid: 21bb1246-5923-4334-8112-9e6d3fe4a0c2
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions:
+  - 'view any unpublished group'
+  - 'view group'
+  - 'view group_membership content'
+  - 'view latest group version'
+  - 'view own unpublished group'

@@ -1,0 +1,104 @@
+uuid: 52bb87a9-eee3-4224-b378-348cdaf8cc35
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.group.datos_del_representante_legal
+    - field.field.group.empresas.field_apellidos_persona_encarga_
+    - field.field.group.empresas.field_apellidos_rep_legal
+    - field.field.group.empresas.field_cargo_user_encargado_pr
+    - field.field.group.empresas.field_city_municipio
+    - field.field.group.empresas.field_departamento
+    - field.field.group.empresas.field_digito_de_verificacion
+    - field.field.group.empresas.field_direccion
+    - field.field.group.empresas.field_email_empresa
+    - field.field.group.empresas.field_email_persona_encargada
+    - field.field.group.empresas.field_fecha_const_empresa
+    - field.field.group.empresas.field_genero_repre_legal
+    - field.field.group.empresas.field_name_repre_legal
+    - field.field.group.empresas.field_name_user_encargado
+    - field.field.group.empresas.field_num_identif_rep_legal
+    - field.field.group.empresas.field_num_identificacion
+    - field.field.group.empresas.field_red_social
+    - field.field.group.empresas.field_sitio_web
+    - field.field.group.empresas.field_tamano_de_empresa
+    - field.field.group.empresas.field_tel_repre_legal
+    - field.field.group.empresas.field_tel_user_encargado_proceso
+    - field.field.group.empresas.field_telefono
+    - field.field.group.empresas.field_tipo
+    - field.field.group.empresas.field_tipo_de_identifiacion_repr
+    - field.field.group.empresas.field_tipo_identificacion_user
+    - group.type.empresas
+  module:
+    - telephone
+id: group.empresas.datos_del_representante_legal
+targetEntityType: group
+bundle: empresas
+mode: datos_del_representante_legal
+content:
+  field_apellidos_rep_legal:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_genero_repre_legal:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_name_repre_legal:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_num_identif_rep_legal:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_tel_repre_legal:
+    type: telephone_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_tipo_de_identifiacion_repr:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_apellidos_persona_encarga_: true
+  field_cargo_user_encargado_pr: true
+  field_city_municipio: true
+  field_departamento: true
+  field_digito_de_verificacion: true
+  field_direccion: true
+  field_email_empresa: true
+  field_email_persona_encargada: true
+  field_fecha_const_empresa: true
+  field_name_user_encargado: true
+  field_num_identificacion: true
+  field_red_social: true
+  field_sitio_web: true
+  field_tamano_de_empresa: true
+  field_tel_user_encargado_proceso: true
+  field_telefono: true
+  field_tipo: true
+  field_tipo_identificacion_user: true
+  label: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

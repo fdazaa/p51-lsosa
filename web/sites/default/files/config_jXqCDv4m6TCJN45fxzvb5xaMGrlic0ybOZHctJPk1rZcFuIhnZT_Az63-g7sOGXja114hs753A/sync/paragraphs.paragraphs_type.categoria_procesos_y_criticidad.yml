@@ -1,0 +1,10 @@
+uuid: f04fcb23-34e7-49c9-8817-76a97d4f3df1
+langcode: es
+status: true
+dependencies: {  }
+id: categoria_procesos_y_criticidad
+label: 'Categoría, Procesos y Criticidad'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

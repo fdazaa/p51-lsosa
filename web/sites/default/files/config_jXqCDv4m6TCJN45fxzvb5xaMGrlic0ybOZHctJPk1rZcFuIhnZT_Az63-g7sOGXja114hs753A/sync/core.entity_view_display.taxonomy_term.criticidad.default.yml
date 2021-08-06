@@ -1,0 +1,43 @@
+uuid: 281fb8b1-94ba-4af2-8ffc-f0cbe8d2d2d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.criticidad.field_id_estatico
+    - field.field.taxonomy_term.criticidad.field_valor
+    - taxonomy.vocabulary.criticidad
+  module:
+    - options
+    - text
+id: taxonomy_term.criticidad.default
+targetEntityType: taxonomy_term
+bundle: criticidad
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_id_estatico:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_valor:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,64 @@
+uuid: 88d3668e-f308-4768-a3f5-765da8b9bd1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.matriz_de_calor.field_categoria_proceso_y_critic
+    - field.field.node.matriz_de_calor.field_rol_del_evaluador
+    - field.field.node.matriz_de_calor.field_tamano_de_empresa
+    - field.field.node.matriz_de_calor.field_tipo_de_empresa
+    - node.type.matriz_de_calor
+  module:
+    - inline_entity_form
+id: node.matriz_de_calor.default
+targetEntityType: node
+bundle: matriz_de_calor
+mode: default
+content:
+  field_categoria_proceso_y_critic:
+    type: inline_entity_form_simple
+    weight: 4
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      collapsed: true
+      revision: false
+      override_labels: false
+      collapsible: false
+    third_party_settings: {  }
+    region: content
+  field_rol_del_evaluador:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tamano_de_empresa:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tipo_de_empresa:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

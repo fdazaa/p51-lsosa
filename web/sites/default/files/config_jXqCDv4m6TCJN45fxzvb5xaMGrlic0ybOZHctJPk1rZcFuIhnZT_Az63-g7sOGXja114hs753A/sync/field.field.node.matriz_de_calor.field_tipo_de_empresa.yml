@@ -1,0 +1,29 @@
+uuid: 1662c9d8-9c20-49bb-b804-b5f96dbd7a91
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_empresa
+    - node.type.matriz_de_calor
+    - taxonomy.vocabulary.tipo_de_empresa
+id: node.matriz_de_calor.field_tipo_de_empresa
+field_name: field_tipo_de_empresa
+entity_type: node
+bundle: matriz_de_calor
+label: 'Tipo de Empresa'
+description: 'Seleccione el Tipo de Empresa'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_empresa: tipo_de_empresa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

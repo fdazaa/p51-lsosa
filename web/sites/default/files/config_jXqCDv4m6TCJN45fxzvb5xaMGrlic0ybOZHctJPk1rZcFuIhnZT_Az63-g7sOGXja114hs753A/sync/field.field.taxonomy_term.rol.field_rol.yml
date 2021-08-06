@@ -1,0 +1,23 @@
+uuid: 508500c2-cb34-4bf8-9f2f-7db010733ea7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_rol
+    - taxonomy.vocabulary.rol
+id: taxonomy_term.rol.field_rol
+field_name: field_rol
+entity_type: taxonomy_term
+bundle: rol
+label: Rol
+description: Rol
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user_role'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

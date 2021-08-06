@@ -1,0 +1,8 @@
+uuid: ed650ab7-16ad-4ae1-b072-7906a3773056
+langcode: es
+status: true
+dependencies: {  }
+id: accesos-
+label: 'Accesos '
+description: 'Menú de la region accesos en Header'
+locked: false

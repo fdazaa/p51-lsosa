@@ -1,0 +1,11 @@
+uuid: 15d64fad-f84a-4835-9c43-1e0da4864e95
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.tienda_tie
+id: commerce_store.tienda_tie
+target_entity_type_id: commerce_store
+target_bundle: tienda_tie
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,17 @@
+uuid: a3e3781e-df04-41df-aa02-869629da5539
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.operaciones
+id: empresas-2073a6218
+label: Operaciones
+weight: 9
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

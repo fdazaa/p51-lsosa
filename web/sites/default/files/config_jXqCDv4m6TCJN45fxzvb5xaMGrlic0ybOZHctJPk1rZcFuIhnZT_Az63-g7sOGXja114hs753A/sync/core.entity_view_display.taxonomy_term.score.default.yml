@@ -1,0 +1,32 @@
+uuid: 911aa4b9-9bcf-45a9-b924-5c0ed5fe08ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.score.field_score
+    - taxonomy.vocabulary.score
+  module:
+    - text
+id: taxonomy_term.score.default
+targetEntityType: taxonomy_term
+bundle: score
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_score:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  langcode: true

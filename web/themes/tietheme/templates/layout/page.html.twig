@@ -38,8 +38,8 @@
  * @ingroup themeable
  */
 #}
-<section class="tw-skewed-bottom-right tw-h-full">
-	<nav class="tw-h-14 lg:tw-h-16 tw-items-center tw-top-0 tw-inset-x-0 tw-z-50 md:tw-px-5 lg:tw-px-6 md:tw-py-5 lg:tw-py-6 tw-flex tw-justify-between tw-shadow-lg tw-fixed" 
+<section class="tw-mt-14 lg:tw-mt-16">
+	<nav class="tw-h-14 lg:tw-h-16 tw-items-center tw-top-0 tw-inset-x-0 tw-z-50 md:tw-px-5 lg:tw-px-6 md:tw-py-5 lg:tw-py-6 tw-flex tw-justify-between tw-shadow-lg tw-fixed"
 		style=" background: white;">
 		{# este es el logo #}
 		{% if page.header_logo %}
@@ -47,20 +47,20 @@
 				{{ page.header_logo }}
 			</a>
 		{% endif %}
-		
+
 		{# este es el menu #}
 		{% if page.header_menu %}
 			<ul class="tw-hidden tw-top-1/2 tw-left-1/2 tw-transform tw--translate-y-50% lg:tw-mx-auto lg:tw-flex lg:tw-items-center lg:tw-w-auto lg:tw-space-x-6 tw--translate-x-50%">
 				{{ page.header_menu }}
 			</ul>
 		{% endif %}
-		
+
 		<div class="tw-flex tw-items-center">
 			{% if page.header_cart %}
 				{{ page.header_cart }}
 			{% endif %}
 
-			{# Estos son los accesos #}						
+			{# Estos son los accesos #}
 			{% if page.header_accesos %}
 				{{ page.header_accesos }}
 			{% endif %}
@@ -81,9 +81,9 @@
 			</button>
 		</div> #}
 		{# Este es el menu desplegable para movil #}
-		
+
 	</nav>
-		
+
 	{% if logged_in %}
 			{% if page.sidebar_left %}
 				<aside id="scrollaside" class="tw-bg-gray-800 tw-w-3/4 tw-hidden sm:tw-block tw-fixed tw-inset-y-0 tw-overflow-x-hidden tw-overflow-y-auto lg:tw-w-64 sm:tw-max-w-xs tw-mt-16">
@@ -93,30 +93,45 @@
 				</aside>
 			{% endif %}
 		{% else %}
-		
 	{% endif %}
 
 	{% if logged_in %}
 			{% if page.content %}
-				<main class="lg:tw-ml-72 lg:tw-mt-16">	
-					<div class="tw-bg-gray-50 tw-p-12 radius-for-skewed tw-m-0 tw-w-full">	
+				<main class="lg:tw-ml-72 lg:tw-mt-16">
+					<div class="tw-p-12 radius-for-skewed tw-m-0 tw-w-full">
 						<div class="tw-container">
+              {% if page.highlighted %}
+                <div>
+                  <aside>
+                    {{ page.highlighted }}
+                  </aside>
+                </div>
+              {% endif %}
+              {{ tietheme }}
 							{{ page.content }}
 						</div>
 					</div>
-				</main>		
+				</main>
 			{% endif %}
 		{% else %}
-		
+
 			{% if page.content %}
-				<div class="tw-bg-gray-50 lg:tw-p-12 radius-for-skewed tw-mt-24 lg:tw-m-0 tw-w-full">
+				<div class="lg:tw-p-12 tw-mt-24 lg:tw-m-0 tw-w-full">
 					<div class="tw-container">
+            {% if page.highlighted %}
+              <div>
+                <aside>
+                  {{ page.highlighted }}
+                </aside>
+              </div>
+            {% endif %}
+            {{ tietheme }}
 						{{ page.content }}
 					</div>
 				</div>
-			{% endif %}		
-	{% endif %}		
-	
+			{% endif %}
+	{% endif %}
+
 	{% if page.header_menumovil %}
 		<div class="tw-transition tw-delay-150 tw-duration-300 tw-ease-in-out lg:tw-hidden navbar-menu tw-relative tw-z-50 hidden block" id="example-collapse-navbar">
 			<div class="navbar-backdrop tw-w-5/6 tw-fixed tw-inset-0 tw-bg-gray-800 tw-opacity-25"></div>

@@ -1,0 +1,17 @@
+uuid: 8f64f5f8-f555-4bf3-a75d-a955295256c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.le
+id: empresas-6be7c1a08
+label: LE
+weight: 12
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

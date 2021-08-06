@@ -1,0 +1,14 @@
+uuid: ba5a8827-339c-4785-a733-60f6f7848cdd
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-ventas_estrategico
+label: 'Ventas - Estratégico'
+weight: 12
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

@@ -1,0 +1,8 @@
+uuid: 5464e50a-f702-4b23-aaaf-a9d0f2e699c0
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Empresa'
+vid: tipo_de_empresa
+description: 'Contiene los tipos de empresa'
+weight: 0

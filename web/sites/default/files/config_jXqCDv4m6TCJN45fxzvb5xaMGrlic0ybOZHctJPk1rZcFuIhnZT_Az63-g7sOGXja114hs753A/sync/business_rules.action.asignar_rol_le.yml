@@ -1,0 +1,15 @@
+uuid: 747635eb-946a-496b-a2a1-e9ddeb7a2af0
+langcode: es
+status: true
+dependencies: {  }
+id: asignar_rol_le
+label: 'Asignar rol LE'
+description: 'Asignar rol LE'
+settings:
+  user_container: current
+  roles:
+    le: le
+tags: {  }
+type: add_user_role
+target_entity_type: null
+target_bundle: null

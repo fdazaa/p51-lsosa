@@ -1,0 +1,20 @@
+uuid: 81473621-3bb7-4b53-b03d-444336f774e5
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_num_identificacion
+field_name: field_num_identificacion
+entity_type: group
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

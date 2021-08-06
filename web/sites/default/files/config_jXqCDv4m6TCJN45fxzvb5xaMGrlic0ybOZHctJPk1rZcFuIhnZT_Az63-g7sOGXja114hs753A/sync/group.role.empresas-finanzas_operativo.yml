@@ -1,0 +1,14 @@
+uuid: 0e15ad26-f0fb-40ad-a575-c73897900215
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-finanzas_operativo
+label: 'Finanzas - Operativo'
+weight: 23
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

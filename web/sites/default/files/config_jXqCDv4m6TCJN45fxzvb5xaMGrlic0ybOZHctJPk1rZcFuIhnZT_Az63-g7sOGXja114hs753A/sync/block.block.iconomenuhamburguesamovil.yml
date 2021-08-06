@@ -1,0 +1,25 @@
+uuid: 2f405502-9410-4cfa-9323-7976df131b6a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a7b8cb75-de21-444b-818c-b2e833efbbd1'
+  module:
+    - block_content
+  theme:
+    - tietheme
+id: iconomenuhamburguesamovil
+theme: tietheme
+region: header_iconomenumovil
+weight: 0
+provider: null
+plugin: 'block_content:a7b8cb75-de21-444b-818c-b2e833efbbd1'
+settings:
+  id: 'block_content:a7b8cb75-de21-444b-818c-b2e833efbbd1'
+  label: 'Icono menu hamburguesa movil'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

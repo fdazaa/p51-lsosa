@@ -1,0 +1,20 @@
+uuid: 16bc13b7-17fc-48a5-b583-afcc3ca8dc33
+langcode: es
+status: true
+dependencies:
+  module:
+    - quiz
+    - taxonomy
+id: quiz_question.field_categoria_proceso
+field_name: field_categoria_proceso
+entity_type: quiz_question
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

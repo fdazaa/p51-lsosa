@@ -1,0 +1,22 @@
+uuid: bc1e8d60-ab5f-41cf-8c4f-509692c87ec4
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tietheme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: tietheme_content
+theme: tietheme
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 57715a2e-d902-4b8b-8a2f-b96531df5ab2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_telefono
+    - group.type.empresas
+  module:
+    - telephone
+id: group.empresas.field_telefono
+field_name: field_telefono
+entity_type: group
+bundle: empresas
+label: Teléfono
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

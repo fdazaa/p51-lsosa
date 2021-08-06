@@ -1,0 +1,31 @@
+uuid: cb58d506-8991-43d8-b7fa-97506a6d821b
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.action.asignar_rol_de_compras
+    - business_rules.action.asignar_rol_lo
+id: si_tiene_rol_de_compras_o
+label: 'Si tiene Rol de Compras O'
+type: user_has_role_group
+reverse: false
+description: 'Si tiene Rol de Compras O'
+target_entity_type: null
+target_bundle: null
+success_items:
+  asignar_rol_de_compras:
+    id: asignar_rol_de_compras
+    type: action
+    weight: -9
+  asignar_rol_lo:
+    id: asignar_rol_lo
+    type: action
+    weight: -8
+fail_items: {  }
+tags: {  }
+settings:
+  group_id: '1'
+  role_id: empresas-compras_operativo
+  user_key: userid
+  user_name: null
+  user_id: '[current-user:uid]'

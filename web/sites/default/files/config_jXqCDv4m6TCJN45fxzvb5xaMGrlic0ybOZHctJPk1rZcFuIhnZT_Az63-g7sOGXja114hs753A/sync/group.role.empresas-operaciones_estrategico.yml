@@ -1,0 +1,19 @@
+uuid: 90ac5041-f0e8-47b8-82b4-cd23369b5fac
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-operaciones_estrategico
+label: 'Operaciones - Estratégico'
+weight: 19
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions:
+  - 'view any unpublished group'
+  - 'view group'
+  - 'view group_membership content'
+  - 'view latest group version'
+  - 'view own unpublished group'

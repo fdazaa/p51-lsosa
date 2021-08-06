@@ -1,0 +1,20 @@
+uuid: 26bf828f-67e3-467a-bb36-60b0c6eb243e
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - group
+id: group.field_fecha_const_empresa
+field_name: field_fecha_const_empresa
+entity_type: group
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

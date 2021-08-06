@@ -1,0 +1,14 @@
+uuid: 7de8a474-7d09-4f67-bf31-57de7d328ac1
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ventas
+  module:
+    - user
+id: user_remove_role_action.ventas
+label: 'Elimina el rol Ventas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ventas

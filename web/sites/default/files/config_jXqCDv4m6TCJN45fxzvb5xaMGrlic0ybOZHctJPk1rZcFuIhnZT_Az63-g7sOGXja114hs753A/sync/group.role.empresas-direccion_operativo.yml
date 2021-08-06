@@ -1,0 +1,14 @@
+uuid: fcf9fb58-c386-432a-948d-5c0c27e82410
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-direccion_operativo
+label: 'Dirección - Operativo'
+weight: 29
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

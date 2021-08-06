@@ -1,0 +1,21 @@
+uuid: 1cf950bb-d095-44ee-9693-12150164b2ca
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_apellidos_rep_legal
+field_name: field_apellidos_rep_legal
+entity_type: group
+type: string
+settings:
+  max_length: 60
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

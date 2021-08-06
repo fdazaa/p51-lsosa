@@ -1,0 +1,17 @@
+uuid: 8988588e-03d4-4416-b674-128e581672a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.direccion
+id: empresas-53856f3a3
+label: Dirección
+weight: 8
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

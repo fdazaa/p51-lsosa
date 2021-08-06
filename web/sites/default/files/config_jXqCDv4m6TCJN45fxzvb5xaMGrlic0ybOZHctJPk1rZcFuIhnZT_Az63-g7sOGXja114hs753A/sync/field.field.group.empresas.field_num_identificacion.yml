@@ -1,0 +1,23 @@
+uuid: b10d0ffa-0b4a-4a47-bcd2-d99507b777fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_num_identificacion
+    - group.type.empresas
+id: group.empresas.field_num_identificacion
+field_name: field_num_identificacion
+entity_type: group
+bundle: empresas
+label: 'Número de Identificación'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

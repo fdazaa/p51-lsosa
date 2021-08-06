@@ -1,0 +1,29 @@
+uuid: 0c5f948a-a6f8-4d39-b0a1-8ba2019bb21b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.quiz_question.field_tipo
+    - quiz.question.type.multichoice
+    - taxonomy.vocabulary.tipo
+id: quiz_question.multichoice.field_tipo
+field_name: field_tipo
+entity_type: quiz_question
+bundle: multichoice
+label: Tipo
+description: 'Seleccione el tipo de pregunta que se deberá asignar al formulario.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo: tipo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

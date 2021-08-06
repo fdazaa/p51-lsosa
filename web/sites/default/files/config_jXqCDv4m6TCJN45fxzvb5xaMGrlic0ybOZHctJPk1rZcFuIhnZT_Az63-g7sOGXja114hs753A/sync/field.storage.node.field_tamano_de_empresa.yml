@@ -1,0 +1,20 @@
+uuid: 462e3840-c211-4c94-acbc-32abfcd33246
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tamano_de_empresa
+field_name: field_tamano_de_empresa
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: dde73e95-7fe3-4c08-9b48-3dfd73eb3f9c
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz_multichoice
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: o13K2SXNJ1JmUDAF_AvVby9OctaSdTdaiXN20hdcn2k
+id: paragraph.multichoice_feedback_not_chosen
+field_name: multichoice_feedback_not_chosen
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 6e35fcff-3d32-401d-8318-2ebf0bab6210
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.ubicacion_de_la_empresa
+label: 'Ubicación de la Empresa'
+targetEntityType: group
+cache: true

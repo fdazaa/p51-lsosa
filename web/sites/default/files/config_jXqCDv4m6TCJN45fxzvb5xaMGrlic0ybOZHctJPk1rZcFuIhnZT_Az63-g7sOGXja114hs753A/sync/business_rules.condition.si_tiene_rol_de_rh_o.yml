@@ -1,0 +1,31 @@
+uuid: d2edf6c8-02d7-41ab-b72e-1dbb964933b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.action.asignar_rol_de_rh
+    - business_rules.action.asignar_rol_lo
+id: si_tiene_rol_de_rh_o
+label: 'Si tiene Rol de RH O'
+type: user_has_role_group
+reverse: false
+description: 'Si tiene Rol de RH O'
+target_entity_type: null
+target_bundle: null
+success_items:
+  asignar_rol_lo:
+    id: asignar_rol_lo
+    type: action
+    weight: -9
+  asignar_rol_de_rh:
+    id: asignar_rol_de_rh
+    type: action
+    weight: -8
+fail_items: {  }
+tags: {  }
+settings:
+  group_id: '1'
+  role_id: empresas-rh_operativo
+  user_key: userid
+  user_name: null
+  user_id: '[current-user:uid]'

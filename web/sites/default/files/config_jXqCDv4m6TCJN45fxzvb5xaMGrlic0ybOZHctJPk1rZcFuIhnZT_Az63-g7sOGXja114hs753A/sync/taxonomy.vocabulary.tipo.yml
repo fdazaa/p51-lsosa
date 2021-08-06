@@ -1,0 +1,8 @@
+uuid: 4c7d8e80-d144-415d-909a-e86f7be47dca
+langcode: es
+status: true
+dependencies: {  }
+name: Tipo
+vid: tipo
+description: 'Se utiliza para el selector de apropiacion y adopcion en formulario y preguntas. Importante no cambiar el nombre.'
+weight: 0

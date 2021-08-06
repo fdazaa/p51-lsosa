@@ -1,0 +1,14 @@
+uuid: 416f527a-133d-445d-ba22-56bb9e270389
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-operaciones_operativo
+label: 'Operaciones - Operativo'
+weight: 20
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

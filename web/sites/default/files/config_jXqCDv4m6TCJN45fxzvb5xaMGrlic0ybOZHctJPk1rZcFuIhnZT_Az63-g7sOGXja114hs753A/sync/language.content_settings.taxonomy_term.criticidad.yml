@@ -1,0 +1,11 @@
+uuid: a570fe90-707c-43bc-924f-baeabfabac01
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.criticidad
+id: taxonomy_term.criticidad
+target_entity_type_id: taxonomy_term
+target_bundle: criticidad
+default_langcode: site_default
+language_alterable: false

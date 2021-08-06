@@ -1,0 +1,21 @@
+uuid: dc62a7bd-0fae-4de8-a0a5-711431b5c05f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_id_estatico_terms
+    - taxonomy.vocabulary.clasificacion
+  module:
+    - options
+id: taxonomy_term.clasificacion.field_id_estatico_terms
+field_name: field_id_estatico_terms
+entity_type: taxonomy_term
+bundle: clasificacion
+label: 'ID estático terms'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

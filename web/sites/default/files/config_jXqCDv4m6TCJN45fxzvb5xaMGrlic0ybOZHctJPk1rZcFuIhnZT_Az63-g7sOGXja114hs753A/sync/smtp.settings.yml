@@ -1,0 +1,21 @@
+smtp_on: true
+smtp_host: smtp.mi.com.co
+smtp_hostbackup: smtp.mi.com.co
+smtp_port: '587'
+smtp_protocol: tls
+smtp_autotls: false
+smtp_timeout: 30
+smtp_username: it@segen-group.com
+smtp_password: 'ITsegen2021#'
+smtp_from: it@segen-group.com
+smtp_fromname: 'Segen Group'
+smtp_client_hostname: smtp.mi.com.co
+smtp_client_helo: 'Segen Group te dice'
+smtp_allowhtml: '0'
+smtp_test_address: ''
+smtp_debugging: false
+prev_mail_system: php_mail
+smtp_keepalive: true
+_core:
+  default_config_hash: 2v5R3I9tNatGzKQjuZWh1y_955xK09313Vn-IIuedyI
+langcode: es

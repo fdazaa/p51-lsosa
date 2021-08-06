@@ -1,0 +1,8 @@
+uuid: b5143a96-27bb-4379-ae12-b8b13a39e008
+langcode: es
+status: true
+dependencies: {  }
+name: Pilares
+vid: pilares
+description: 'Lista de Pilares Segen Group'
+weight: 0

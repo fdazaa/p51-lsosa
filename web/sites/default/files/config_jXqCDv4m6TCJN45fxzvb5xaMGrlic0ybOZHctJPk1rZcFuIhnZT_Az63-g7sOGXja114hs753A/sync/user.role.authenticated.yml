@@ -1,0 +1,30 @@
+uuid: c51d7cec-24cb-495e-9108-00a2df93c7d6
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Usuario autenticado'
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access files overview'
+  - 'access quiz'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view any quiz'
+  - 'view commerce_product'
+  - 'view commerce_store'
+  - 'view own commerce_order'
+  - 'view own profile'
+  - 'view own quiz_result'
+  - 'view own unpublished content'
+  - 'view tienda_tie commerce_store'

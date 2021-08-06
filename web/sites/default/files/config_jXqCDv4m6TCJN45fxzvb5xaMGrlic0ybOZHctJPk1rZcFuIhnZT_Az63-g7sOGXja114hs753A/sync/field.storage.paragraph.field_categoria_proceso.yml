@@ -1,0 +1,20 @@
+uuid: 79917eb5-e407-4e3a-bb03-43869e3f2bb1
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_categoria_proceso
+field_name: field_categoria_proceso
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

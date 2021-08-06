@@ -1,0 +1,11 @@
+uuid: d01b2f78-42ba-48c4-a742-0f8d09847e19
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.matriz_de_calor
+id: node.matriz_de_calor
+target_entity_type_id: node
+target_bundle: matriz_de_calor
+default_langcode: site_default
+language_alterable: false

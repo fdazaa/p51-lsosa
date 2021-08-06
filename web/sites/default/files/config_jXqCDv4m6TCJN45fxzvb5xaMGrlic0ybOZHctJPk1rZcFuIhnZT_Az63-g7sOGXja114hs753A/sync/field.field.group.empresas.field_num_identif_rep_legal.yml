@@ -1,0 +1,23 @@
+uuid: 014c94ca-6328-4cfc-be85-51c2b177cfd6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_num_identif_rep_legal
+    - group.type.empresas
+id: group.empresas.field_num_identif_rep_legal
+field_name: field_num_identif_rep_legal
+entity_type: group
+bundle: empresas
+label: 'Número de Identificación Representante Legal'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

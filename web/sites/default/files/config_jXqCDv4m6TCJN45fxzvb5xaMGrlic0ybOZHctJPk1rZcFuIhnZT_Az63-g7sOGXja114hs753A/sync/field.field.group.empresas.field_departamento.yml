@@ -1,0 +1,21 @@
+uuid: 4fc4be77-5926-429a-a3b8-3f5a0bdad063
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_departamento
+    - group.type.empresas
+  module:
+    - options
+id: group.empresas.field_departamento
+field_name: field_departamento
+entity_type: group
+bundle: empresas
+label: Departamento
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

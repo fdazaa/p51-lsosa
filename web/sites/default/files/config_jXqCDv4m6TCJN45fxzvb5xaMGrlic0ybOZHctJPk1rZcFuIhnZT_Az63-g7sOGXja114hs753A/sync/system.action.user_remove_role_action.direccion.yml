@@ -1,0 +1,14 @@
+uuid: 5cbc5a08-7d9f-4b36-a36f-ff4cb5bcad96
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.direccion
+  module:
+    - user
+id: user_remove_role_action.direccion
+label: 'Elimina el rol Dirección al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: direccion

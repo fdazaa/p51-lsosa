@@ -1,0 +1,15 @@
+uuid: 95d199a3-aadd-42dd-83b3-50aede2e7998
+langcode: es
+status: true
+dependencies: {  }
+id: asignar_rol_de_rh
+label: 'Asignar Rol de RH'
+description: 'Asignar Rol de RH'
+settings:
+  user_container: current
+  roles:
+    rh: rh
+tags: {  }
+type: add_user_role
+target_entity_type: null
+target_bundle: null

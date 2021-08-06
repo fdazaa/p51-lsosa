@@ -1,0 +1,24 @@
+uuid: ae6d3680-e00f-4ab8-b019-c368a3117a65
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.action.asignar_rol_de_direccion
+id: si_el_pago_fue_completado
+label: 'Si el pago fue completado'
+type: variable_data_comparison
+reverse: false
+description: 'Si el pago fue completado'
+target_entity_type: null
+target_bundle: null
+success_items: {  }
+fail_items:
+  asignar_rol_de_direccion:
+    id: asignar_rol_de_direccion
+    type: action
+    weight: -9
+tags: {  }
+settings:
+  value_1: '[commerce_payment:completed]'
+  operator: empty
+  value_2: .

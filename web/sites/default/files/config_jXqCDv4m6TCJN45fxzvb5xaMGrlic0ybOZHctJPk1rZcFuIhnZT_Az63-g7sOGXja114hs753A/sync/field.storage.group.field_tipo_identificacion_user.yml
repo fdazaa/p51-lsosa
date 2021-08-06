@@ -1,0 +1,27 @@
+uuid: 8dbdfb26-0635-480c-8b30-fefafd6de5fa
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_tipo_identificacion_user
+field_name: field_tipo_identificacion_user
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: NIT
+      label: NIT
+    -
+      value: RUT
+      label: RUT
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

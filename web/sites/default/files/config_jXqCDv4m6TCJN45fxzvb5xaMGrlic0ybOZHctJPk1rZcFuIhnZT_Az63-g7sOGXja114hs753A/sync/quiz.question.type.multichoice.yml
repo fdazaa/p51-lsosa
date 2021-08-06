@@ -1,0 +1,11 @@
+uuid: 4c9dfcc5-a151-4722-a8d2-cc004563f480
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz_multichoice
+_core:
+  default_config_hash: 8s0SXvQ4MVxywoXmjh0KjlBPTMONNMRlDWo2FmuBDis
+id: multichoice
+label: 'Pregunta de opción múltiple'

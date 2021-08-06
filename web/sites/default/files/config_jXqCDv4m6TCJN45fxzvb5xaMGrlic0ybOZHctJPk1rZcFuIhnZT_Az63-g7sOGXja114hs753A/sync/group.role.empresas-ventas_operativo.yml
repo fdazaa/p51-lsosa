@@ -1,0 +1,14 @@
+uuid: 26a75c70-2c64-4f49-87fb-dc272f6a63a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-ventas_operativo
+label: 'Ventas - Operativo'
+weight: 14
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

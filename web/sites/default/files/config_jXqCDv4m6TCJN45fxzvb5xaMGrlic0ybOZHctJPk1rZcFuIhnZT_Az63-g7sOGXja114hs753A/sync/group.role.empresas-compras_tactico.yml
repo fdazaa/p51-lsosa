@@ -1,0 +1,14 @@
+uuid: d009db09-b413-48b4-b7ef-3453979fb87c
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-compras_tactico
+label: 'Compras - Táctico'
+weight: 16
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

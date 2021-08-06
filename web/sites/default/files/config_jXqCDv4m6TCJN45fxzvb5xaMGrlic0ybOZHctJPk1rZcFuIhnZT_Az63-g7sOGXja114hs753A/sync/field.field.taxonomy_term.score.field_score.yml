@@ -1,0 +1,23 @@
+uuid: 2f0fe61a-e50e-4321-aa42-52cdcb3b4143
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_score
+    - taxonomy.vocabulary.score
+id: taxonomy_term.score.field_score
+field_name: field_score
+entity_type: taxonomy_term
+bundle: score
+label: Score
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

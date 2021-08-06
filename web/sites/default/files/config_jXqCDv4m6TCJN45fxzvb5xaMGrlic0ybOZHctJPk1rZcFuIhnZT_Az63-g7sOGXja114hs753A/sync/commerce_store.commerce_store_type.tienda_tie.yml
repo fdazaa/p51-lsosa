@@ -1,0 +1,9 @@
+uuid: 728923a6-2fb6-4464-9b07-711ef867a1e4
+langcode: es
+status: true
+dependencies: {  }
+id: tienda_tie
+label: 'Tienda TIE'
+description: ''
+traits: {  }
+locked: false

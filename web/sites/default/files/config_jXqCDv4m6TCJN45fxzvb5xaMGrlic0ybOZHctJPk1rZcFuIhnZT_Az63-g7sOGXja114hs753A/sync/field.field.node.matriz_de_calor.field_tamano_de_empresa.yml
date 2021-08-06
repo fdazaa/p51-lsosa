@@ -1,0 +1,29 @@
+uuid: 0a4ff390-60ab-4b37-ae4f-e2912f63c242
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tamano_de_empresa
+    - node.type.matriz_de_calor
+    - taxonomy.vocabulary.tamano_de_empresa
+id: node.matriz_de_calor.field_tamano_de_empresa
+field_name: field_tamano_de_empresa
+entity_type: node
+bundle: matriz_de_calor
+label: 'Tamaño de Empresa'
+description: 'Selección el tamaño de empresa'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tamano_de_empresa: tamano_de_empresa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

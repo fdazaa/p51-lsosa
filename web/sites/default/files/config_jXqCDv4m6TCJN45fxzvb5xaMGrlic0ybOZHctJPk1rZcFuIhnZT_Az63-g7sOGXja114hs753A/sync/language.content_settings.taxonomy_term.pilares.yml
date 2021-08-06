@@ -1,0 +1,11 @@
+uuid: e7e02f61-3224-4351-8d9f-631e3390b5fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pilares
+id: taxonomy_term.pilares
+target_entity_type_id: taxonomy_term
+target_bundle: pilares
+default_langcode: site_default
+language_alterable: false

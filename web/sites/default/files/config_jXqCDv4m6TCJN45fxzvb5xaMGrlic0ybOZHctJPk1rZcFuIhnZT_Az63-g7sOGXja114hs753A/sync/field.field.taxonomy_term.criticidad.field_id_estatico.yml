@@ -1,0 +1,21 @@
+uuid: c937b57b-2564-4821-bd8e-f8e87c517831
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_id_estatico
+    - taxonomy.vocabulary.criticidad
+  module:
+    - options
+id: taxonomy_term.criticidad.field_id_estatico
+field_name: field_id_estatico
+entity_type: taxonomy_term
+bundle: criticidad
+label: 'ID estático'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

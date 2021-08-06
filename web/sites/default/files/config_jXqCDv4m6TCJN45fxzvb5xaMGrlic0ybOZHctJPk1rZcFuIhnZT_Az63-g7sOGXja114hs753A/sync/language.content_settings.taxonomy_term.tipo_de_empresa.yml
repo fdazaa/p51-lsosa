@@ -1,0 +1,11 @@
+uuid: 75dd70b5-3765-404e-af1c-ccdf6ad85dbc
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_empresa
+id: taxonomy_term.tipo_de_empresa
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_empresa
+default_langcode: site_default
+language_alterable: false

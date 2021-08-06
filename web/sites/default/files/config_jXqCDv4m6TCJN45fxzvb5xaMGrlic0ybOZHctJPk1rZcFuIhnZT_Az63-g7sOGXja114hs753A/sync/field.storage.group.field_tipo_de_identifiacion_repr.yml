@@ -1,0 +1,30 @@
+uuid: a4add656-5070-4758-9c77-b8a107b02140
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_tipo_de_identifiacion_repr
+field_name: field_tipo_de_identifiacion_repr
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: CC
+      label: CC
+    -
+      value: Pasaporte
+      label: Pasaporte
+    -
+      value: CE
+      label: CE
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: ec05b8d2-e904-4797-8223-3c314b39747b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.rol.field_rol
+    - taxonomy.vocabulary.rol
+  module:
+    - text
+id: taxonomy_term.rol.default
+targetEntityType: taxonomy_term
+bundle: rol
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_rol:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true

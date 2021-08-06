@@ -1,0 +1,21 @@
+uuid: a538b04e-ccc1-4ea0-addc-50010cca92db
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_name_repre_legal
+field_name: field_name_repre_legal
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

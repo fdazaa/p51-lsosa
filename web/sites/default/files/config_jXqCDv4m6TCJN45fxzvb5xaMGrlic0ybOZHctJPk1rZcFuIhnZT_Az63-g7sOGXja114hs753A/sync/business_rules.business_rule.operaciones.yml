@@ -1,0 +1,19 @@
+uuid: e18398ab-c81f-4695-82c2-6b830a6e70a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.condition.si_tiene_rol_de_operaciones_e
+description: Operaciones
+id: operaciones
+label: Operaciones
+enabled: null
+reacts_on: user_login
+items:
+  si_tiene_rol_de_operaciones_e:
+    id: si_tiene_rol_de_operaciones_e
+    type: condition
+    weight: -9
+tags: {  }
+target_bundle: user
+target_entity_type: user

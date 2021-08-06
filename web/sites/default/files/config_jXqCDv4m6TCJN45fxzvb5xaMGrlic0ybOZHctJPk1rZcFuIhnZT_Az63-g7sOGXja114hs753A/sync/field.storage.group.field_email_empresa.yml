@@ -1,0 +1,18 @@
+uuid: 7f5a3bfa-6ab8-4ca1-bcc6-5572d97c34dc
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_email_empresa
+field_name: field_email_empresa
+entity_type: group
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

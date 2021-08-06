@@ -1,0 +1,26 @@
+uuid: 453c7a5e-b7c2-484e-aabe-0bb7d0798eb4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.multichoice_answer
+    - paragraphs.paragraphs_type.multichoice
+  enforced:
+    module:
+      - quiz_multichoice
+  module:
+    - text
+_core:
+  default_config_hash: IPDuiPQccuVBMpWu-4VYHGppnHOWK1F5LHW01fMdgY4
+id: paragraph.multichoice.multichoice_answer
+field_name: multichoice_answer
+entity_type: paragraph
+bundle: multichoice
+label: Respuesta
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

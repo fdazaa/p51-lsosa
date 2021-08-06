@@ -1,0 +1,14 @@
+uuid: 40d6dbce-542d-4c6c-85ac-6d006f40602d
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.rh
+  module:
+    - user
+id: user_remove_role_action.rh
+label: 'Elimina el rol RH al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: rh

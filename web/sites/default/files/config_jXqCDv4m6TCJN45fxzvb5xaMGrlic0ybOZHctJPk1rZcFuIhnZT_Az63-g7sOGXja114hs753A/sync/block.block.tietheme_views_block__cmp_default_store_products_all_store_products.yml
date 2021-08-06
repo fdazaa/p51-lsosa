@@ -1,0 +1,30 @@
+uuid: 9a0c465c-879d-4cfa-8eb1-8f2a402b075f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.cmp_default_store_products
+  module:
+    - system
+    - views
+  theme:
+    - tietheme
+id: tietheme_views_block__cmp_default_store_products_all_store_products
+theme: tietheme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:cmp_default_store_products-all_store_products'
+settings:
+  id: 'views_block:cmp_default_store_products-all_store_products'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/store/*'
+    negate: false

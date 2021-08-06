@@ -1,0 +1,17 @@
+uuid: 99727a58-a9e9-4c43-8c27-59638699b710
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  module:
+    - user
+id: empresas-group_membership
+label: 'Empresas: Group membership'
+description: 'Adds users to groups as members.'
+group_type: empresas
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

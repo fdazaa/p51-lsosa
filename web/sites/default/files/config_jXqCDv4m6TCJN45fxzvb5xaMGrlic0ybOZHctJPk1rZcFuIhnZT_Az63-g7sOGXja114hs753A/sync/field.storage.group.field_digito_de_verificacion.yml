@@ -1,0 +1,20 @@
+uuid: 52a4f6ba-74d1-4ab2-b72d-478551a5d66c
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_digito_de_verificacion
+field_name: field_digito_de_verificacion
+entity_type: group
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

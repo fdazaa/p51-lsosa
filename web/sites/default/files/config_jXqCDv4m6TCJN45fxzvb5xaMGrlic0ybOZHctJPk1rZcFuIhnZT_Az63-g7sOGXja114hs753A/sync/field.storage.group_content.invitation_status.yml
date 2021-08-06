@@ -1,0 +1,22 @@
+uuid: ea74df9b-d469-4696-a756-85727945cc4a
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: aP4AjuNseqA2EDtQrOYcEUncxNkZzNKQ4XGKXkdD6Wo
+id: group_content.invitation_status
+field_name: invitation_status
+entity_type: group_content
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: true
+custom_storage: false

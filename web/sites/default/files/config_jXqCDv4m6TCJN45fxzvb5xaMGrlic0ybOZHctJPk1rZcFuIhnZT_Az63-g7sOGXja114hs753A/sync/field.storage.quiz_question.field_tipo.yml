@@ -1,0 +1,20 @@
+uuid: 2ae6d507-13e6-4832-a8d2-127ee60f7f05
+langcode: es
+status: true
+dependencies:
+  module:
+    - quiz
+    - taxonomy
+id: quiz_question.field_tipo
+field_name: field_tipo
+entity_type: quiz_question
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

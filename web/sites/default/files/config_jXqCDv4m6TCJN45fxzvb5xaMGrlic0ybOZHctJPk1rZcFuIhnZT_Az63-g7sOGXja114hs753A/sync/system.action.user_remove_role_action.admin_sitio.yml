@@ -1,0 +1,14 @@
+uuid: 7dc3b508-6684-475f-812b-a0c9682e722e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.admin_sitio
+  module:
+    - user
+id: user_remove_role_action.admin_sitio
+label: 'Elimina el rol Admin Sitio al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: admin_sitio

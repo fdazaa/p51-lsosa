@@ -1,0 +1,39 @@
+uuid: 4cc6d465-a323-4721-a3d8-135029f922ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.tienda_tie
+    - field.field.commerce_store.tienda_tie.field_productos
+id: commerce_store.tienda_tie.default
+targetEntityType: commerce_store
+bundle: tienda_tie
+mode: default
+content:
+  field_productos:
+    weight: 0
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  address: true
+  billing_countries: true
+  default_currency: true
+  epayco_api_private_key: true
+  epayco_api_public_key: true
+  epayco_client_id: true
+  epayco_key: true
+  epayco_language: true
+  epayco_mode: true
+  is_default: true
+  langcode: true
+  mail: true
+  name: true
+  prices_include_tax: true
+  tax_registrations: true
+  timezone: true
+  uid: true

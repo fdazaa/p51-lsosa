@@ -1,0 +1,31 @@
+uuid: d21a63f7-0e5c-42ae-bea6-bc590d4a8919
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.naturaleza_del_formulario.field_naturaleza
+    - taxonomy.vocabulary.naturaleza_del_formulario
+  module:
+    - options
+    - text
+id: taxonomy_term.naturaleza_del_formulario.default
+targetEntityType: taxonomy_term
+bundle: naturaleza_del_formulario
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_naturaleza:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true

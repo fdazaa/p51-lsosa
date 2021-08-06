@@ -1,0 +1,8 @@
+uuid: 95e6f9c7-7d74-4c2b-9a15-142be31a6b97
+langcode: es
+status: true
+dependencies: {  }
+name: Rol
+vid: rol
+description: 'Lista de Roles'
+weight: 0

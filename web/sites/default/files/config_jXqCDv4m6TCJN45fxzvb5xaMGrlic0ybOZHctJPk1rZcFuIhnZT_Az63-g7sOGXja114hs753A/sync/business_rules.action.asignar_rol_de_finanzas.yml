@@ -1,0 +1,15 @@
+uuid: c2fe5d42-5a5b-4880-b7dd-4bd5ed879a16
+langcode: es
+status: true
+dependencies: {  }
+id: asignar_rol_de_finanzas
+label: 'Asignar Rol de Finanzas'
+description: 'Asignar Rol de Finanzas'
+settings:
+  user_container: current
+  roles:
+    finanzas: finanzas
+tags: {  }
+type: add_user_role
+target_entity_type: null
+target_bundle: null

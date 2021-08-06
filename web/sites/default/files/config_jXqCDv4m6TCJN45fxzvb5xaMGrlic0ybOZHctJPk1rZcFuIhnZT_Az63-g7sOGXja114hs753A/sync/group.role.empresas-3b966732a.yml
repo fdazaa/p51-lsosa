@@ -1,0 +1,17 @@
+uuid: d2898c5b-98ff-4e99-82cf-0d25660ef3d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.lt
+id: empresas-3b966732a
+label: LT
+weight: 13
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

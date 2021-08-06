@@ -1,0 +1,14 @@
+uuid: a98a89ec-6a4f-40da-bf21-1afcd8908b49
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-rh_estrategico
+label: 'RH - Estratégico'
+weight: 24
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

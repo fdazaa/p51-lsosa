@@ -1,0 +1,19 @@
+uuid: 57de8c72-25a4-45a3-9dae-85021a2a1196
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_email_persona_encargada
+    - group.type.empresas
+id: group.empresas.field_email_persona_encargada
+field_name: field_email_persona_encargada
+entity_type: group
+bundle: empresas
+label: 'Correo Electronico Persona Encargada del Proceso'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

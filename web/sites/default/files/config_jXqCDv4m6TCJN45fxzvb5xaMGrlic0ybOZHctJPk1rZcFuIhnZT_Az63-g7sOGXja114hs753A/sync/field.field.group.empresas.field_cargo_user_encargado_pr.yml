@@ -1,0 +1,21 @@
+uuid: f5fc2670-9aec-4338-b35d-462cfa2289a3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_cargo_user_encargado_pr
+    - group.type.empresas
+  module:
+    - options
+id: group.empresas.field_cargo_user_encargado_pr
+field_name: field_cargo_user_encargado_pr
+entity_type: group
+bundle: empresas
+label: 'Cargo Persona Encargada del Proceso'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

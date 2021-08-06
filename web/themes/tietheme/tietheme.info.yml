@@ -15,6 +15,7 @@ regions:
   header_iconomenumovil: 'Icono menu hamburguesa movil'
   header_menumovil: 'Menú movil'
   sidebar_left: 'Sidebar Izquierdo Usuario registrado'
+  highlighted: 'Avisos'
   content: Content
   footer: Footer
 

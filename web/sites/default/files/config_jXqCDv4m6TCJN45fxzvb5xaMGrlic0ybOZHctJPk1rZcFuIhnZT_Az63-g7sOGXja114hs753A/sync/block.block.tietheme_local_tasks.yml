@@ -1,0 +1,22 @@
+uuid: f18c6b4a-d810-4712-8dfa-87a9007a1a75
+langcode: es
+status: true
+dependencies:
+  theme:
+    - tietheme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: tietheme_local_tasks
+theme: tietheme
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

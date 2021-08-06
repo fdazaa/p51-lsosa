@@ -1,0 +1,11 @@
+uuid: 7206caf4-2565-435c-b1c6-ceaa87027c47
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_procesos
+id: taxonomy_term.categorias_procesos
+target_entity_type_id: taxonomy_term
+target_bundle: categorias_procesos
+default_langcode: site_default
+language_alterable: false

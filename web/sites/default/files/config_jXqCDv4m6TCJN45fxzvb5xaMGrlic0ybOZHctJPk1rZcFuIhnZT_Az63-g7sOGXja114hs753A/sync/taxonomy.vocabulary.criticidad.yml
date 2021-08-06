@@ -1,0 +1,8 @@
+uuid: cbd72a89-3863-4a4b-9e3e-58f043cc65f3
+langcode: es
+status: true
+dependencies: {  }
+name: Criticidad
+vid: criticidad
+description: 'Valores de la criticidad para la matriz de calor'
+weight: 0

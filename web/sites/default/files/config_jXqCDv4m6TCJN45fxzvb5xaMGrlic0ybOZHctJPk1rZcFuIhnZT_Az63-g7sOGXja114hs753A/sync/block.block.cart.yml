@@ -1,0 +1,21 @@
+uuid: 60a1bd7d-39af-47de-9a7d-3325d177e13f
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - tietheme
+id: cart
+theme: tietheme
+region: header_cart
+weight: 0
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility: {  }

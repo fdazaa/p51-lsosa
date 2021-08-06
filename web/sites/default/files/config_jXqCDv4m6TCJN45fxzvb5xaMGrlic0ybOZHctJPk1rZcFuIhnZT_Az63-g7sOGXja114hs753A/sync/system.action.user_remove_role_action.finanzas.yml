@@ -1,0 +1,14 @@
+uuid: de21a59a-1089-4ac9-8f48-9a0d4201e9cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.finanzas
+  module:
+    - user
+id: user_remove_role_action.finanzas
+label: 'Elimina el rol Finanzas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: finanzas

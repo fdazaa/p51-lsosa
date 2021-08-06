@@ -1,0 +1,14 @@
+uuid: fb3be730-2319-47c5-8fe2-a08f55185fe8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.lt
+  module:
+    - user
+id: user_remove_role_action.lt
+label: 'Elimina el rol LT al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lt

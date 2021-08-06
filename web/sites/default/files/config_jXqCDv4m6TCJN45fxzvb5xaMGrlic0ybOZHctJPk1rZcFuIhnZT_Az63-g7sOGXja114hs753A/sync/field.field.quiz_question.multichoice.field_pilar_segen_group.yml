@@ -1,0 +1,29 @@
+uuid: 40d20d34-20c4-4094-96ff-4a8accbd29cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.quiz_question.field_pilar_segen_group
+    - quiz.question.type.multichoice
+    - taxonomy.vocabulary.pilares
+id: quiz_question.multichoice.field_pilar_segen_group
+field_name: field_pilar_segen_group
+entity_type: quiz_question
+bundle: multichoice
+label: 'Pilar Segen Group'
+description: 'Seleccione unos de los Pilares al que pertenece la pregunta.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pilares: pilares
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

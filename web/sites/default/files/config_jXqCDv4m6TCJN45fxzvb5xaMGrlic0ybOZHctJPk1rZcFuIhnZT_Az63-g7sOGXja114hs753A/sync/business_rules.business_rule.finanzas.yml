@@ -1,0 +1,19 @@
+uuid: 366b670b-eba2-424e-8621-49f09e635ad4
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.condition.si_tiene_rol_de_finanzas_e
+description: Finanzas
+id: finanzas
+label: Finanzas
+enabled: null
+reacts_on: user_login
+items:
+  si_tiene_rol_de_finanzas_e:
+    id: si_tiene_rol_de_finanzas_e
+    type: condition
+    weight: -9
+tags: {  }
+target_bundle: user
+target_entity_type: user

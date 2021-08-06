@@ -1,0 +1,29 @@
+uuid: 507a6cdc-c704-47d8-8807-f064d6c2a7b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.matriz_de_calor.field_categoria_proceso_y_critic
+    - field.field.node.matriz_de_calor.field_rol_del_evaluador
+    - field.field.node.matriz_de_calor.field_tamano_de_empresa
+    - field.field.node.matriz_de_calor.field_tipo_de_empresa
+    - node.type.matriz_de_calor
+  module:
+    - user
+id: node.matriz_de_calor.teaser
+targetEntityType: node
+bundle: matriz_de_calor
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_categoria_proceso_y_critic: true
+  field_rol_del_evaluador: true
+  field_tamano_de_empresa: true
+  field_tipo_de_empresa: true
+  langcode: true

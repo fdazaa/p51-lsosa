@@ -1,0 +1,36 @@
+uuid: 446fd2d3-1365-4edc-9c33-52bfc56a30a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - commerce_store.commerce_store_type.tienda_tie
+    - field.storage.commerce_store.field_productos
+  content:
+    - 'commerce_product:default:44fcebfe-fbcf-429b-96cc-aef1893de0a7'
+    - 'commerce_product:default:75a95bd5-c278-4121-96aa-eb175234b4a1'
+id: commerce_store.tienda_tie.field_productos
+field_name: field_productos
+entity_type: commerce_store
+bundle: tienda_tie
+label: Productos
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 75a95bd5-c278-4121-96aa-eb175234b4a1
+  -
+    target_uuid: 44fcebfe-fbcf-429b-96cc-aef1893de0a7
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product'
+  handler_settings:
+    target_bundles:
+      default: default
+    sort:
+      field: status
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

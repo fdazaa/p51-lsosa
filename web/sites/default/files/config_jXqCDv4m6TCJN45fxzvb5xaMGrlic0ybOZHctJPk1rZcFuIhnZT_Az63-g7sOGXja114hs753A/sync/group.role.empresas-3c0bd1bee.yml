@@ -1,0 +1,17 @@
+uuid: 9d5c36c8-90ac-4b24-ad6b-efd9d6692dbf
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.admin_sitio
+id: empresas-3c0bd1bee
+label: 'Admin Sitio'
+weight: 5
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

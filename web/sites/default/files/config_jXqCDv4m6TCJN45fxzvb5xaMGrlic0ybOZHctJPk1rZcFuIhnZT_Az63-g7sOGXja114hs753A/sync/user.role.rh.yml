@@ -1,0 +1,11 @@
+uuid: 0681432b-48db-4445-a9fd-77341f6e6f61
+langcode: es
+status: true
+dependencies: {  }
+id: rh
+label: RH
+weight: 11
+is_admin: null
+permissions:
+  - 'view own field_tamano_de_empresa'
+  - 'view own field_tipo'

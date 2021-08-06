@@ -1,0 +1,14 @@
+uuid: 153b0490-ea71-4bd7-afb6-75dad005b586
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ventas
+  module:
+    - user
+id: user_add_role_action.ventas
+label: 'Añade el rol Ventas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ventas

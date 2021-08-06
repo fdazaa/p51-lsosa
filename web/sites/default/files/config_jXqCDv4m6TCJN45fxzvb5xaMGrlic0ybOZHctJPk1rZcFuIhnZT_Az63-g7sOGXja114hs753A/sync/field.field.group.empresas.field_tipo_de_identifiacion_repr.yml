@@ -1,0 +1,21 @@
+uuid: 70f1f899-0dba-46a2-84d4-a5462398c76e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_tipo_de_identifiacion_repr
+    - group.type.empresas
+  module:
+    - options
+id: group.empresas.field_tipo_de_identifiacion_repr
+field_name: field_tipo_de_identifiacion_repr
+entity_type: group
+bundle: empresas
+label: 'Tipo de Identificación Representante Legal'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

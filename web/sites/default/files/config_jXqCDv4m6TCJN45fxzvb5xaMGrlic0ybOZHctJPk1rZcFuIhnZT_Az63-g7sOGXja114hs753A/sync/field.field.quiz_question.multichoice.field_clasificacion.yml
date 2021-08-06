@@ -1,0 +1,29 @@
+uuid: 805ef736-7631-4257-b8f6-c528bc074985
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.quiz_question.field_clasificacion
+    - quiz.question.type.multichoice
+    - taxonomy.vocabulary.clasificacion
+id: quiz_question.multichoice.field_clasificacion
+field_name: field_clasificacion
+entity_type: quiz_question
+bundle: multichoice
+label: Clasificación
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      clasificacion: clasificacion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 8cf6b39f-eabd-42e1-a2df-c4a5e3c87ced
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-anonymous
+label: Anónimo
+weight: -102
+internal: true
+audience: anonymous
+group_type: empresas
+permissions_ui: true
+permissions: {  }

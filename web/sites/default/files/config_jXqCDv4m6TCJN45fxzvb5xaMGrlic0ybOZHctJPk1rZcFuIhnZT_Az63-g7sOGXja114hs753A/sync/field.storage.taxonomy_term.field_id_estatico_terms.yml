@@ -1,0 +1,30 @@
+uuid: da7567ec-a8f6-483d-a3b8-890474a03eb4
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_id_estatico_terms
+field_name: field_id_estatico_terms
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: P
+      label: P
+    -
+      value: TC
+      label: TC
+    -
+      value: TMP
+      label: TMP
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

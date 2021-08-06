@@ -1,0 +1,14 @@
+uuid: 466f4d7b-1db6-4d88-afb6-cb799a1000a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.le
+  module:
+    - user
+id: user_remove_role_action.le
+label: 'Elimina el rol LE al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: le

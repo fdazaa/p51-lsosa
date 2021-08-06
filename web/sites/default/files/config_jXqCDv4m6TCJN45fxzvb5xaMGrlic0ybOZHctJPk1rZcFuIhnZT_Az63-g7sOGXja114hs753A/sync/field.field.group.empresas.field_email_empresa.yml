@@ -1,0 +1,19 @@
+uuid: 40c0fb87-fbca-4eda-bea6-7e12cfc08f59
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_email_empresa
+    - group.type.empresas
+id: group.empresas.field_email_empresa
+field_name: field_email_empresa
+entity_type: group
+bundle: empresas
+label: 'Correo Electrónico de la Empresa'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

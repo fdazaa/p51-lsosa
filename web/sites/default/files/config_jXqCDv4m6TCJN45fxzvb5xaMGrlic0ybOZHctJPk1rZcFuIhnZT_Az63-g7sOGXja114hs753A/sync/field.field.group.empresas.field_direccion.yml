@@ -1,0 +1,19 @@
+uuid: e84e088a-a7cf-4f30-9f00-5f4d69c5a81e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_direccion
+    - group.type.empresas
+id: group.empresas.field_direccion
+field_name: field_direccion
+entity_type: group
+bundle: empresas
+label: Dirección
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

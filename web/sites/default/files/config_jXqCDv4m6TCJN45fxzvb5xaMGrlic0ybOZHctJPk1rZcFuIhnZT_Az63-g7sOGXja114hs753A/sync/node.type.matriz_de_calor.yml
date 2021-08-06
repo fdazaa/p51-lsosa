@@ -1,0 +1,17 @@
+uuid: df955e72-91f7-4144-b3b3-a015609fef2f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Matriz de Calor'
+type: matriz_de_calor
+description: 'Contiene los campos correspondientes a la creación de la matriz de calor'
+help: ''
+new_revision: true
+preview_mode: 2
+display_submitted: true

@@ -1,0 +1,15 @@
+uuid: 626036c6-7035-4047-ac4e-837c94a9a852
+langcode: es
+status: true
+dependencies: {  }
+id: asignar_rol_de_direccion
+label: 'Asignar Rol de Dirección'
+description: 'Se asigna rol de dirección al usuario loggeado que cumpla con ciertas condiciones'
+settings:
+  user_container: current
+  roles:
+    direccion: direccion
+tags: {  }
+type: add_user_role
+target_entity_type: null
+target_bundle: null

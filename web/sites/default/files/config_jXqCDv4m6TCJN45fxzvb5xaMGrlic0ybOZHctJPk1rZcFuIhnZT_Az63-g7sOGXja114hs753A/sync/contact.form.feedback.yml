@@ -1,0 +1,14 @@
+uuid: 66ec4253-7d5d-4798-a093-ded40739b980
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Comentarios sobre el sitio web'
+recipients:
+  - it@segen-group.com
+reply: ''
+weight: 0
+message: 'Su mensaje ha sido enviado.'
+redirect: ''

@@ -1,0 +1,15 @@
+uuid: 1ba23ca5-5d74-474c-8b0a-f5140aa0a295
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz
+_core:
+  default_config_hash: h20Bf7dlQS94vsDufq92rf6f0m8lqySDErfEpwR9vEI
+id: quiz_question_term_pool
+label: 'Form question term pool'
+icon_uuid: null
+icon_default: null
+description: 'Holds a pool configuration for Quizzes with questions from random categories.'
+behavior_plugins: {  }

@@ -1,0 +1,25 @@
+uuid: 06888657-1374-40ab-ba2a-dad34bbcaf60
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - tietheme
+id: navegacionprincipal_2
+theme: tietheme
+region: header_menumovil
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

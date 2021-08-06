@@ -1,0 +1,35 @@
+uuid: baa4d3b8-7c26-48f2-883a-46207a790105
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.quiz_question_tid
+    - paragraphs.paragraphs_type.quiz_question_term_pool
+    - taxonomy.vocabulary.clasificacion
+  enforced:
+    module:
+      - quiz
+      - taxonomy
+_core:
+  default_config_hash: vQo23fHKmxa4QV4Q30KkJR30k7ArU5P98MHiFrmZdag
+id: paragraph.quiz_question_term_pool.quiz_question_tid
+field_name: quiz_question_tid
+entity_type: paragraph
+bundle: quiz_question_term_pool
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      clasificacion: clasificacion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: categorias_procesos
+field_type: entity_reference

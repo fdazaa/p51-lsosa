@@ -1,0 +1,21 @@
+uuid: a135324c-aa1d-4c82-b36d-02f2ff2c0a97
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_fecha_const_empresa
+    - group.type.empresas
+  module:
+    - datetime
+id: group.empresas.field_fecha_const_empresa
+field_name: field_fecha_const_empresa
+entity_type: group
+bundle: empresas
+label: 'Fecha de Constitucion de la Empresa'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

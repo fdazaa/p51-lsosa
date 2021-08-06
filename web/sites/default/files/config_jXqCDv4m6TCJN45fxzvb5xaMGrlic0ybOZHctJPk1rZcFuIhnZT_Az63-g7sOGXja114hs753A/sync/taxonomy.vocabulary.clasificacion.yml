@@ -1,0 +1,8 @@
+uuid: d995aadd-ed19-445f-8763-c43b7b7c0f23
+langcode: es
+status: true
+dependencies: {  }
+name: Clasificación
+vid: clasificacion
+description: 'Seleccionar la clasificación de la pregunta'
+weight: 0

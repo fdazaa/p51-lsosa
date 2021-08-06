@@ -1,0 +1,15 @@
+uuid: 5f086966-b335-40a0-ba3a-230b28c21bac
+langcode: es
+status: true
+dependencies: {  }
+id: asignar_rol_de_operaciones
+label: 'Asignar Rol de Operaciones'
+description: 'Asignar Rol de Operaciones'
+settings:
+  user_container: current
+  roles:
+    operaciones: operaciones
+tags: {  }
+type: add_user_role
+target_entity_type: null
+target_bundle: null

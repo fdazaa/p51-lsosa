@@ -1,0 +1,15 @@
+uuid: 43a600dd-0834-4e77-ba78-c469989705a8
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz
+  module:
+    - quiz
+_core:
+  default_config_hash: tOzLMHVJG0n-Y5ZEUbhIVZDp4a2wWxXC1FociOextbA
+id: quiz_question.question
+label: Pregunta
+targetEntityType: quiz_question
+cache: true

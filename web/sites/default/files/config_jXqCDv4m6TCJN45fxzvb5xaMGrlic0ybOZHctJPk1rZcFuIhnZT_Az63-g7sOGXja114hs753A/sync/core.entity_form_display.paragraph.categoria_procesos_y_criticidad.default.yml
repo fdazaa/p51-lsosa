@@ -1,0 +1,37 @@
+uuid: 4d269175-f0b8-47ed-8f74-6d0b7cc8b2cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.categoria_procesos_y_criticidad.field_categoria_proceso
+    - field.field.paragraph.categoria_procesos_y_criticidad.field_criticidad
+    - paragraphs.paragraphs_type.categoria_procesos_y_criticidad
+  module:
+    - cshs
+id: paragraph.categoria_procesos_y_criticidad.default
+targetEntityType: paragraph
+bundle: categoria_procesos_y_criticidad
+mode: default
+content:
+  field_categoria_proceso:
+    weight: 0
+    settings:
+      parent: null
+      hierarchy_depth: '0'
+      required_depth: '0'
+      save_lineage: '1'
+      level_labels: ''
+      none_label: '- Please select -'
+      force_deepest: false
+    third_party_settings: {  }
+    type: cshs
+    region: content
+  field_criticidad:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

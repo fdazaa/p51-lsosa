@@ -1,0 +1,8 @@
+uuid: 48c96e70-ab43-452c-a235-4c8c51f061c0
+langcode: es
+status: true
+dependencies: {  }
+id: administracion
+label: 'Segen Group Admin'
+description: 'Menú de administración por dashboard de Segen Group para la plataforma TIE'
+locked: false

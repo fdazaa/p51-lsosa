@@ -1,0 +1,10 @@
+uuid: 3abc145a-1bc6-418a-a3e1-27e4aa45a534
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.datos_basicos_de_la_empresa
+label: 'Datos básicos de la Empresa'
+targetEntityType: group
+cache: true

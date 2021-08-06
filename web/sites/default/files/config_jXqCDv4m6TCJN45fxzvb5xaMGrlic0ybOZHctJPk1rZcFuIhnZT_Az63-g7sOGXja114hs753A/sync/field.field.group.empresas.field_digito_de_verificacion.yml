@@ -1,0 +1,23 @@
+uuid: 83099266-5bd2-4668-9f50-a2f879862bc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_digito_de_verificacion
+    - group.type.empresas
+id: group.empresas.field_digito_de_verificacion
+field_name: field_digito_de_verificacion
+entity_type: group
+bundle: empresas
+label: 'Digito de Verificación'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 9
+  prefix: ''
+  suffix: ''
+field_type: integer

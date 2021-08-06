@@ -1,0 +1,43 @@
+uuid: da5b0686-dd5a-40fb-aa7f-5f98ef25c0d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.cmp_empresa_autenticado
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bartik
+id: views_block__cmp_empresa_autenticado_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:cmp_empresa_autenticado-block_1'
+settings:
+  id: 'views_block:cmp_empresa_autenticado-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /empresa
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      admin_sitio: admin_sitio
+      ventas: ventas
+      compras: compras
+      operaciones: operaciones
+      finanzas: finanzas
+      rh: rh
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

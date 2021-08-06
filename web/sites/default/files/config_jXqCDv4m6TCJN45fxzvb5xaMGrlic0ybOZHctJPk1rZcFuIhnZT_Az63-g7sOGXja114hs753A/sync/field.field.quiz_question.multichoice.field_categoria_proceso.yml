@@ -1,0 +1,29 @@
+uuid: b3ca3041-e938-4938-bb25-559d649f8aae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.quiz_question.field_categoria_proceso
+    - quiz.question.type.multichoice
+    - taxonomy.vocabulary.categorias_procesos
+id: quiz_question.multichoice.field_categoria_proceso
+field_name: field_categoria_proceso
+entity_type: quiz_question
+bundle: multichoice
+label: 'Categoría - Proceso'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_procesos: categorias_procesos
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

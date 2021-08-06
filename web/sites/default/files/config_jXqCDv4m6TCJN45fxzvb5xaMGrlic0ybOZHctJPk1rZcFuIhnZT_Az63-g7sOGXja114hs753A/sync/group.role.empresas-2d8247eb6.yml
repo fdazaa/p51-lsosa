@@ -1,0 +1,17 @@
+uuid: e389f660-e10b-464b-b6d0-dfc0f64074a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.compras
+id: empresas-2d8247eb6
+label: Compras
+weight: 7
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

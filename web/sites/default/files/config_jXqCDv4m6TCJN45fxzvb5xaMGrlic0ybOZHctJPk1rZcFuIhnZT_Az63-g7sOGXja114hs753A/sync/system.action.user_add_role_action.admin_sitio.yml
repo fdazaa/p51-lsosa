@@ -1,0 +1,14 @@
+uuid: 70daed22-9766-428f-a443-d286a8b348c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.admin_sitio
+  module:
+    - user
+id: user_add_role_action.admin_sitio
+label: 'Añade el rol Admin Sitio al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: admin_sitio

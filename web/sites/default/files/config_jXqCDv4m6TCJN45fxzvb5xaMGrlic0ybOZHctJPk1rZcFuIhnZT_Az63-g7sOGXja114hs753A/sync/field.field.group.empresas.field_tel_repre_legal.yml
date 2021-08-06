@@ -1,0 +1,21 @@
+uuid: 79d4ecbd-79c3-4d7d-a09f-5b2f197f5a71
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_tel_repre_legal
+    - group.type.empresas
+  module:
+    - telephone
+id: group.empresas.field_tel_repre_legal
+field_name: field_tel_repre_legal
+entity_type: group
+bundle: empresas
+label: 'Teléfono Representante Legal'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

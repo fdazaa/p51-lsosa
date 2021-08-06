@@ -1,0 +1,20 @@
+uuid: 62515f24-f82f-4698-8e76-57be6df40fdc
+langcode: es
+status: true
+dependencies:
+  module:
+    - quiz
+    - taxonomy
+id: quiz.field_naturaleza_del_formulario
+field_name: field_naturaleza_del_formulario
+entity_type: quiz
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

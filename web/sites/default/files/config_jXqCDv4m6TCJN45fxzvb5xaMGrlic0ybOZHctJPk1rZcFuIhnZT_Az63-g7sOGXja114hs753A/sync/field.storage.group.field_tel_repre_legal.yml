@@ -1,0 +1,19 @@
+uuid: f33fa04a-603c-4594-8f26-d646ccbdd407
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - telephone
+id: group.field_tel_repre_legal
+field_name: field_tel_repre_legal
+entity_type: group
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

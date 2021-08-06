@@ -1,0 +1,14 @@
+uuid: d72ac261-c9e3-4678-989f-fb1c4bb4e6f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-ventas_tactico
+label: 'Ventas - Táctico'
+weight: 13
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

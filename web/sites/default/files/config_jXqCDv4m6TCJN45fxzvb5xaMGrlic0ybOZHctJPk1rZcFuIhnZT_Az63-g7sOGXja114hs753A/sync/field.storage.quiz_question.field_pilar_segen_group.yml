@@ -1,0 +1,20 @@
+uuid: 87a9ce01-01d4-407b-8ff0-b23a02b38138
+langcode: es
+status: true
+dependencies:
+  module:
+    - quiz
+    - taxonomy
+id: quiz_question.field_pilar_segen_group
+field_name: field_pilar_segen_group
+entity_type: quiz_question
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

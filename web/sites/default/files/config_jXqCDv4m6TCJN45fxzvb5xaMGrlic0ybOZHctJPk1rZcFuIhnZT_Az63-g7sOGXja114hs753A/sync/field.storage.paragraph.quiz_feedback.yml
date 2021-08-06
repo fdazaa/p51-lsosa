@@ -1,0 +1,24 @@
+uuid: f29932b5-1430-4002-91d8-edeb5c4ae649
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: arksMcocaVWGcxTJ4XdEiTkLnkcWh0BZ0XI66xEDans
+id: paragraph.quiz_feedback
+field_name: quiz_feedback
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

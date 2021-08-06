@@ -1,0 +1,14 @@
+uuid: b9e3a740-fc2c-4052-8f2b-d99076c95e50
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.lo
+  module:
+    - user
+id: user_remove_role_action.lo
+label: 'Elimina el rol LO al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lo

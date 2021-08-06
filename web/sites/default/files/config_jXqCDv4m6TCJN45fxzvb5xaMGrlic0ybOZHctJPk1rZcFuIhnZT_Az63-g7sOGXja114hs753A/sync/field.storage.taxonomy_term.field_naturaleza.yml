@@ -1,0 +1,30 @@
+uuid: f3f1ed01-0013-41cf-8d19-3ab7a4764139
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_naturaleza
+field_name: field_naturaleza
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: LT
+      label: LT
+    -
+      value: LE
+      label: LE
+    -
+      value: LO
+      label: LO
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

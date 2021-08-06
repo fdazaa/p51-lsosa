@@ -1,0 +1,19 @@
+uuid: b78078f8-5015-426f-a5b3-3fb0aa489cd0
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.condition.si_tiene_rol_de_rh_e
+description: RH
+id: rh
+label: RH
+enabled: null
+reacts_on: user_login
+items:
+  si_tiene_rol_de_rh_e:
+    id: si_tiene_rol_de_rh_e
+    type: condition
+    weight: -9
+tags: {  }
+target_bundle: user
+target_entity_type: user

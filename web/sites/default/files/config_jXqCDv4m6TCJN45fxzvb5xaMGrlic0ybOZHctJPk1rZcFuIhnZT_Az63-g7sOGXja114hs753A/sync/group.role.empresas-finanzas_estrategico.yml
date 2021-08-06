@@ -1,0 +1,14 @@
+uuid: cd38463c-8b7e-4210-b944-7ebd6590694d
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+id: empresas-finanzas_estrategico
+label: 'Finanzas - Estratégico'
+weight: 21
+internal: false
+audience: member
+group_type: empresas
+permissions_ui: true
+permissions: {  }

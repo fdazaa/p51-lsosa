@@ -1,0 +1,15 @@
+uuid: b57f80ff-916e-40aa-8dec-9c20ee4fd9a2
+name: 'Plataforma Tie'
+mail: it@segen-group.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/13
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

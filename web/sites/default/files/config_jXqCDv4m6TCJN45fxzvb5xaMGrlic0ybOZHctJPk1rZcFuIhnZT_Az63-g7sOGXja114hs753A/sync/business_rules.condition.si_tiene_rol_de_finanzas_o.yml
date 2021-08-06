@@ -1,0 +1,31 @@
+uuid: f070f5fb-95c7-43e4-9069-935dfe9b5ece
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.action.asignar_rol_de_finanzas
+    - business_rules.action.asignar_rol_lo
+id: si_tiene_rol_de_finanzas_o
+label: 'Si tiene Rol de Finanzas O'
+type: user_has_role_group
+reverse: false
+description: 'Si tiene Rol de Finanzas O'
+target_entity_type: null
+target_bundle: null
+success_items:
+  asignar_rol_de_finanzas:
+    id: asignar_rol_de_finanzas
+    type: action
+    weight: -9
+  asignar_rol_lo:
+    id: asignar_rol_lo
+    type: action
+    weight: -8
+fail_items: {  }
+tags: {  }
+settings:
+  group_id: '1'
+  role_id: empresas-finanzas_operativo
+  user_key: userid
+  user_name: null
+  user_id: '[current-user:uid]'

@@ -1,0 +1,19 @@
+uuid: 6ce0028f-d5e1-489d-9edc-c2e149c0116c
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.condition.si_tiene_rol_de_ventas_e
+description: Ventas
+id: ventas
+label: Ventas
+enabled: null
+reacts_on: user_login
+items:
+  si_tiene_rol_de_ventas_e:
+    id: si_tiene_rol_de_ventas_e
+    type: condition
+    weight: -9
+tags: {  }
+target_bundle: user
+target_entity_type: user

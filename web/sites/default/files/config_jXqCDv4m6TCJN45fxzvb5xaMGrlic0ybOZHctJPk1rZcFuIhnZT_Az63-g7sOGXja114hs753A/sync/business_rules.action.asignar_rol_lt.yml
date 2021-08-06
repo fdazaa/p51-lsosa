@@ -1,0 +1,15 @@
+uuid: 03994a41-8595-4ade-a2b4-4112a41c7f13
+langcode: es
+status: true
+dependencies: {  }
+id: asignar_rol_lt
+label: 'Asignar Rol LT'
+description: 'Asignar Rol LT'
+settings:
+  user_container: current
+  roles:
+    lt: lt
+tags: {  }
+type: add_user_role
+target_entity_type: null
+target_bundle: null

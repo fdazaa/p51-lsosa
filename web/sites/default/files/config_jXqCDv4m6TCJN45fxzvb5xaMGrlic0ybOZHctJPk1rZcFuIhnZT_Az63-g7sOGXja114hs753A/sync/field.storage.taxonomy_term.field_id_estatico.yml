@@ -1,0 +1,33 @@
+uuid: 95b32bb3-34b8-4fc3-979f-2ef2f146a6bb
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_id_estatico
+field_name: field_id_estatico
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ALTO
+      label: ALTO
+    -
+      value: MEDIO
+      label: MEDIO
+    -
+      value: BAJO
+      label: BAJO
+    -
+      value: 'NO APLICA'
+      label: 'NO APLICA'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

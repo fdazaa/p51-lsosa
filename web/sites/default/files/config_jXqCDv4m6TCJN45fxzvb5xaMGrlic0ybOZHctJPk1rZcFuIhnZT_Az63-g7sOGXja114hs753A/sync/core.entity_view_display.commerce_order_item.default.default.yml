@@ -1,0 +1,58 @@
+uuid: b8a764d4-6c9f-4a06-8fe8-7fcd3b3c40c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.default
+  enforced:
+    module:
+      - commerce_product
+  module:
+    - commerce_price
+_core:
+  default_config_hash: a-MK2hTebnM3YwCg08ZKg7ItNkBUOsu3am_y0HIjTw8
+id: commerce_order_item.default.default
+targetEntityType: commerce_order_item
+bundle: default
+mode: default
+content:
+  created:
+    label: hidden
+    type: timestamp
+    weight: 1
+    region: content
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  purchased_entity:
+    type: entity_reference_entity_view
+    weight: 0
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    label: above
+    region: content
+  total_price:
+    type: commerce_price_default
+    weight: 3
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    label: above
+    region: content
+  unit_price:
+    type: commerce_price_default
+    weight: 2
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    label: above
+    region: content
+hidden:
+  adjustments: true
+  quantity: true

@@ -1,0 +1,8 @@
+uuid: 45945ec0-44e8-48f6-860b-6bbf31c0f75c
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tamaño de empresa'
+vid: tamano_de_empresa
+description: 'Lista de tamaño de empresa'
+weight: 0

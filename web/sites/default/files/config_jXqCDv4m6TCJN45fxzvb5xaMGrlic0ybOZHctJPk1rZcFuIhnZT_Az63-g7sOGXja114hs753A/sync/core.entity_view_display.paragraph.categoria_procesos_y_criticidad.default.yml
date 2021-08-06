@@ -1,0 +1,30 @@
+uuid: 8718aacb-6ac5-402e-b84b-31d811cfc23b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.categoria_procesos_y_criticidad.field_categoria_proceso
+    - field.field.paragraph.categoria_procesos_y_criticidad.field_criticidad
+    - paragraphs.paragraphs_type.categoria_procesos_y_criticidad
+id: paragraph.categoria_procesos_y_criticidad.default
+targetEntityType: paragraph
+bundle: categoria_procesos_y_criticidad
+mode: default
+content:
+  field_categoria_proceso:
+    weight: 0
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_criticidad:
+    weight: 1
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

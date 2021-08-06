@@ -1,0 +1,20 @@
+uuid: e0d5a8f2-344f-4758-8c6a-65861d1493d1
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - taxonomy
+id: group.field_tipo
+field_name: field_tipo
+entity_type: group
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

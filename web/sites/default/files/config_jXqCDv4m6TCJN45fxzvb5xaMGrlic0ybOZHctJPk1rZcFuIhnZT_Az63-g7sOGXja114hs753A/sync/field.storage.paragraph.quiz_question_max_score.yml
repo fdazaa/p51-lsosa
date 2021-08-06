@@ -1,0 +1,25 @@
+uuid: fb5611bd-22e3-405d-9a96-38eb3270dc23
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz
+  module:
+    - paragraphs
+_core:
+  default_config_hash: HaSYAL5sP48j84sGNef9EFAvNrRTlnhDzNnhLmPHJdw
+id: paragraph.quiz_question_max_score
+field_name: quiz_question_max_score
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

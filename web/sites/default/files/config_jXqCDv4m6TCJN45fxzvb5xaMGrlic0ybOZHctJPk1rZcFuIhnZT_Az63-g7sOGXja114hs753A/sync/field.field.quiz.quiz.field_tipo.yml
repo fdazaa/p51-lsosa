@@ -1,0 +1,29 @@
+uuid: c561e19d-61f7-489c-be3c-8e266971bc62
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.quiz.field_tipo
+    - quiz.type.quiz
+    - taxonomy.vocabulary.tipo
+id: quiz.quiz.field_tipo
+field_name: field_tipo
+entity_type: quiz
+bundle: quiz
+label: Tipo
+description: 'Seleccione aqui el tipo de formulario si es de adopción o apropiación.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo: tipo
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

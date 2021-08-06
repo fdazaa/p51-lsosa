@@ -1,0 +1,19 @@
+uuid: 57c71e90-63e8-4d36-b626-90cbe43d8d93
+langcode: es
+status: true
+dependencies:
+  config:
+    - business_rules.condition.si_tiene_rol_de_direccion_e
+description: Dirección
+id: direccion
+label: Dirección
+enabled: null
+reacts_on: user_login
+items:
+  si_tiene_rol_de_direccion_e:
+    id: si_tiene_rol_de_direccion_e
+    type: condition
+    weight: -9
+tags: {  }
+target_bundle: user
+target_entity_type: user

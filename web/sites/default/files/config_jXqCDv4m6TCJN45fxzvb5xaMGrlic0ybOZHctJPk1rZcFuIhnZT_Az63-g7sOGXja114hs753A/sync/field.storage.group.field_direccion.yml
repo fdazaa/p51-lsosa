@@ -1,0 +1,21 @@
+uuid: 9090082a-1625-47ba-8246-c0d0053a8093
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_direccion
+field_name: field_direccion
+entity_type: group
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

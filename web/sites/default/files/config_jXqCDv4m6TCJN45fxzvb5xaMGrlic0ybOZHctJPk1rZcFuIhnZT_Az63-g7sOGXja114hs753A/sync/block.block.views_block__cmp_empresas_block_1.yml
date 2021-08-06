@@ -1,0 +1,29 @@
+uuid: 47ee2574-9717-468a-bf7a-aae7ce8078f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.cmp_empresas
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__cmp_empresas_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:cmp_empresas-block_1'
+settings:
+  id: 'views_block:cmp_empresas-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /empresa
+    negate: false

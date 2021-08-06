@@ -1,0 +1,20 @@
+uuid: 46402055-4922-4029-95ad-7efa7ae87402
+langcode: es
+status: true
+dependencies:
+  theme:
+    - tietheme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: tietheme_local_actions
+theme: tietheme
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

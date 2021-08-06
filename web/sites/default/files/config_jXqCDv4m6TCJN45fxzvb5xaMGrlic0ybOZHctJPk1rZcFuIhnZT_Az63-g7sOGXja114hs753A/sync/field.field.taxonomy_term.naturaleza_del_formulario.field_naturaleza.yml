@@ -1,0 +1,21 @@
+uuid: 3be7f4c3-761a-406d-863a-04124d7a6e44
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_naturaleza
+    - taxonomy.vocabulary.naturaleza_del_formulario
+  module:
+    - options
+id: taxonomy_term.naturaleza_del_formulario.field_naturaleza
+field_name: field_naturaleza
+entity_type: taxonomy_term
+bundle: naturaleza_del_formulario
+label: Naturaleza
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

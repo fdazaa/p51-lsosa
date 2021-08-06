@@ -1,0 +1,10 @@
+uuid: bb6e1b85-893c-44a9-ab82-78648f2cfc67
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.datos_de_la_persona_encargada_del_proceso
+label: 'Datos de la Persona Encargada del Proceso'
+targetEntityType: group
+cache: true

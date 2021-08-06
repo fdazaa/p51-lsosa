@@ -1,0 +1,29 @@
+uuid: ce7e0272-a06b-4b86-93ac-ae4d38722b5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rol_del_evaluador
+    - node.type.matriz_de_calor
+    - taxonomy.vocabulary.rol
+id: node.matriz_de_calor.field_rol_del_evaluador
+field_name: field_rol_del_evaluador
+entity_type: node
+bundle: matriz_de_calor
+label: 'Rol del evaluador'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      rol: rol
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

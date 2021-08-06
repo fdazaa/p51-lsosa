@@ -1,0 +1,20 @@
+uuid: caa55951-7e62-4eef-904e-b3116a15139c
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_num_identif_rep_legal
+field_name: field_num_identif_rep_legal
+entity_type: group
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

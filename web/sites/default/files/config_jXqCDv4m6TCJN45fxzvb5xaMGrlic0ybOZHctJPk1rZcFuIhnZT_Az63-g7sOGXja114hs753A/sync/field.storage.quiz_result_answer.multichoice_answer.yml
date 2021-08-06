@@ -1,0 +1,25 @@
+uuid: 52d5c705-0a95-4b80-9967-a54338d92dbb
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - quiz_multichoice
+  module:
+    - quiz
+_core:
+  default_config_hash: MGAFwR90tcuYGLcvyCx5MkGLLdUKKyHDdhbITSHbD-k
+id: quiz_result_answer.multichoice_answer
+field_name: multichoice_answer
+entity_type: quiz_result_answer
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

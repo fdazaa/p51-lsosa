@@ -1,0 +1,29 @@
+uuid: 361459c8-4e98-4ad4-a5d8-2bb7b857cd71
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.quiz.field_naturaleza_del_formulario
+    - quiz.type.quiz
+    - taxonomy.vocabulary.naturaleza_del_formulario
+id: quiz.quiz.field_naturaleza_del_formulario
+field_name: field_naturaleza_del_formulario
+entity_type: quiz
+bundle: quiz
+label: 'Naturaleza del formulario'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      naturaleza_del_formulario: naturaleza_del_formulario
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

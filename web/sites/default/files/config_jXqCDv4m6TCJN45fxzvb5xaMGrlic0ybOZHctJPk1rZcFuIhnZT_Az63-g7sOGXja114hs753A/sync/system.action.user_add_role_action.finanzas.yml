@@ -1,0 +1,14 @@
+uuid: 54933cc8-66f5-459e-898a-f59ddf0569af
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.finanzas
+  module:
+    - user
+id: user_add_role_action.finanzas
+label: 'Añade el rol Finanzas al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: finanzas

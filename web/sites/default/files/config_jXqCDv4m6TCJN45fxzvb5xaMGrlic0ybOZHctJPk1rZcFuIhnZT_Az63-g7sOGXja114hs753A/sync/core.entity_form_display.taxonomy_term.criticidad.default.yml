@@ -1,0 +1,74 @@
+uuid: dfae4c9d-f126-437f-957f-7b2d92f21303
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.criticidad.field_id_estatico
+    - field.field.taxonomy_term.criticidad.field_valor
+    - taxonomy.vocabulary.criticidad
+  module:
+    - path
+    - text
+id: taxonomy_term.criticidad.default
+targetEntityType: taxonomy_term
+bundle: criticidad
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_id_estatico:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_valor:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  revision_log_message:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+hidden: {  }

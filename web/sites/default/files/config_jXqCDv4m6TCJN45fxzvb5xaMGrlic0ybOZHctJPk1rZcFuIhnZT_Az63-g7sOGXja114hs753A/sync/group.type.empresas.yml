@@ -1,0 +1,12 @@
+uuid: 074a14aa-52d7-4db1-96fc-7d8bffc9cd85
+langcode: es
+status: true
+dependencies: {  }
+id: empresas
+label: Empresas
+description: 'A continuación debe crear la empresa con los datos más importante. Debe ser lo más preciso con la información suministrada. '
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - empresas-direccion_estrategico

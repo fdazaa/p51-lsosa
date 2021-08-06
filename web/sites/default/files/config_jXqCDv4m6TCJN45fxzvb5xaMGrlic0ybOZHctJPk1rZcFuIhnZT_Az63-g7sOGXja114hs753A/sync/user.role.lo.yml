@@ -1,0 +1,15 @@
+uuid: 818436ec-dc25-4b5d-8ee7-e8640193b9e7
+langcode: es
+status: true
+dependencies: {  }
+id: lo
+label: LO
+weight: 14
+is_admin: null
+permissions:
+  - 'access quiz overview'
+  - 'create quiz quiz'
+  - 'view any quiz quiz'
+  - 'view own field_tamano_de_empresa'
+  - 'view own field_tipo'
+  - 'view own quiz quiz'

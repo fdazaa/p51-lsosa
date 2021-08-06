@@ -1,0 +1,11 @@
+uuid: 95a217ce-9f9d-4288-93db-9e4aae28ca27
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.naturaleza_del_formulario
+id: taxonomy_term.naturaleza_del_formulario
+target_entity_type_id: taxonomy_term
+target_bundle: naturaleza_del_formulario
+default_langcode: site_default
+language_alterable: false

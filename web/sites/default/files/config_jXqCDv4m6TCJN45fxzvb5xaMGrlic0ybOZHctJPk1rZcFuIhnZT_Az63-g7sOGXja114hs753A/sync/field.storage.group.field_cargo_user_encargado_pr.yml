@@ -1,0 +1,48 @@
+uuid: 801c22f6-514d-427f-8070-d63643503342
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_cargo_user_encargado_pr
+field_name: field_cargo_user_encargado_pr
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Contribuidor individual'
+      label: 'Contribuidor individual'
+    -
+      value: 'Líder de equipo'
+      label: 'Líder de equipo'
+    -
+      value: 'Administrador con menos de 3 años de experiencia'
+      label: 'Administrador con menos de 3 años de experiencia'
+    -
+      value: 'Administrador con más de 3 años de experiencia'
+      label: 'Administrador con más de 3 años de experiencia'
+    -
+      value: 'Líder de área'
+      label: 'Líder de área'
+    -
+      value: Ejecutivo
+      label: Ejecutivo
+    -
+      value: Socio
+      label: Socio
+    -
+      value: Propietario
+      label: Propietario
+    -
+      value: Otro
+      label: Otro
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

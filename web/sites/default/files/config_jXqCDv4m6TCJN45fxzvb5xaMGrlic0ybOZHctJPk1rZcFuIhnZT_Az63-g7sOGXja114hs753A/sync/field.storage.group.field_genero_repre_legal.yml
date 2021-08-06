@@ -1,0 +1,33 @@
+uuid: 4458f3b1-02ce-4a3d-b090-26cea4765b24
+langcode: es
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_genero_repre_legal
+field_name: field_genero_repre_legal
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Femenino
+      label: Femenino
+    -
+      value: Masculino
+      label: Masculino
+    -
+      value: Otro
+      label: Otro
+    -
+      value: 'No provee información'
+      label: 'No provee información'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
