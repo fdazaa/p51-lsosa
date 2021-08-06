@@ -146,7 +146,7 @@ class QuizController extends EntityController {
       return $manage_questions;
     }
     else {
-      $form = \Drupal::service('entity_type.manager')
+      $form = \Drupal::service('entity.manager')
         ->getFormObject('quiz', 'default')
         ->setEntity($quiz);
       $form = \Drupal::formBuilder()->getForm($form);
