@@ -122,6 +122,12 @@ class OrderCollectionFilterTest extends OrderKernelTestBase {
     }, $document['data']));
   }
 
+  /**
+   * Data provider for ::testCustomerOrderCollectionFiltering.
+   *
+   * @return \Generator
+   *   The test data.
+   */
   public function filterDataParameters(): \Generator {
     yield [
       'order_customer',

@@ -21,5 +21,8 @@
         "drupal/entity_print": "^2.2",
         "drupal/mailsystem": "^4.3"
     },
+    "conflict": {
+        "drupal/commerce_shipping": "<2.1"
+    },
     "minimum-stability": "dev"
 }

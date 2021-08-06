@@ -56,7 +56,7 @@ class OrderForm extends ContentEntityForm {
    * {@inheritdoc}
    */
   public function form(array $form, FormStateInterface $form_state) {
-    /* @var \Drupal\commerce_order\Entity\Order $order */
+    /** @var \Drupal\commerce_order\Entity\OrderInterface $order */
     $order = $this->entity;
     $form = parent::form($form, $form_state);
 

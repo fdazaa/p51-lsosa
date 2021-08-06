@@ -2,13 +2,13 @@
 /******/ 	"use strict";
 var __webpack_exports__ = {};
 
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck/_index.mjs
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
   }
 }
-;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/createClass/_index.mjs
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/createClass.js
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
@@ -51,6 +51,7 @@ function _createClass(Constructor, protoProps, staticProps) {
       this.groups = {};
       this.currentLevel = -1;
       this.$element = $(element);
+      this.disabled = element.disabled;
       this.elementId = element.id;
       this.isMultiple = element.multiple;
       this.elementClasses = element.className.replace('simpler-select-root', 'simpler-select'); // Use `$.extend()` to not care about `Object.assign()` polyfill for IE11.
@@ -70,7 +71,7 @@ function _createClass(Constructor, protoProps, staticProps) {
         // Ensure that we'll clearly initiate a new instance.
         this.destroy();
         this.buildOptions();
-        var $currentWrapper = this.createSelectElement(this.$element, undefined, !this.settings.noFirstLevelNone);
+        var $currentWrapper = this.createSelectElement(this.$element, this.rootValue, !this.settings.noFirstLevelNone);
 
         if ($currentWrapper !== this.$element) {
           var lastSelectedValue = this.$element.val();
@@ -107,6 +108,8 @@ function _createClass(Constructor, protoProps, staticProps) {
     }, {
       key: "buildOptions",
       value: function buildOptions() {
+        var _a, _b;
+
         for (var _i4 = 0, _this$$element$0$opti2 = this.$element[0].options; _i4 < _this$$element$0$opti2.length; _i4++) {
           var option = _this$$element$0$opti2[_i4];
           var group = option.parentNode instanceof HTMLOptGroupElement ? option.parentNode.label : undefined;
@@ -123,7 +126,12 @@ function _createClass(Constructor, protoProps, staticProps) {
             // `undefined` and `''` results in an `undefined`.
             parent: option.dataset.parent || undefined
           });
-        }
+        } // If the first option is a `_none`, then the next one is the
+        // real where we should look for a parent to determine whether
+        // the hierarchy starts from a specific item.
+
+
+        this.rootValue = (_b = this.options[((_a = this.options[0]) === null || _a === void 0 ? void 0 : _a.value) === this.settings.noneValue ? 1 : 0]) === null || _b === void 0 ? void 0 : _b.parent;
       }
     }, {
       key: "createSelectElement",
@@ -143,7 +151,11 @@ function _createClass(Constructor, protoProps, staticProps) {
         var $wrapper = $createElement('div') // Add level-specific class to ease the styling.
         .addClass([wrapperClass, wrapperClass + levelPrefix]) // Provide the read-only attribute for those who may need to query it.
         .attr('data-level', this.currentLevel);
-        var $select = $createElement('select').addClass(this.elementClasses).attr('id', selectId);
+        var $select = $createElement('select').addClass(this.elementClasses).attr('id', selectId) // Suppress `Argument of type 'boolean' is not assignable to
+        // parameter of type 'string | number` because it's not true.
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore TS2345.
+        .attr('disabled', this.disabled);
 
         if (addNoneOption) {
           $createElement('option').attr('value', this.settings.noneValue).attr('data-parent-value', parent || null).text(this.settings.noneLabel).appendTo($select);
@@ -275,9 +287,9 @@ function _createClass(Constructor, protoProps, staticProps) {
 
         while (true) {
           if (value !== this.settings.noneValue) {
-            var option = this.getOptionByValue(value);
+            var option = this.getOptionByValue(value); // Do not allow going beyond the configured root.
 
-            if (option === null || option === void 0 ? void 0 : option.parent) {
+            if ((option === null || option === void 0 ? void 0 : option.parent) && option.parent !== this.rootValue) {
               parents.push(option.parent);
               var child = this.getOptionByValue(option.parent);
 

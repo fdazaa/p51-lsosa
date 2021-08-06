@@ -5,10 +5,3 @@ administer commerce_payment_gateway:
 administer commerce_payment:
   title: 'Administer payments'
   restrict access: true
-
-administer commerce_payment_method:
-  title: 'Administer payment methods'
-  restrict access: true
-
-manage own commerce_payment_method:
-  title: 'Manage own payment methods'

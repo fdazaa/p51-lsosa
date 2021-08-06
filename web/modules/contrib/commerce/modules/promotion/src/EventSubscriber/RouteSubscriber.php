@@ -31,6 +31,11 @@ class RouteSubscriber extends RouteSubscriberBase {
     $route = $collection->get('entity.commerce_promotion_coupon.collection');
     if ($route) {
       $route->setOption('_admin_route', TRUE);
+      $route->setOption('parameters', [
+        'commerce_promotion' => [
+          'type' => 'entity:commerce_promotion',
+        ],
+      ]);
     }
   }
 

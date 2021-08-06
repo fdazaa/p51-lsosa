@@ -2,9 +2,9 @@
 
 namespace Drupal\cshs\Plugin\Field\FieldFormatter;
 
-use Drupal\Core\Link;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Field\FieldItemListInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Plugin implementation of the "Flexible hierarchy" formatter.
@@ -21,13 +21,31 @@ use Drupal\Core\Field\FieldItemListInterface;
 class CshsFlexibleHierarchyFormatter extends CshsFormatterBase {
 
   /**
+   * An instance of the `token` service.
+   *
+   * @var \Drupal\Core\Utility\Token
+   */
+  protected $token;
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+    $instance = parent::create($container, $configuration, $plugin_id, $plugin_definition);
+    $instance->token = $container->get('token');
+
+    return $instance;
+  }
+
+  /**
    * {@inheritdoc}
    */
   public static function defaultSettings(): array {
-    return [
-      'format' => '[term:name]',
-      'clear' => TRUE,
-      ] + parent::defaultSettings();
+    $settings = parent::defaultSettings();
+    $settings['format'] = '[term:name]';
+    $settings['clear'] = TRUE;
+
+    return $settings;
   }
 
   /**
@@ -35,7 +53,6 @@ class CshsFlexibleHierarchyFormatter extends CshsFormatterBase {
    */
   public function settingsForm(array $form, FormStateInterface $form_state): array {
     $element = parent::settingsForm($form, $form_state);
-
     $element['format'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Format'),
@@ -66,7 +83,6 @@ class CshsFlexibleHierarchyFormatter extends CshsFormatterBase {
    */
   public function settingsSummary(): array {
     $summary = parent::settingsSummary();
-
     $summary[] = $this->t('Format: @format', ['@format' => $this->getSetting('format')]);
 
     return $summary;
@@ -80,16 +96,10 @@ class CshsFlexibleHierarchyFormatter extends CshsFormatterBase {
     $linked = $this->getSetting('linked');
     $format = $this->getSetting('format');
     $clear = $this->getSetting('clear');
-    $token = \Drupal::token();
 
     foreach ($this->getEntitiesToView($items, $langcode) as $delta => $term) {
-      $text = $token->replace($format, ['term' => $term], ['clear' => $clear]);
-
-      if ($linked) {
-        $text = Link::fromTextAndUrl($text, $term->toUrl())->toString();
-      }
-
-      $elements[$delta]['#markup'] = $text;
+      $text = $this->token->replace($format, ['term' => $term], ['clear' => $clear]);
+      $elements[$delta]['#markup'] = $linked ? $term->toLink($text)->toString() : $text;
     }
 
     return $elements;

@@ -959,12 +959,44 @@ class EuropeanUnionVat extends LocalTaxTypeBase {
         ],
       ],
     ]);
+    $zones['pt_20'] = new TaxZone([
+      'id' => 'pt_20',
+      'label' => $this->t('Portugal (Azores)'),
+      'display_label' => $labels['vat'],
+      'territories' => [
+        ['country_code' => 'PT', 'included_postal_codes' => '/(9)[5-9][0-9]{2}-[0-9]{3}/'],
+      ],
+      'rates' => [
+        [
+          'id' => 'standard',
+          'label' => $labels['standard'],
+          'percentages' => [
+            ['number' => '0.18', 'start_date' => '2012-04-01'],
+          ],
+          'default' => TRUE,
+        ],
+        [
+          'id' => 'intermediate',
+          'label' => $labels['intermediate'],
+          'percentages' => [
+            ['number' => '0.9', 'start_date' => '2012-04-01'],
+          ],
+        ],
+        [
+          'id' => 'reduced',
+          'label' => $labels['reduced'],
+          'percentages' => [
+            ['number' => '0.04', 'start_date' => '2012-04-01'],
+          ],
+        ],
+      ],
+    ]);
     $zones['pt_30'] = new TaxZone([
       'id' => 'pt_30',
       'label' => $this->t('Portugal (Madeira)'),
       'display_label' => $labels['vat'],
       'territories' => [
-        ['country_code' => 'PT', 'included_postal_codes' => '/(9)[5-9][0-9]{2}-[0-9]{3}/'],
+        ['country_code' => 'PT', 'included_postal_codes' => '/(9)[0-4][0-9]{2}-[0-9]{3}/'],
       ],
       'rates' => [
         [

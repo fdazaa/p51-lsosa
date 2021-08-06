@@ -150,7 +150,7 @@ class OrderAdminTest extends OrderWebDriverTestBase {
     $this->submitForm([], 'Save');
     $this->assertSession()->pageTextContains('The order has been successfully saved.');
     $order = Order::load(1);
-    $this->assertNull($order->getBillingProfile());;
+    $this->assertNull($order->getBillingProfile());
 
     // Use an adjustment that is not locked by default.
     $this->drupalGet($order->toUrl('edit-form'));

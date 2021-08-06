@@ -4,6 +4,7 @@
  * Theme for "Group by root" formatter.
  *
  * Available variables:
+ * - id: The ID of a root term.
  * - title: Title of a group.
  * - terms: Children terms.
  *
@@ -13,15 +14,17 @@
  */
 #}
 <div class="cshs-term-group">
-  <div class="cshs-term-group__title">
+  <div class="cshs-term-group__title" data-id="{{ id }}">
      {{ title }}
   </div>
 
   {% if terms is not empty %}
-    <div class="cshs-term-group__terms">
-      {% for delta, term in terms %}
-        <div class="cshs-term-group__term"> {{ term | raw }}</div>
+    <ul class="cshs-term-group__terms">
+      {% for term in terms %}
+        <li class="cshs-term-group__term" data-id="{{ term.id }}" data-parent="{{ term.parent }}">
+          {{ term.label | raw }}
+        </li>
       {% endfor %}
-    </div>
+    </ul>
   {% endif %}
 </div>

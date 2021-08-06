@@ -58,7 +58,7 @@ function configure(mode, devtool, plugins = []) {
     mode,
     plugins,
     devtool,
-    target: 'es5',
+    target: ['web', 'es5'],
     entry: entrypoints.reduce((accumulator, name) => {
       accumulator[name] = `${directories.src}/${name}.ts`;
 

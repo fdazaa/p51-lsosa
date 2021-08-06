@@ -93,12 +93,18 @@ abstract class CshsFormatterBase extends EntityReferenceFormatterBase {
    *
    * @param \Drupal\taxonomy\TermInterface $term
    *   The taxonomy term.
+   * @param bool $start_from_root
+   *   The state of whether to return the hierarchy starting from the root
+   *   or vice versa.
    *
-   * @return TermInterface[]
+   * @return \Drupal\taxonomy\TermInterface[]
    *   The parent terms of a given term.
    */
-  protected function getTermParents(TermInterface $term): array {
-    return \array_reverse($this->getTermStorage()->loadAllParents($term->id()));
+  protected function getTermParents(TermInterface $term, bool $start_from_root = TRUE): array {
+    $hierarchy = $this->getTermStorage()->loadAllParents($term->id());
+
+    // By default, the `$hierarchy` ends by the root term.
+    return $start_from_root ? \array_reverse($hierarchy) : $hierarchy;
   }
 
 }

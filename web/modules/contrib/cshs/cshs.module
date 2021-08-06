@@ -45,6 +45,7 @@ function cshs_theme(): array {
 
   $info['cshs_term_group'] = [
     'variables' => [
+      'id' => '0',
       'title' => '',
       'terms' => [],
     ],

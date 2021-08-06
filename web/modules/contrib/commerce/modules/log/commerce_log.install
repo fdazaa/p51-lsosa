@@ -19,7 +19,10 @@ function commerce_log_update_8201() {
 
   $database = \Drupal::database();
   // Resize the source_entity_type field.
-  $database->query("ALTER TABLE {commerce_log} MODIFY source_entity_type VARCHAR(32)");
+  $database->schema()->changeField('commerce_log', 'source_entity_type', 'source_entity_type', [
+    'type' => 'varchar',
+    'length' => EntityTypeInterface::ID_MAX_LENGTH,
+  ]);
 
   // Update storage schema.
   $storage_key = 'commerce_log.field_schema_data.source_entity_type';

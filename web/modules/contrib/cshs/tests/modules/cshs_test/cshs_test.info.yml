@@ -10,7 +10,7 @@ dependencies:
   - drupal:taxonomy
   - drupal:views
 
-# Information added by Drupal.org packaging script on 2021-07-01
-version: '8.x-3.3'
+# Information added by Drupal.org packaging script on 2021-07-16
+version: '8.x-3.4'
 project: 'cshs'
-datestamp: 1625151397
+datestamp: 1626424437

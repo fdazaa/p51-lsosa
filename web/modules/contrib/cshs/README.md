@@ -40,7 +40,7 @@ The field widget has a variety of configuration options:
 - 8.x
   - [Sergii Bondarenko (BR0kEN)](https://www.drupal.org/u/BR0kEN)
 - 7.x
-  - Unmaintained.
+  - Seeking maintainers. See https://www.drupal.org/project/cshs/issues/3222007
 
 ## Sponsorship
 

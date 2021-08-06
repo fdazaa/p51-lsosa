@@ -15,15 +15,18 @@
   class ClientSideHierarchicalSelect implements Cshs.Plugin {
     protected readonly $element: JQuery<HTMLSelectElement>;
     protected readonly settings: Cshs.Settings;
+    protected readonly disabled: boolean;
     protected readonly elementId: string;
     protected readonly isMultiple: boolean;
     protected readonly elementClasses: string;
     protected readonly options: Cshs.Option[] = [];
     protected readonly groups: Record<string, JQuery<HTMLOptGroupElement> | undefined> = {};
     protected currentLevel = -1;
+    protected rootValue: string | undefined;
 
     constructor(element: HTMLSelectElement, settings: Partial<Cshs.Settings>) {
       this.$element = $(element);
+      this.disabled = element.disabled;
       this.elementId = element.id;
       this.isMultiple = element.multiple;
       this.elementClasses = element.className.replace('simpler-select-root', 'simpler-select');
@@ -43,7 +46,7 @@
       this.destroy();
       this.buildOptions();
 
-      let $currentWrapper = this.createSelectElement(this.$element, undefined, !this.settings.noFirstLevelNone);
+      let $currentWrapper = this.createSelectElement(this.$element, this.rootValue, !this.settings.noFirstLevelNone);
 
       if ($currentWrapper !== this.$element) {
         let lastSelectedValue = this.$element.val();
@@ -93,6 +96,11 @@
           parent: option.dataset.parent || undefined,
         });
       }
+
+      // If the first option is a `_none`, then the next one is the
+      // real where we should look for a parent to determine whether
+      // the hierarchy starts from a specific item.
+      this.rootValue = this.options[this.options[0]?.value === this.settings.noneValue ? 1 : 0]?.parent;
     }
 
     protected createSelectElement<T extends JQuery>($element: T, parent?: string, addNoneOption = true): T | JQuery<HTMLDivElement> {
@@ -113,7 +121,12 @@
         .attr('data-level', this.currentLevel);
       const $select = $createElement('select')
         .addClass(this.elementClasses)
-        .attr('id', selectId);
+        .attr('id', selectId)
+        // Suppress `Argument of type 'boolean' is not assignable to
+        // parameter of type 'string | number` because it's not true.
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore TS2345.
+        .attr('disabled', this.disabled);
 
       if (addNoneOption) {
         $createElement('option')
@@ -239,7 +252,8 @@
         if (value !== this.settings.noneValue) {
           const option = this.getOptionByValue(value);
 
-          if (option?.parent) {
+          // Do not allow going beyond the configured root.
+          if (option?.parent && option.parent !== this.rootValue) {
             parents.push(option.parent);
 
             const child = this.getOptionByValue(option.parent);

@@ -23,7 +23,10 @@ class CshsFullHierarchyFormatter extends CshsFormatterBase {
    * {@inheritdoc}
    */
   public static function defaultSettings(): array {
-    return ['separator' => ' » '] + parent::defaultSettings();
+    $settings = parent::defaultSettings();
+    $settings['separator'] = ' » ';
+
+    return $settings;
   }
 
   /**
@@ -31,7 +34,6 @@ class CshsFullHierarchyFormatter extends CshsFormatterBase {
    */
   public function settingsForm(array $form, FormStateInterface $form_state): array {
     $element = parent::settingsForm($form, $form_state);
-
     $element['separator'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Separator'),
@@ -60,14 +62,13 @@ class CshsFullHierarchyFormatter extends CshsFormatterBase {
    * {@inheritdoc}
    */
   public function viewElements(FieldItemListInterface $items, $langcode): array {
+    $elements = [];
     $linked = $this->getSetting('linked');
     $reverse = $this->getSetting('reverse');
     $separator = $this->getSetting('separator') ?: ' ';
-    $elements = [];
 
     foreach ($this->getEntitiesToView($items, $langcode) as $delta => $term) {
-      $terms = $this->getTermsLabels($this->getTermParents($term), $linked);
-      $elements[$delta]['#markup'] = \implode($separator, $reverse ? \array_reverse($terms) : $terms);
+      $elements[$delta]['#markup'] = \implode($separator, $this->getTermsLabels($this->getTermParents($term, !$reverse), $linked));
     }
 
     return $elements;

@@ -64,7 +64,8 @@ use Drupal\profile\Entity\ProfileInterface;
  *   admin_permission = "administer commerce_order",
  *   permission_granularity = "bundle",
  *   field_indexes = {
- *     "order_number"
+ *     "order_number",
+ *     "state"
  *   },
  *   entity_keys = {
  *     "id" = "order_id",

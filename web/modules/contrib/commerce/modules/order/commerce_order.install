@@ -288,3 +288,11 @@ function commerce_order_update_8214() {
 
   return t('The order version number field was created.');
 }
+
+/**
+ * Update the state field definition.
+ */
+function commerce_order_update_8215() {
+  $definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+  $definition_update_manager->updateFieldStorageDefinition($definition_update_manager->getFieldStorageDefinition('state', 'commerce_order'));
+}

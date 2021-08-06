@@ -202,6 +202,7 @@ class PaymentAddForm extends FormBase implements ContainerInjectionInterface {
       $form = $this->buildPaymentMethodForm($form, $form_state, $default_option);
     }
 
+    $form['actions']['#type'] = 'actions';
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Continue'),
@@ -308,6 +309,7 @@ class PaymentAddForm extends FormBase implements ContainerInjectionInterface {
       '#parents' => ['payment'],
     ];
     $form['payment'] = $inline_form->buildInlineForm($form['payment'], $form_state);
+    $form['actions']['#type'] = 'actions';
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Add payment'),

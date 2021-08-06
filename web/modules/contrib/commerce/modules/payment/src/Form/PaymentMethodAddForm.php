@@ -117,6 +117,7 @@ class PaymentMethodAddForm extends FormBase implements ContainerInjectionInterfa
     $form_state->set('payment_gateway', $default_option->getPaymentGatewayId());
     $form_state->set('payment_method_type', $default_option->getPaymentMethodTypeId());
     $form = $this->buildPaymentMethodForm($form, $form_state);
+    $form['actions']['#type'] = 'actions';
     $form['actions']['submit_payment_method'] = [
       '#type' => 'submit',
       '#value' => $this->t('Save'),
