@@ -152,6 +152,8 @@
                     <!-- Profile Card -->
                     <div class="tw-bg-white tw-p-3 tw-border-t-4 tw-border-green-400">
                       <div class="image overflow-hidden">
+                        {{ username }}
+                        {{ path('entity.user.canonical', {'user': user.id}, {}) }}
                         <img class="tw-h-auto tw-w-full tw-mx-auto" src="https://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg" alt="">
                       </div>
                       <h1 class="tw-text-gray-900 tw-font-bold tw-text-xl tw-leading-8 tw-my-1">{{ user.displayname }}</h1>
