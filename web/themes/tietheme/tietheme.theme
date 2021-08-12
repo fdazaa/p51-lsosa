@@ -46,6 +46,7 @@ function tietheme_preprocess_block(&$variables) {
     $region = Block::load($variables['elements']['#id'])->getRegion();
     $variables['content']['#attributes']['region'] = $region;
   }
+
 }
 
 /**
@@ -95,35 +96,42 @@ function tietheme_theme_suggestions_menu_alter(&$suggestions, array $variables) 
 /**
  * Implements hook_preprocess_HOOK().
  */
-function tietheme_preprocess_page(&$variables)
+/*function tietheme_preprocess_page(&$variables)
 {
-  $variables['tietheme'] = 'prueba de preprocess en page';
-  dpm($variables, 'variablees');
-}
-//function tietheme_preprocess_node(&$variables)
-//{
-// dpm($variables, 'variablees');
-//}
-/**
- * Implements hook_preprocess_user().
- */
+  $variables['tietheme'] = 'prueba de preprocess en pagessssssssssss';
+  $variables['userrs'] = 'Imprimaaaaaaaaaaaaaaaaaaa';
+
+}*/
+
+
+
+
 function tietheme_preprocess_user(&$variables)
 {
-
-
   $account = $variables['elements']['#user'];
+  $variables['pruebas'] = $account -> getDisplayName();
 
-  $variables['username'] = $account->getDisplayname();
-  dpm($variables, 'foto de perfil');
+  $variables['userrs'] = 'Imprimaaaaaaaaaaaaaaaaaaa';
+  dpm($variables, 'VER VARIABLES');
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function tietheme_preprocess_page(&$variables)
+{
+
+  $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+  $picture = $user->user_picture->view('thumbnail');
+  $variables['imagen'] = $picture;
+
+ /* $pictureUri = $user->user_picture->entity->getFileUri();
+  $style = \Drupal::entityTypeManager()->getStorage('image_style')->load('thumbnail');
+  $urlPicture = $style->buildUrl($pictureUri);
+  $variables = $urlPicture;*/
+
+  dpm($variables, 'variables de la pagina');
+
 }
 
 
-// Getting the actual user uid.
-$uid = \Drupal::service('current_user')->id();
-// Getting the actual user entity.
-$user = \Drupal::service('entity.manager')->getStorage('user')->load($uid);
-// Getting the user picture.
-$user_picture = $user->user_picture->entity->getFileUri();
-
-// To use dpm you need the devel module.
-dpm($user_picture);
