@@ -134,4 +134,13 @@ function tietheme_preprocess_page(&$variables)
 
 }
 
-
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ */
+function tietheme_theme_suggestions_views_view_alter(array &$suggestions, array $variables)
+{
+  return [
+    'views_view' . $variables['view']->current_display,
+  ];
+}
