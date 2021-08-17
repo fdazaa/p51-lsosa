@@ -38,7 +38,7 @@
     sticky ? 'sticky-enabled',
   ]
 %}
-<table{{ attributes.addClass(classes) }}>
+<table class="tw-w-full" {{ attributes.addClass(classes) }}>
   {% if caption_needed %}
     <caption>
     {% if caption %}
@@ -63,7 +63,7 @@
               ]
             %}
           {% endif %}
-          <th class="tw-bg-gray-300{{ column.attributes.addClass(column_classes).setAttribute('scope', 'col') }}>
+          <th class="tw-bg-gray-300"{{ column.attributes.addClass(column_classes).setAttribute('scope', 'col') }}>
             {%- if column.wrapper_element -%}
               <{{ column.wrapper_element }}>
                 {%- if column.url -%}
@@ -86,7 +86,7 @@
   {% endif %}
   <tbody>
     {% for row in rows %}
-      <tr class="tw-border-2" {{ row.attributes }}>
+      <tr class="tw-border-2"{{ row.attributes }}>
         {% for key, column in row.columns %}
           {% if column.default_classes %}
             {%
@@ -98,7 +98,7 @@
               {% set column_classes = column_classes|merge(['views-field-' ~ field]) %}
             {% endfor %}
           {% endif %}
-          <td class="tw-border-2" {{ column.attributes.addClass(column_classes) }}>
+          <td class="tw-border-2"{{ column.attributes.addClass(column_classes) }}>
             {%- if column.wrapper_element -%}
               <{{ column.wrapper_element }}>
               {% for content in column.content %}

@@ -28,7 +28,6 @@ function tietheme_get_active_theme() {
   return \Drupal::service('theme.manager')->getActiveTheme()->getName();
 }
 
-
 /**
  * Implements hook_preprocess_HOOK().
  *
@@ -46,7 +45,6 @@ function tietheme_preprocess_block(&$variables) {
     $region = Block::load($variables['elements']['#id'])->getRegion();
     $variables['content']['#attributes']['region'] = $region;
   }
-
 }
 
 /**
@@ -62,57 +60,10 @@ function tietheme_theme_suggestions_menu_alter(&$suggestions, array $variables) 
   }
 }
 
-
-
-/**
-*function tietheme_preprocess_menus(&$menu_name) {
-*  dpm($menu_name, 'IMPRIME VARIABLES');
-*}*/
-
-/**
- * Implements hook_theme_suggestions_HOOK_alter().
- */
-// function tietheme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-
-//   if (\Drupal::currentUser()->isAuthenticated()){
-//     $suggestions[] = 'page__autenticado';
-//   }
-//     dpm($suggestions, 'suggestions');
-// }
-
-
-// // Get actual user role.
-// $current_user_roles = \Drupal::currentUser()->getRoles();
-
-// // Check if user is not admin.
-// if (!in_array('administrator', $current_user_roles)) {}
-
-// // Check if user is an admin.
-// if (in_array('administrator', $current_user_roles)) {}
-
-/**
- * Implements hook_preprocess_HOOK().
- */
-/**
- * Implements hook_preprocess_HOOK().
- */
-/*function tietheme_preprocess_page(&$variables)
-{
-  $variables['tietheme'] = 'prueba de preprocess en pagessssssssssss';
-  $variables['userrs'] = 'Imprimaaaaaaaaaaaaaaaaaaa';
-
-}*/
-
-
-
-
 function tietheme_preprocess_user(&$variables)
 {
   $account = $variables['elements']['#user'];
   $variables['pruebas'] = $account -> getDisplayName();
-
-  $variables['userrs'] = 'Imprimaaaaaaaaaaaaaaaaaaa';
-  dpm($variables, 'VER VARIABLES');
 }
 
 /**
@@ -120,27 +71,28 @@ function tietheme_preprocess_user(&$variables)
  */
 function tietheme_preprocess_page(&$variables)
 {
-
   $user = \Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
   $picture = $user->user_picture->view('thumbnail');
   $variables['imagen'] = $picture;
-
- /* $pictureUri = $user->user_picture->entity->getFileUri();
-  $style = \Drupal::entityTypeManager()->getStorage('image_style')->load('thumbnail');
-  $urlPicture = $style->buildUrl($pictureUri);
-  $variables = $urlPicture;*/
-
-  dpm($variables, 'variables de la pagina');
-
 }
 
 /**
- * Implements hook_theme_suggestions_HOOK_alter().
- *
+ * Implements hook_theme_suggestions_HOOK_alter().views general
  */
 function tietheme_theme_suggestions_views_view_alter(array &$suggestions, array $variables)
+  // If you want you can add a template suggestion for all views
+  // based on their ID:
 {
-  return [
-    'views_view' . $variables['view']->current_display,
-  ];
+  $suggestions[] =sprintf('views_view__%s', $variables['view']->id());
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().views campos
+ */
+function tietheme_theme_suggestions_views_view_field_alter(array &$suggestions, array $variables) {
+  // Check here the id, add suggestions, do whatever you want
+  // ...
+  $suggestions[] =sprintf('views_view_field__%s', $variables['view']->id());
+}
+
+

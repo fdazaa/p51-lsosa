@@ -4,6 +4,7 @@ global-styling:
       public/css/globalstyles.css: {}
       public/css/styles.css: {}
       public/css/form.css: {}
+      piblic/css/botondetabla.css: {}
       //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css: {type: external}
   js:
       public/js/menuhamburguesa.js: {}
