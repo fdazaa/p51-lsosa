@@ -38,7 +38,7 @@
     sticky ? 'sticky-enabled',
   ]
 %}
-<table class="tw-w-full" {{ attributes.addClass(classes) }}>
+<table class="tw-w-full tw-whitespace-nowrap" {{ attributes.addClass(classes) }}>
   {% if caption_needed %}
     <caption>
     {% if caption %}
@@ -53,7 +53,7 @@
   {% endif %}
   {% if header %}
     <thead>
-      <tr class="tw-border-2">
+      <tr class="tw-sticky tw-top-0 tw-text-gray-600 tw-uppercase tw-text-sm">
         {% for key, column in header %}
           {% if column.default_classes %}
             {%
@@ -63,7 +63,7 @@
               ]
             %}
           {% endif %}
-          <th class="tw-bg-gray-300"{{ column.attributes.addClass(column_classes).setAttribute('scope', 'col') }}>
+          <th class="tw-bg-gray-100 tw-px-6 tw-py-3"{{ column.attributes.addClass(column_classes).setAttribute('scope', 'col') }}>
             {%- if column.wrapper_element -%}
               <{{ column.wrapper_element }}>
                 {%- if column.url -%}
@@ -86,7 +86,7 @@
   {% endif %}
   <tbody>
     {% for row in rows %}
-      <tr class="tw-border-2"{{ row.attributes }}>
+      <tr class="tw-border tw-border-dashed tw-border-gray-200"{{ row.attributes }}>
         {% for key, column in row.columns %}
           {% if column.default_classes %}
             {%
@@ -98,7 +98,7 @@
               {% set column_classes = column_classes|merge(['views-field-' ~ field]) %}
             {% endfor %}
           {% endif %}
-          <td class="tw-border-2"{{ column.attributes.addClass(column_classes) }}>
+          <td class="tw-border tw-border-dashed tw-border-gray-200"{{ column.attributes.addClass(column_classes) }}>
             {%- if column.wrapper_element -%}
               <{{ column.wrapper_element }}>
               {% for content in column.content %}

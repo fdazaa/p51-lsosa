@@ -19,6 +19,13 @@
 						{% if page.content %}
 							<div class="tw-container">
 								{{ page.content }}
+                {% if page.highlighted %}
+                  <div>
+                    <aside>
+                      {{ page.highlighted }}
+                    </aside>
+                  </div>
+                {% endif %}
 							</div>
 						{% endif %}
 					</div>

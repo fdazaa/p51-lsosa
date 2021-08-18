@@ -96,3 +96,13 @@ function tietheme_theme_suggestions_views_view_field_alter(array &$suggestions, 
 }
 
 
+
+//status messages//
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function tietheme_theme_suggestions_status_messages_alter(array &$suggestions, array $variables)
+{
+  $route = \Drupal::routeMatch();
+  $suggestions[] = 'status_messages__'.str_replace('.','_', $route->getRouteName());
+}
