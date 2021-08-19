@@ -1,6 +1,6 @@
 name: Tie Theme
 description: Plantilla desarrollada para proyecto Plataforma TIE para segen-group.com
-version: 1.1.12
+version: 1.1.15
 core_version_requirement: ^8 || ^9
 type: theme
 base theme: stable
