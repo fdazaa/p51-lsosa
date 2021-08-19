@@ -32,21 +32,30 @@
 #}
 {%
   set classes = [
-    dom_id ? 'js-view-dom-id-' ~ dom_id,
-  ]
+  dom_id ? 'js-view-dom-id-' ~ dom_id,
+]
 %}
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {{ title }}
-  {{ title_suffix }}
+<div class="lg:tw-grid tw-gap-4 tw-grid-cols-6 tw-bg-white tw-mb-6">
+
 
   {% if header %}
-    <header>
+    <header  class="tw-grid tw-items-center tw-bg-green-600 tw-text-white tw-text-center hover:tw-bg-green-700 tw-transition tw-duration-200 tw-rounded tw-p-1">
       {{ header }}
     </header>
   {% endif %}
 
-  {{ exposed }}
+    {{ exposed }}
+
+</div>
+<div class="alturatabla tw-shadow-xl tw-relative tw-bg-white tw-rounded-lg lg:tw-rounded-none tw-overflow-x-auto tw-overflow-y-auto lg:tw-w-full"
+  {{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title }}
+  {{ title_suffix }}
+
+
+
+  {#{{ exposed }}#}
   {{ attachment_before }}
 
   {% if rows -%}
@@ -54,7 +63,7 @@
   {% elseif empty -%}
     {{ empty }}
   {% endif %}
-  {{ pager }}
+
 
   {{ attachment_after }}
   {{ more }}
@@ -67,3 +76,4 @@
 
   {{ feed_icons }}
 </div>
+{{ pager }}

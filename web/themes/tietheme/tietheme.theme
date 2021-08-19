@@ -76,24 +76,27 @@ function tietheme_preprocess_page(&$variables)
   $variables['imagen'] = $picture;
 }
 
+
+
+
 /**
  * Implements hook_theme_suggestions_HOOK_alter().views general
  */
-function tietheme_theme_suggestions_views_view_alter(array &$suggestions, array $variables)
+//function tietheme_theme_suggestions_views_view_alter(array &$suggestions, array $variables)//
   // If you want you can add a template suggestion for all views
   // based on their ID:
-{
-  $suggestions[] =sprintf('views_view__%s', $variables['view']->id());
-}
+//{//
+  //$suggestions[] =sprintf('views_view__%s', $variables['view']->id());//
+//}//
 
 /**
  * Implements hook_theme_suggestions_HOOK_alter().views campos
  */
-function tietheme_theme_suggestions_views_view_field_alter(array &$suggestions, array $variables) {
+//function tietheme_theme_suggestions_views_view_field_alter(array &$suggestions, array $variables) {//
   // Check here the id, add suggestions, do whatever you want
   // ...
-  $suggestions[] =sprintf('views_view_field__%s', $variables['view']->id());
-}
+  //$suggestions[] =sprintf('views_view_field__%s', $variables['view']->id());//
+//}//
 
 
 
@@ -105,4 +108,17 @@ function tietheme_theme_suggestions_status_messages_alter(array &$suggestions, a
 {
   $route = \Drupal::routeMatch();
   $suggestions[] = 'status_messages__'.str_replace('.','_', $route->getRouteName());
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().tables
+ * @param array $suggestions
+ * @param array $variables
+ * @param $hook
+ */
+function tietheme_theme_suggestions_table_alter(array &$suggestions, array &$variables, $hook)
+{
+  $route = \Drupal::routeMatch();
+  $suggestions[] = 'table__'.str_replace('.','_', $route->getRouteName());
 }

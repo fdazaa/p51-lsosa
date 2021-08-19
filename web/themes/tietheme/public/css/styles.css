@@ -4,21 +4,21 @@
 #scrollaside::-webkit-scrollbar {
     width: 10px;
   }
-  
+
   /* Track */
 #scrollaside::-webkit-scrollbar-track {
     border-radius: 10px;
  }
-   
+
   /* Handle */
 #scrollaside::-webkit-scrollbar-thumb {
-    background: #737373; 
+    background: #737373;
     border-radius: 10px;
   }
-  
+
   /* Handle on hover */
 #scrollaside::-webkit-scrollbar-thumb:hover {
-    background: #4c4c4c; 
+    background: #4c4c4c;
   }
 /* FIN SCROLL DE SIDEBAR PARA LOGUEADO*/
 
@@ -37,7 +37,7 @@
     height: 5px;
     width: 37px;
     background-color: #fff;
-    
+
   }
   .icon-menu-movil > span:nth-child(1) {
     top: 0px;
@@ -64,3 +64,53 @@
     transition: left 1.6s;
   }
 /* END ICONO BURGER MENU MOVIL*/
+
+/*Afecta enlace editar de Banco de preguntas administrativa*/
+td > div > a,
+.link {
+  padding: 3px 12px;
+  color: #059669;
+  border-radius: 3px;
+  border: 1px solid #059669;
+}
+td > div > a:hover,
+td > div > a:focus,
+.link:hover,
+.link:focus {
+  color: white;
+  border-radius: 3px;
+  background-color: #059669;
+  border: 1px solid #059669;
+}
+td > div > a:active,
+.link:active {
+  color: #23aeff;
+}
+/*Fin Afecta enlace editar de Banco de preguntas administrativa*/
+
+/*Altura automatica y estilo scrollbar para tablas*/
+.alturatabla {
+  height: 59vh;
+}
+
+.alturatabla::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.alturatabla::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+.alturatabla::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.alturatabla::-webkit-scrollbar-thumb:hover {
+  background: #a5a3a3;
+}
+/*Altura automatica y estilo scrollbar para tablas*/
