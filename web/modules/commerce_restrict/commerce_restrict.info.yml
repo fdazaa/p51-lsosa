@@ -1,9 +1,0 @@
-name: Commerce Restrict
-type: module
-description: 'Provides aditional restrictions for Commerce.'
-package: Custom
-core_version_requirement: ^8.8.8 || ^9
-dependencies:
-  - commerce:commerce_order
-  - commerce:commerce_product
-  - commerce:commerce_store

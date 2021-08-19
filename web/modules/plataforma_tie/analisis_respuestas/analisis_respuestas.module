@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function analisis_respuestas_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+
+    // Main module help for the block module.
+    case 'help.page.analisis_respuestas':
+      return '<p> El modulo de analisis de respuestas, permite analizar las repsuestas brindadas por el usuario a cada uno de los formularios y presentar los indicadores correspondientes </p>';
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ *
+ * @param \Drupal\node\NodeInterface $node
+ */
+function analisis_respuesta_node_update(\Drupal\node\NodeInterface $node) {
+  dpm('El tipo de contenido de indicadores a sido cargado');
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ *
+ * @param \Drupal\node\NodeInterface $node
+ */
+function analisis_respuesta_node_insert(\Drupal\node\NodeInterface $node) {
+  dpm('El Indicador ha sido insertado');
+}

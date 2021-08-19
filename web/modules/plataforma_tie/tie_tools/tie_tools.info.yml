@@ -1,7 +1,7 @@
 name: 'TIE Tools'
 type: module
 description: 'Provides several tools.'
-package: Custom
+package: 'Plataforma TIE'
 core_version_requirement: ^8.8.8 || ^9
 #dependencies:
 #  - commerce:commerce_order

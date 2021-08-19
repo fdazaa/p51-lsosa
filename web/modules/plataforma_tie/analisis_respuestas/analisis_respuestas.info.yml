@@ -1,0 +1,10 @@
+name: 'Analisis de respuestas'
+type: module
+core_version_requirement: ^9
+
+description: 'Modulo de analisis de respuestas de formularios, para generacion de indicadores'
+version: 1.0.0
+
+package: 'Plataforma TIE'
+dependencies:
+  -drupal:node

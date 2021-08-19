@@ -1,0 +1,41 @@
+analisis_respuestas.ruta_configuracion:
+  path: '/analisis_respuestas/controller/config'
+  defaults:
+    _controller: '\Drupal\analisis_respuestas\Controller\Analisis_respuestasController::configAnalisis_respuestas'
+  requeriments:
+    _permission: 'acces content'
+
+analisis_respuestas.ruta_entityload:
+  path: '/analisis_respuestas/controller/entity/load'
+  defaults:
+    _controller: '\Drupal\analisis_respuestas\Controller\EntityController::entityLoad'
+  requirements:
+    _permission: 'access content'
+
+analisis_respuestas.ruta_entitycreate:
+  path: '/analisis_respuestas/controller/entity/create'
+  defaults:
+    _controller: '\Drupal\analisis_respuestas\Controller\EntityController::entityCreate'
+  requirements:
+    _permission: 'access content'
+
+analisis_respuestas.ruta_entityedit:
+  path: '/analisis_respuestas/controller/entity/edit'
+  defaults:
+    _controller: '\Drupal\analisis_respuestas\Controller\EntityController::entityEdit'
+  requirements:
+    _permission: 'access content'
+
+analisis_respuestas.ruta_entitydelete:
+  path: '/analisis_respuestas/controller/entity/delete'
+  defaults:
+    _controller: '\Drupal\analisis_respuestas\Controller\EntityController::entityDelete'
+  requirements:
+    _permission: 'access content'
+
+analisis_respuestas.ruta_entityquery:
+  path: '/analisis_respuestas/controller/entity/query'
+  defaults:
+    _controller: '\Drupal\analisis_respuestas\Controller\EntityController::entityQuery'
+  requirements:
+    _permission: 'access content'
