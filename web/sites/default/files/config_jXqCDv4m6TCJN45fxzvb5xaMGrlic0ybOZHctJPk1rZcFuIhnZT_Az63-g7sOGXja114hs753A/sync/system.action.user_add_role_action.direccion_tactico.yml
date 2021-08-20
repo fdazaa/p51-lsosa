@@ -1,0 +1,14 @@
+uuid: 55b83e1b-c0e4-46ff-b630-bd2d46c6feb6
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.direccion_tactico
+  module:
+    - user
+id: user_add_role_action.direccion_tactico
+label: 'Añade el rol Dirección - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: direccion_tactico

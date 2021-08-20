@@ -29,7 +29,7 @@
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
   {% if items %}
-    {% if menu_level == 0 %}    
+    {% if menu_level == 0 %}
       <ul class="tw-mb-8 tw-text-left tw-text-base tw-text-white tw-font-medium"{{ attributes }}>
     {% else %}
       <ul>
@@ -40,13 +40,13 @@
           {{ item.attributes }}
           <div @click="open = !open">{{ link(item.title, item.url) }}</div>
           {% if item.below %}
-            <div x-show="open" 
+            <div x-cloak
               x-transition:enter="tw-transition tw-ease-out tw-duration-700"
               x-transition:enter-start="tw-opacity-0 tw-transform tw-scale-90"
               x-transition:enter-end="tw-opacity-100 tw-transform tw-scale-100"
               x-transition:leave="tw-transition tw-ease-in tw-duration-300"
               x-transition:leave-start="tw-opacity-100 tw-transform tw-scale-100"
-              x-transition:leave-end="tw-opacity-0 tw-transform tw-scale-90"  
+              x-transition:leave-end="tw-opacity-0 tw-transform tw-scale-90"
               class="tw-px-3 tw-text-sm tw-text-gray-400">
               {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
             </div>

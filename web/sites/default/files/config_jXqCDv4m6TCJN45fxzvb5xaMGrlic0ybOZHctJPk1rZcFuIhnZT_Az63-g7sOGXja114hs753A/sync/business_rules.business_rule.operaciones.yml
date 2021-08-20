@@ -1,6 +1,6 @@
 uuid: e18398ab-c81f-4695-82c2-6b830a6e70a7
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - business_rules.condition.si_tiene_rol_de_operaciones_e

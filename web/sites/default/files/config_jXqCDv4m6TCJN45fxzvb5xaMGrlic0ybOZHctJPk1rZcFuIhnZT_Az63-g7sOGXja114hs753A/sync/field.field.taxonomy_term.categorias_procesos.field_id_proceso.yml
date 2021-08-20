@@ -1,0 +1,21 @@
+uuid: f9ab4815-faab-41f3-9145-ab8b11faebc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_id_proceso
+    - taxonomy.vocabulary.categorias_procesos
+  module:
+    - options
+id: taxonomy_term.categorias_procesos.field_id_proceso
+field_name: field_id_proceso
+entity_type: taxonomy_term
+bundle: categorias_procesos
+label: 'Id Proceso'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

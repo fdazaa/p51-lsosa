@@ -1,0 +1,9 @@
+uuid: 43918251-2519-4328-9b3d-211782e6b3f8
+langcode: es
+status: true
+dependencies: {  }
+id: direccion_estrategico
+label: 'Dirección - Estratégico'
+weight: 24
+is_admin: null
+permissions: {  }

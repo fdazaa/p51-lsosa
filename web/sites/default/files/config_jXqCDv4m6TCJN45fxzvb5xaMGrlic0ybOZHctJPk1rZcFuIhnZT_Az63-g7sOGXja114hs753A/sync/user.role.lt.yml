@@ -8,10 +8,16 @@ weight: 13
 is_admin: null
 permissions:
   - 'access quiz overview'
+  - 'access quiz_question overview'
+  - 'create analisis_de_respuesta content'
   - 'create quiz quiz'
-  - 'view any quiz quiz'
+  - 'create quiz_result'
+  - 'delete own analisis_de_respuesta content'
+  - 'edit any analisis_de_respuesta content'
+  - 'edit own analisis_de_respuesta content'
+  - 'revert analisis_de_respuesta revisions'
+  - 'view analisis_de_respuesta revisions'
   - 'view own field_tamano_de_empresa'
   - 'view own field_tipo'
   - 'view own quiz'
-  - 'view own quiz quiz'
   - 'view results for own quiz'

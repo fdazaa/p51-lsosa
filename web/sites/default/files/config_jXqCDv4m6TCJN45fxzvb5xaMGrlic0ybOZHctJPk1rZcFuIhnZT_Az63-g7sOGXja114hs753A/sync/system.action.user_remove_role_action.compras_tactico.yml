@@ -1,0 +1,14 @@
+uuid: 7289329c-2a53-42e6-8a7b-6acbb095655b
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.compras_tactico
+  module:
+    - user
+id: user_remove_role_action.compras_tactico
+label: 'Elimina el rol Compras - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: compras_tactico

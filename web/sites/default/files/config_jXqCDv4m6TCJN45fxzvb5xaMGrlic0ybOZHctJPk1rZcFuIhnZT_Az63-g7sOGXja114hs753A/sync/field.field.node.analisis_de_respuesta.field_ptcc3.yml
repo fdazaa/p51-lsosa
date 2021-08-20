@@ -1,0 +1,23 @@
+uuid: a285f133-2cf0-4b18-a327-82e230e39fec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ptcc3
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_ptcc3
+field_name: field_ptcc3
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 3 TC'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

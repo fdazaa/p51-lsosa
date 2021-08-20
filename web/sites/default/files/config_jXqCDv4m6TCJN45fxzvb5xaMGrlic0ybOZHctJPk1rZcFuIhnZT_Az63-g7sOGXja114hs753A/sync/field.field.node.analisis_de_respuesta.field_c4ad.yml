@@ -1,0 +1,23 @@
+uuid: 09ab1479-b82f-4675-9f6f-a691662652a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c4ad
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c4ad
+field_name: field_c4ad
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 4 AD'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

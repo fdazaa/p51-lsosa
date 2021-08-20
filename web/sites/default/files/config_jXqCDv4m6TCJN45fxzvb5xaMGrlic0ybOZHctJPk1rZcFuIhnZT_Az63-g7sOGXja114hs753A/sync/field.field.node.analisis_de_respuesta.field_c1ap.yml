@@ -1,0 +1,23 @@
+uuid: d0129272-4f95-4149-b4b9-b32af24703aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c1ap
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c1ap
+field_name: field_c1ap
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 1 AP'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

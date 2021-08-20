@@ -1,0 +1,9 @@
+uuid: dfe46c1e-59c6-4deb-93c5-5e3e5d8bd71b
+langcode: es
+status: true
+dependencies: {  }
+id: ventas_operativo
+label: 'Ventas - Operativo'
+weight: 17
+is_admin: null
+permissions: {  }

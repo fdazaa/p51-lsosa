@@ -1,0 +1,9 @@
+uuid: 90f68020-d2c3-45fa-93fa-cf519c234fbb
+langcode: es
+status: true
+dependencies: {  }
+id: operaciones_estrategico
+label: 'Operaciones - Estratégico'
+weight: 27
+is_admin: null
+permissions: {  }

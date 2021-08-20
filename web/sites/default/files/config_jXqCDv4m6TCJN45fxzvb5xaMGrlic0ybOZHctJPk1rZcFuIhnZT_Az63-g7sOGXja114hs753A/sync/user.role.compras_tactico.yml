@@ -1,0 +1,9 @@
+uuid: ea46c7ee-9d51-4666-bd80-96102817ddaf
+langcode: es
+status: true
+dependencies: {  }
+id: compras_tactico
+label: 'Compras - Táctico'
+weight: 19
+is_admin: null
+permissions: {  }

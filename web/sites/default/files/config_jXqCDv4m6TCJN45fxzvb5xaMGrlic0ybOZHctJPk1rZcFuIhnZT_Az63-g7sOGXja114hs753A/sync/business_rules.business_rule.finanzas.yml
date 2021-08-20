@@ -1,6 +1,6 @@
 uuid: 366b670b-eba2-424e-8621-49f09e635ad4
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - business_rules.condition.si_tiene_rol_de_finanzas_e

@@ -1,0 +1,14 @@
+uuid: 45c332bb-20a2-4d14-8f1f-199d46c98c52
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.direccion_estrategico
+  module:
+    - user
+id: user_remove_role_action.direccion_estrategico
+label: 'Elimina el rol Dirección - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: direccion_estrategico

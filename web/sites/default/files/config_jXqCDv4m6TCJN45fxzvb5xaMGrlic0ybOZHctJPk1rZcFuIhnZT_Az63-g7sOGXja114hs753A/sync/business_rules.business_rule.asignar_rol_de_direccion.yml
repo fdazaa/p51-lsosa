@@ -1,6 +1,6 @@
 uuid: e266e7d4-ac9c-4906-8318-84e818a8b5ab
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - business_rules.condition.si_el_pago_fue_completado

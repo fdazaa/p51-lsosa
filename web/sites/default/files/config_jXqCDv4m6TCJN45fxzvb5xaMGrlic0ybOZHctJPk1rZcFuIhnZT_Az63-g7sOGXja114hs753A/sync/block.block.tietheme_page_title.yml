@@ -2,6 +2,8 @@ uuid: eb36c7b2-6ef7-4a3f-b633-45762b751401
 langcode: es
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - tietheme
 _core:
@@ -17,4 +19,8 @@ settings:
   label: 'Título de la página'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /inicio
+    negate: true

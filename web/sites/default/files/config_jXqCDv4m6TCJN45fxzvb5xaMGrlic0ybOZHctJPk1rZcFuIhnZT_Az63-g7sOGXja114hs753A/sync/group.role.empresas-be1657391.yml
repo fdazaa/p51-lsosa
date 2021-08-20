@@ -1,0 +1,17 @@
+uuid: 616e8631-03c0-4384-954a-f1aef97f2e83
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.finanzas_tactico
+id: empresas-be1657391
+label: 'Finanzas - Táctico'
+weight: 22
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: 361be90b-6429-482a-8d5a-f23566a2972f
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.operaciones_operativo
+  module:
+    - user
+id: user_remove_role_action.operaciones_operativo
+label: 'Elimina el rol Operaciones - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: operaciones_operativo

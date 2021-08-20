@@ -1,0 +1,14 @@
+uuid: c3070a5d-86da-4dbe-b492-c4a0753c6023
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.operaciones_estrategico
+  module:
+    - user
+id: user_remove_role_action.operaciones_estrategico
+label: 'Elimina el rol Operaciones - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: operaciones_estrategico

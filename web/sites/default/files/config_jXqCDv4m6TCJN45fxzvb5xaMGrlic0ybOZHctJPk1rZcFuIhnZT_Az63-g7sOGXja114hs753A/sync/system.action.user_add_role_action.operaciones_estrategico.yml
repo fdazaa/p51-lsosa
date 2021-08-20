@@ -1,0 +1,14 @@
+uuid: fe749337-a9f0-4d70-8148-79ccb388667a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.operaciones_estrategico
+  module:
+    - user
+id: user_add_role_action.operaciones_estrategico
+label: 'Añade el rol Operaciones - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: operaciones_estrategico

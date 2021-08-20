@@ -1,0 +1,14 @@
+uuid: 05c2279c-d8b8-4c43-9575-55badce0c3e6
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.direccion_operativo
+  module:
+    - user
+id: user_add_role_action.direccion_operativo
+label: 'Añade el rol Dirección - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: direccion_operativo

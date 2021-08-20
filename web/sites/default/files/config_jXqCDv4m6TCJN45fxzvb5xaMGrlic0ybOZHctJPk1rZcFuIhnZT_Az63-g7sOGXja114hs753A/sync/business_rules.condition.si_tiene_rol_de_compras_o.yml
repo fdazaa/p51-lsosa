@@ -24,7 +24,7 @@ success_items:
 fail_items: {  }
 tags: {  }
 settings:
-  group_id: '1'
+  group_id: empresa
   role_id: empresas-compras_operativo
   user_key: userid
   user_name: null

@@ -1,0 +1,17 @@
+uuid: edebfe6a-356e-4ffb-95e6-454c91feaee8
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.direccion_operativo
+id: empresas-88afa76eb
+label: 'Dirección - Operativo'
+weight: 26
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

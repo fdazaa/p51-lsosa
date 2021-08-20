@@ -1,0 +1,23 @@
+uuid: cc20187c-8f25-4cf0-94c1-13f76c905208
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c1ad
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c1ad
+field_name: field_c1ad
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 1 AD'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,23 @@
+uuid: 1f8f544e-6d4d-45af-9411-1f7aff3f1599
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c2ad
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c2ad
+field_name: field_c2ad
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 2 AD'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

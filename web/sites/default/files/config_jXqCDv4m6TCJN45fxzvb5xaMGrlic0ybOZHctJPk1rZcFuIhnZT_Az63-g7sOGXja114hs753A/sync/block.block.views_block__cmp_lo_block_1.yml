@@ -26,12 +26,17 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /pruebas
+    pages: /mis-formularios
     negate: false
   user_role:
     id: user_role
     roles:
-      lo: lo
+      ventas_operativo: ventas_operativo
+      compras_operativo: compras_operativo
+      finanzas_operativo: finanzas_operativo
+      direccion_operativo: direccion_operativo
+      operaciones_operativo: operaciones_operativo
+      rh_operativo: rh_operativo
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

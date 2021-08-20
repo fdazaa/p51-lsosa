@@ -1,0 +1,17 @@
+uuid: 0e869fc9-017a-402d-9718-46ff8e57545f
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.finanzas_estrategico
+id: empresas-004759b02
+label: 'Finanzas - Estratégico'
+weight: 21
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

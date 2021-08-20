@@ -6,7 +6,6 @@ dependencies:
     - views.view.cmp_creacion_de_empresa
   module:
     - system
-    - user
     - views
   theme:
     - bartik
@@ -28,10 +27,3 @@ visibility:
     id: request_path
     pages: ' /user/*'
     negate: false
-  user_role:
-    id: user_role
-    roles:
-      direccion: direccion
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'

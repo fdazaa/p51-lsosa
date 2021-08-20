@@ -1,0 +1,42 @@
+uuid: f653a216-11a3-4746-a8aa-7a6693f0702c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.group_content.empresas-group_invitation.group_roles
+    - field.field.group_content.empresas-group_invitation.invitation_status
+    - field.field.group_content.empresas-group_invitation.invitee_mail
+    - group.content_type.empresas-group_invitation
+id: group_content.empresas-group_invitation.default
+targetEntityType: group_content
+bundle: empresas-group_invitation
+mode: default
+content:
+  group_roles:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: false
+    weight: -4
+    third_party_settings: {  }
+    region: content
+  invitation_status:
+    type: number_integer
+    weight: -2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  invitee_mail:
+    type: email_mailto
+    weight: -3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  uid: true

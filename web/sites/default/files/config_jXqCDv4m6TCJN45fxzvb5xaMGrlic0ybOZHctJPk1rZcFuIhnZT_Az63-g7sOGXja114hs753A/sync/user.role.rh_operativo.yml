@@ -1,0 +1,9 @@
+uuid: e0fa61df-7833-4739-97dd-3cd054cbceff
+langcode: es
+status: true
+dependencies: {  }
+id: rh_operativo
+label: 'RH - Operativo'
+weight: 32
+is_admin: null
+permissions: {  }

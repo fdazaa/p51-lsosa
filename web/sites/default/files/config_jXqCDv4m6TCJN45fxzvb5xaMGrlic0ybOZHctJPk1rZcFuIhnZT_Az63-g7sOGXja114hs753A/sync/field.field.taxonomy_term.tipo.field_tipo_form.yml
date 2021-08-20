@@ -1,0 +1,21 @@
+uuid: b01046f4-4306-4d10-8feb-e877cef018bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_tipo_form
+    - taxonomy.vocabulary.tipo
+  module:
+    - options
+id: taxonomy_term.tipo.field_tipo_form
+field_name: field_tipo_form
+entity_type: taxonomy_term
+bundle: tipo
+label: 'tipo form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

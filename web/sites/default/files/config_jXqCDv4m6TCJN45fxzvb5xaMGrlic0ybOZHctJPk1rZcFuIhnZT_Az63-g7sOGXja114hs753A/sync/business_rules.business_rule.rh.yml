@@ -1,6 +1,6 @@
 uuid: b78078f8-5015-426f-a5b3-3fb0aa489cd0
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - business_rules.condition.si_tiene_rol_de_rh_e

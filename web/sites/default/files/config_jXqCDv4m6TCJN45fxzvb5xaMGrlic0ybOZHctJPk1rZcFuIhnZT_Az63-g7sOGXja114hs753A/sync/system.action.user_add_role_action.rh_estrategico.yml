@@ -1,0 +1,14 @@
+uuid: 10036fc2-c6b5-4c73-b9c5-3d2febdfd772
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.rh_estrategico
+  module:
+    - user
+id: user_add_role_action.rh_estrategico
+label: 'Añade el rol RH - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: rh_estrategico

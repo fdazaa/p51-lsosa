@@ -1,0 +1,14 @@
+uuid: ee6f7812-e60c-43cb-b7b2-0214f488a30c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ventas_tactico
+  module:
+    - user
+id: user_add_role_action.ventas_tactico
+label: 'Añade el rol Ventas - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ventas_tactico

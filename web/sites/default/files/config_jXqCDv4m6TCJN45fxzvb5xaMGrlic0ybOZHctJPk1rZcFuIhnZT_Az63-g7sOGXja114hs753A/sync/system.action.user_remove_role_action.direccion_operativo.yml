@@ -1,0 +1,14 @@
+uuid: 52fc1e0f-ca02-49d1-8e22-7665ecc3f0b2
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.direccion_operativo
+  module:
+    - user
+id: user_remove_role_action.direccion_operativo
+label: 'Elimina el rol Dirección - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: direccion_operativo

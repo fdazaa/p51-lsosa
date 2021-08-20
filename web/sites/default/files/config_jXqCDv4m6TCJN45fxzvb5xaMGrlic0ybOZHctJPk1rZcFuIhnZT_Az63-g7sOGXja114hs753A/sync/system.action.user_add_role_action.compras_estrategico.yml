@@ -1,0 +1,14 @@
+uuid: d73fe273-56d5-4fc6-9bd4-c047e8b5c57a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.compras_estrategico
+  module:
+    - user
+id: user_add_role_action.compras_estrategico
+label: 'Añade el rol Compras - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: compras_estrategico

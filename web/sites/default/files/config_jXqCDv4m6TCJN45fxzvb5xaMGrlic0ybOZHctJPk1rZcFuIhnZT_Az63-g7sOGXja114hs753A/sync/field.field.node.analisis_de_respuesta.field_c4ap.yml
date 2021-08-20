@@ -1,0 +1,23 @@
+uuid: 5be4ef51-c1fc-4f67-ba3b-e462b1c53656
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c4ap
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c4ap
+field_name: field_c4ap
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 4 AP'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

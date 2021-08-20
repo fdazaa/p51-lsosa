@@ -1,0 +1,9 @@
+uuid: 8717bbba-4e20-400a-a938-cf357bdca5b2
+langcode: es
+status: true
+dependencies: {  }
+id: ventas_estrategico
+label: 'Ventas - Estratégico'
+weight: 15
+is_admin: null
+permissions: {  }

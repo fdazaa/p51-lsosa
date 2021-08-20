@@ -1,0 +1,14 @@
+uuid: 17372b7d-34c8-4a36-ab23-8b3e54675100
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.operaciones_tactico
+  module:
+    - user
+id: user_add_role_action.operaciones_tactico
+label: 'Añade el rol Operaciones - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: operaciones_tactico

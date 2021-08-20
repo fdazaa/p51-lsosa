@@ -1,0 +1,14 @@
+uuid: e8fdc1d8-20b4-4d76-be45-3d87d7f83a6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.direccion_estrategico
+  module:
+    - user
+id: user_add_role_action.direccion_estrategico
+label: 'Añade el rol Dirección - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: direccion_estrategico

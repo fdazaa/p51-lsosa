@@ -1,0 +1,21 @@
+uuid: 27defb98-f822-4bbc-933b-f0ba421d5f82
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_origen
+field_name: field_origen
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 276f2d92-08b1-45fc-a9d7-d71ab4a9f296
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_id_categoria
+    - taxonomy.vocabulary.categorias_procesos
+  module:
+    - options
+id: taxonomy_term.categorias_procesos.field_id_categoria
+field_name: field_id_categoria
+entity_type: taxonomy_term
+bundle: categorias_procesos
+label: 'Id Categoria'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

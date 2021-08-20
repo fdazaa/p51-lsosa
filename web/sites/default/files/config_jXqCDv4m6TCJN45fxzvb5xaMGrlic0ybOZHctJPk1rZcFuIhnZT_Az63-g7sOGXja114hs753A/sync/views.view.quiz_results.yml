@@ -49,7 +49,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -284,7 +284,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Date started'
+          label: 'Fecha de inicio'
           exclude: false
           alter:
             alter_text: false
@@ -351,7 +351,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Date finished'
+          label: 'Fecha de finalización'
           exclude: false
           alter:
             alter_text: false
@@ -418,7 +418,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Score
+          label: Ponderado
           exclude: false
           alter:
             alter_text: false
@@ -592,7 +592,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Score
+          text: Ponderado
           output_url_as_text: false
           absolute: false
           entity_type: quiz_result
@@ -1227,7 +1227,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Score
+          label: Ponderado
           exclude: false
           alter:
             alter_text: false
@@ -1467,7 +1467,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Date started'
+          label: 'Fecha de inicio'
           exclude: false
           alter:
             alter_text: false
@@ -1534,7 +1534,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Date finished'
+          label: 'Fecha de finalización'
           exclude: false
           alter:
             alter_text: false
@@ -1601,7 +1601,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Score
+          label: Ponderado
           exclude: false
           alter:
             alter_text: false
@@ -1775,7 +1775,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Score
+          text: Ponderado
           output_url_as_text: false
           absolute: false
           entity_type: quiz_result

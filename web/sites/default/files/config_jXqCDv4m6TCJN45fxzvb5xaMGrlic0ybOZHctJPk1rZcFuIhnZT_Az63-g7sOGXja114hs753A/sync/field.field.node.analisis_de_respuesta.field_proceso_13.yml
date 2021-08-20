@@ -1,0 +1,23 @@
+uuid: 2f2e5c0f-4be2-4c36-b43c-2ec178e7104b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proceso_13
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_proceso_13
+field_name: field_proceso_13
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'PROCESO 13'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

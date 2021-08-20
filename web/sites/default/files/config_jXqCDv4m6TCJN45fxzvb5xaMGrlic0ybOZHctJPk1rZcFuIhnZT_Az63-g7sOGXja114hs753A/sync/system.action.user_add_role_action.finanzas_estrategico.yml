@@ -1,0 +1,14 @@
+uuid: ad9962d6-313f-44dd-899c-c589eca74a0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.finanzas_estrategico
+  module:
+    - user
+id: user_add_role_action.finanzas_estrategico
+label: 'Añade el rol Finanzas - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: finanzas_estrategico

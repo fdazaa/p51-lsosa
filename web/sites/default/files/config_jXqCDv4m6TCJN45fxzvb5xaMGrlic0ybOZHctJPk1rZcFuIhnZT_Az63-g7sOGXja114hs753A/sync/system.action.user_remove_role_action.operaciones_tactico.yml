@@ -1,0 +1,14 @@
+uuid: 485c5204-458a-4487-814c-4e44e586d8ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.operaciones_tactico
+  module:
+    - user
+id: user_remove_role_action.operaciones_tactico
+label: 'Elimina el rol Operaciones - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: operaciones_tactico

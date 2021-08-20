@@ -1,0 +1,17 @@
+uuid: e9e70629-3d8c-474d-9b00-6cab7c7b62e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.operaciones_tactico
+id: empresas-81c53621c
+label: 'Operaciones - Táctico'
+weight: 28
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,9 @@
+uuid: d91a5b85-62c2-454f-8b8c-3e958ded99ff
+langcode: es
+status: true
+dependencies: {  }
+id: compras_operativo
+label: 'Compras - Operativo'
+weight: 20
+is_admin: null
+permissions: {  }

@@ -1,0 +1,23 @@
+uuid: af4beba4-ab32-4a45-bced-4023e32198d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proceso_6
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_proceso_6
+field_name: field_proceso_6
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'PROCESO 6'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

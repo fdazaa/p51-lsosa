@@ -1,0 +1,9 @@
+uuid: f7e464b1-5e12-4e5b-bbbe-56904d0cf58a
+langcode: es
+status: true
+dependencies: {  }
+id: rh_tactico
+label: 'RH - Táctico'
+weight: 31
+is_admin: null
+permissions: {  }

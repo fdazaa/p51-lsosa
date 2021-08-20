@@ -1,0 +1,10 @@
+uuid: 357c2386-8a82-43cd-8783-e66acf47b8bd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.tie_indicadores
+label: 'TIE - Indicadores'
+targetEntityType: node
+cache: true

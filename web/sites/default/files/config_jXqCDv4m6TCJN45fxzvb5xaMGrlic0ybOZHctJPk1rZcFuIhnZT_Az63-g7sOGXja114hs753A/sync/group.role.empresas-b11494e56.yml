@@ -1,0 +1,17 @@
+uuid: c7831669-2340-4d40-9187-60de861a9823
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.finanzas_operativo
+id: empresas-b11494e56
+label: 'Finanzas - Operativo'
+weight: 23
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,17 @@
+uuid: 2082deb2-3e3b-44c9-8624-09e7ca368038
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.ventas_tactico
+id: empresas-4fb8934c9
+label: 'Ventas - Táctico'
+weight: 16
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

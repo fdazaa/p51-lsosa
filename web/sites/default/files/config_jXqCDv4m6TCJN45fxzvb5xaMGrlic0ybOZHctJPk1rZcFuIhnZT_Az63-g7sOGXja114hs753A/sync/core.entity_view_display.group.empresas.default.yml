@@ -29,9 +29,9 @@ dependencies:
     - field.field.group.empresas.field_tipo_identificacion_user
     - group.type.empresas
   module:
+    - datetime
     - options
     - telephone
-    - tie_tools
 id: group.empresas.default
 targetEntityType: group
 bundle: empresas
@@ -107,14 +107,13 @@ content:
     type: basic_string
     region: content
   field_fecha_const_empresa:
-    weight: 22
+    weight: 25
     label: above
     settings:
-      future_format: '@interval hence'
-      past_format: '@interval ago'
-      granularity: 2
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
-    type: datetime_time_ago_and_date
+    type: datetime_default
     region: content
   field_genero_repre_legal:
     weight: 13

@@ -114,3 +114,7 @@ td > div > a:active,
   background: #a5a3a3;
 }
 /*Altura automatica y estilo scrollbar para tablas*/
+
+/*ocultar elementos alpine mientras carga la pagina*/
+[x-cloak] { display: none !important; }
+/*ocultar elementos alpine mientras carga la pagina*/

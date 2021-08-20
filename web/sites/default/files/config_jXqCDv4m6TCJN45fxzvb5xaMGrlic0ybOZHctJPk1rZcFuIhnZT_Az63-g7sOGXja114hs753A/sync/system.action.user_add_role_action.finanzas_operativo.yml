@@ -1,0 +1,14 @@
+uuid: ab3f0760-dc49-4f0c-81de-ac80f21ff5ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.finanzas_operativo
+  module:
+    - user
+id: user_add_role_action.finanzas_operativo
+label: 'Añade el rol Finanzas - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: finanzas_operativo

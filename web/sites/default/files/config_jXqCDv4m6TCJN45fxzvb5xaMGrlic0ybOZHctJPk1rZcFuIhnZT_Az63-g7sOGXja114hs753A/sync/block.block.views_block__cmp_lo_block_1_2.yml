@@ -1,0 +1,42 @@
+uuid: e26e92ec-ea53-4e83-9a99-0581e6cd0cc5
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.cmp_lo
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - tietheme
+id: views_block__cmp_lo_block_1_2
+theme: tietheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:cmp_lo-block_1'
+settings:
+  id: 'views_block:cmp_lo-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /mis-formularios
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      ventas_operativo: ventas_operativo
+      compras_operativo: compras_operativo
+      finanzas_operativo: finanzas_operativo
+      direccion_operativo: direccion_operativo
+      operaciones_operativo: operaciones_operativo
+      rh_operativo: rh_operativo
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

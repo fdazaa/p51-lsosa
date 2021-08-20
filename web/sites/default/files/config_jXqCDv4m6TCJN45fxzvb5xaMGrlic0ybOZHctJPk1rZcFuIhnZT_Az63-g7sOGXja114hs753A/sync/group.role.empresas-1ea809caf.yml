@@ -1,0 +1,17 @@
+uuid: 23b6a1a4-6205-407b-b686-369b421b3aeb
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.rh_estrategico
+id: empresas-1ea809caf
+label: 'RH - Estratégico'
+weight: 30
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

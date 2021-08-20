@@ -1,0 +1,9 @@
+uuid: 8525b90b-ece2-465a-b769-354f9bc251d6
+langcode: es
+status: true
+dependencies: {  }
+id: finanzas_estrategico
+label: 'Finanzas - Estratégico'
+weight: 21
+is_admin: null
+permissions: {  }

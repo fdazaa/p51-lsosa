@@ -1,0 +1,14 @@
+uuid: 296eb7ce-de95-4c36-b604-97287c530bcb
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ventas_estrategico
+  module:
+    - user
+id: user_remove_role_action.ventas_estrategico
+label: 'Elimina el rol Ventas - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ventas_estrategico

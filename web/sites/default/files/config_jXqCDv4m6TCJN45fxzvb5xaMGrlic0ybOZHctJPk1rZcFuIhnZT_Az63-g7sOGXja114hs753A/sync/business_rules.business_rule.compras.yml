@@ -1,6 +1,6 @@
 uuid: 6e6dfbc5-0561-4d6a-8225-f742797012b1
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - business_rules.condition.si_tiene_rol_de_compras_e

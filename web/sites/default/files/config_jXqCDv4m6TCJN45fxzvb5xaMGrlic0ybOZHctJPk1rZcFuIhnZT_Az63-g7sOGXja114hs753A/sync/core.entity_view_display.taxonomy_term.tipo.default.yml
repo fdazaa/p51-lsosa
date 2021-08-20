@@ -1,0 +1,31 @@
+uuid: ac726638-80d8-48dd-9d48-19c6352919e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipo.field_tipo_form
+    - taxonomy.vocabulary.tipo
+  module:
+    - options
+    - text
+id: taxonomy_term.tipo.default
+targetEntityType: taxonomy_term
+bundle: tipo
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tipo_form:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true

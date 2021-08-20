@@ -1,0 +1,9 @@
+uuid: 7e08dc1b-e5a3-41f4-bdea-1b3f7d903ad9
+langcode: es
+status: true
+dependencies: {  }
+id: operaciones_tactico
+label: 'Operaciones - Táctico'
+weight: 28
+is_admin: null
+permissions: {  }

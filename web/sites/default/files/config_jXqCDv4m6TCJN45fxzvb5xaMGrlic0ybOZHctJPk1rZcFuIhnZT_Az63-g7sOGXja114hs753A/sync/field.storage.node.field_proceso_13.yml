@@ -1,0 +1,20 @@
+uuid: 8a60fdd7-532a-4545-b404-e0e669a6d45a
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_proceso_13
+field_name: field_proceso_13
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: 4bd64841-9ac3-449d-9184-f20b4b53005c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ventas_estrategico
+  module:
+    - user
+id: user_add_role_action.ventas_estrategico
+label: 'Añade el rol Ventas - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ventas_estrategico

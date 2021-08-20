@@ -1,0 +1,14 @@
+uuid: 29098eca-6ae0-44d9-b52c-669978308dbe
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ventas_tactico
+  module:
+    - user
+id: user_remove_role_action.ventas_tactico
+label: 'Elimina el rol Ventas - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ventas_tactico

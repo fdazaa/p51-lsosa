@@ -1,0 +1,14 @@
+uuid: 809ee1c6-f921-4048-ba17-bbe36a0ad14a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.rh_estrategico
+  module:
+    - user
+id: user_remove_role_action.rh_estrategico
+label: 'Elimina el rol RH - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: rh_estrategico

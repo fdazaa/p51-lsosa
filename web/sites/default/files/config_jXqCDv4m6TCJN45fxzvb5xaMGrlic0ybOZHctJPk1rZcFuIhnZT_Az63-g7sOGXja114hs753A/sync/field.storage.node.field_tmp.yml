@@ -1,0 +1,20 @@
+uuid: 16af3f14-122e-49db-8160-1620c6f6b9c0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_tmp
+field_name: field_tmp
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

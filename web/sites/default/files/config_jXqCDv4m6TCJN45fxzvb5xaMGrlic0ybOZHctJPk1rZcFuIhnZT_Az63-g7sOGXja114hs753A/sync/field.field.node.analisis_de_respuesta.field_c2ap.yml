@@ -1,0 +1,23 @@
+uuid: d8f62197-6f9a-474d-b039-46635321044c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c2ap
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c2ap
+field_name: field_c2ap
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 2 AP'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

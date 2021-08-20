@@ -5,3 +5,7 @@ function toggleNavbar(collapseID) {
   }
   /* FIN OCULTA Y HACE VISIBLE MENU MOVIL CON BURGER ICON*/
 
+function mifuncion(colapseID) {
+  document.getElementById(colapseID).classList.toggle("ocultar");
+  document.getElementById(colapseID).classList.toggle("mostrar");
+}

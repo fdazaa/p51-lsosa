@@ -1,0 +1,14 @@
+uuid: b3ba5851-d76b-4a61-8497-ac62e4a6d6ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.operaciones_operativo
+  module:
+    - user
+id: user_add_role_action.operaciones_operativo
+label: 'Añade el rol Operaciones - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: operaciones_operativo

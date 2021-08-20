@@ -1,0 +1,11 @@
+uuid: e9f1b9d1-699a-4d84-a289-4609a4864544
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta
+target_entity_type_id: node
+target_bundle: analisis_de_respuesta
+default_langcode: site_default
+language_alterable: false

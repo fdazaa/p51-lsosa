@@ -1,0 +1,23 @@
+uuid: bf82d2b1-5f0c-4ad5-997a-a40eaffc286d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proceso_10
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_proceso_10
+field_name: field_proceso_10
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'PROCESO 10'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

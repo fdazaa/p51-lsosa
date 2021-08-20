@@ -1,0 +1,23 @@
+uuid: 609b8725-e5e1-49be-8584-66c3e06fa053
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ppc1
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_ppc1
+field_name: field_ppc1
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Promedio Procesos Categoria 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

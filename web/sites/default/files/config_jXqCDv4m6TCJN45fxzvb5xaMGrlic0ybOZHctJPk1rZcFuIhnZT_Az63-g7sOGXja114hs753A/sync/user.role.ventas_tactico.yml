@@ -1,0 +1,9 @@
+uuid: 3b1ca017-41fb-4c0b-bd96-cbadb7c6758f
+langcode: es
+status: true
+dependencies: {  }
+id: ventas_tactico
+label: 'Ventas - Táctico'
+weight: 16
+is_admin: null
+permissions: {  }

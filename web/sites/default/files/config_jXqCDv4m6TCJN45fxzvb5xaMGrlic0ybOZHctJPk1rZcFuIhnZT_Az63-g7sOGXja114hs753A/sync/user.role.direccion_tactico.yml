@@ -1,0 +1,9 @@
+uuid: a7317310-9d85-44c0-a592-bf3c975b2943
+langcode: es
+status: true
+dependencies: {  }
+id: direccion_tactico
+label: 'Dirección - Táctico'
+weight: 25
+is_admin: null
+permissions: {  }

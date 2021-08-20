@@ -1,0 +1,14 @@
+uuid: 9ddff591-efb6-45b9-a125-443e24b72b81
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ventas_operativo
+  module:
+    - user
+id: user_remove_role_action.ventas_operativo
+label: 'Elimina el rol Ventas - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ventas_operativo

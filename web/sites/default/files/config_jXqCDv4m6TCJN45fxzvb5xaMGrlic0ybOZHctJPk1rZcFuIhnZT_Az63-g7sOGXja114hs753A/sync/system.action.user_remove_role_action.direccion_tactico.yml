@@ -1,0 +1,14 @@
+uuid: f26a96b4-f7a3-46a3-8d56-19bb13fe698c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.direccion_tactico
+  module:
+    - user
+id: user_remove_role_action.direccion_tactico
+label: 'Elimina el rol Dirección - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: direccion_tactico

@@ -26,12 +26,17 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /pruebas
+    pages: /mis-formularios
     negate: false
   user_role:
     id: user_role
     roles:
-      le: le
+      ventas_estrategico: ventas_estrategico
+      compras_estrategico: compras_estrategico
+      finanzas_estrategico: finanzas_estrategico
+      direccion_estrategico: direccion_estrategico
+      operaciones_estrategico: operaciones_estrategico
+      rh_estrategico: rh_estrategico
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

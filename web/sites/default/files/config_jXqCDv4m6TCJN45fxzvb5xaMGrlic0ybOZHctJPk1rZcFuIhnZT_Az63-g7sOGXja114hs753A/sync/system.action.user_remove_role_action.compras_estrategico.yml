@@ -1,0 +1,14 @@
+uuid: dd9c78e0-f416-4974-9656-1b431855c033
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.compras_estrategico
+  module:
+    - user
+id: user_remove_role_action.compras_estrategico
+label: 'Elimina el rol Compras - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: compras_estrategico

@@ -1,0 +1,20 @@
+uuid: f07b330f-e80a-4b8e-9f93-2723484905ba
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_c4ap
+field_name: field_c4ap
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 52512a56-1e05-450c-9f43-7a940a01417e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_c1ad
+field_name: field_c1ad
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

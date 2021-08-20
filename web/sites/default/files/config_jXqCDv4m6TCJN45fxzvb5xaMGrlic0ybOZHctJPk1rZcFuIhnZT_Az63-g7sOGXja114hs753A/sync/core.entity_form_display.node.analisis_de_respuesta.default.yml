@@ -1,0 +1,398 @@
+uuid: 01d10558-fd1f-4387-864a-758de21d56a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.analisis_de_respuesta.field_c1ad
+    - field.field.node.analisis_de_respuesta.field_c1ap
+    - field.field.node.analisis_de_respuesta.field_c2ad
+    - field.field.node.analisis_de_respuesta.field_c2ap
+    - field.field.node.analisis_de_respuesta.field_c3ad
+    - field.field.node.analisis_de_respuesta.field_c3ap
+    - field.field.node.analisis_de_respuesta.field_c4ad
+    - field.field.node.analisis_de_respuesta.field_c4ap
+    - field.field.node.analisis_de_respuesta.field_c5ad
+    - field.field.node.analisis_de_respuesta.field_c5ap
+    - field.field.node.analisis_de_respuesta.field_origen
+    - field.field.node.analisis_de_respuesta.field_ppc1
+    - field.field.node.analisis_de_respuesta.field_ppc2
+    - field.field.node.analisis_de_respuesta.field_ppc3
+    - field.field.node.analisis_de_respuesta.field_ppc4
+    - field.field.node.analisis_de_respuesta.field_ppc5
+    - field.field.node.analisis_de_respuesta.field_proceso_1
+    - field.field.node.analisis_de_respuesta.field_proceso_10
+    - field.field.node.analisis_de_respuesta.field_proceso_11
+    - field.field.node.analisis_de_respuesta.field_proceso_12
+    - field.field.node.analisis_de_respuesta.field_proceso_13
+    - field.field.node.analisis_de_respuesta.field_proceso_14
+    - field.field.node.analisis_de_respuesta.field_proceso_15
+    - field.field.node.analisis_de_respuesta.field_proceso_16
+    - field.field.node.analisis_de_respuesta.field_proceso_2
+    - field.field.node.analisis_de_respuesta.field_proceso_3
+    - field.field.node.analisis_de_respuesta.field_proceso_4
+    - field.field.node.analisis_de_respuesta.field_proceso_5
+    - field.field.node.analisis_de_respuesta.field_proceso_6
+    - field.field.node.analisis_de_respuesta.field_proceso_7
+    - field.field.node.analisis_de_respuesta.field_proceso_8
+    - field.field.node.analisis_de_respuesta.field_proceso_9
+    - field.field.node.analisis_de_respuesta.field_ptcc1
+    - field.field.node.analisis_de_respuesta.field_ptcc2
+    - field.field.node.analisis_de_respuesta.field_ptcc3
+    - field.field.node.analisis_de_respuesta.field_ptcc4
+    - field.field.node.analisis_de_respuesta.field_ptcc5
+    - field.field.node.analisis_de_respuesta.field_tmp
+    - field.field.node.analisis_de_respuesta.field_total
+    - node.type.analisis_de_respuesta
+  module:
+    - hide_revision_field
+    - path
+id: node.analisis_de_respuesta.default
+targetEntityType: node
+bundle: analisis_de_respuesta
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_c1ad:
+    weight: 36
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c1ap:
+    weight: 41
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c2ad:
+    weight: 37
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c2ap:
+    weight: 42
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c3ad:
+    weight: 46
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c3ap:
+    weight: 43
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c4ad:
+    weight: 39
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c4ap:
+    weight: 44
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c5ad:
+    weight: 40
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_c5ap:
+    weight: 45
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_origen:
+    weight: 48
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ppc1:
+    weight: 25
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ppc2:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ppc3:
+    weight: 27
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ppc4:
+    weight: 28
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ppc5:
+    weight: 29
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_1:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_10:
+    weight: 18
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_11:
+    weight: 19
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_12:
+    weight: 20
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_13:
+    weight: 21
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_14:
+    weight: 22
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_15:
+    weight: 23
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_16:
+    weight: 24
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_2:
+    weight: 10
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_3:
+    weight: 11
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_4:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_5:
+    weight: 13
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_6:
+    weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_7:
+    weight: 16
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_8:
+    weight: 15
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_proceso_9:
+    weight: 17
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ptcc1:
+    weight: 30
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ptcc2:
+    weight: 31
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ptcc3:
+    weight: 32
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ptcc4:
+    weight: 33
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_ptcc5:
+    weight: 34
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_tmp:
+    weight: 35
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_total:
+    weight: 47
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  revision_log:
+    type: hide_revision_field_log_widget
+    weight: 7
+    region: content
+    settings:
+      show: true
+      default: ''
+      permission_based: false
+      allow_user_settings: true
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

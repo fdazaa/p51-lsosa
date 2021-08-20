@@ -1,0 +1,99 @@
+uuid: c7f39953-8b1a-4b98-8a4c-36b7d54b0e07
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.analisis_de_respuesta.field_c1ad
+    - field.field.node.analisis_de_respuesta.field_c1ap
+    - field.field.node.analisis_de_respuesta.field_c2ad
+    - field.field.node.analisis_de_respuesta.field_c2ap
+    - field.field.node.analisis_de_respuesta.field_c3ad
+    - field.field.node.analisis_de_respuesta.field_c3ap
+    - field.field.node.analisis_de_respuesta.field_c4ad
+    - field.field.node.analisis_de_respuesta.field_c4ap
+    - field.field.node.analisis_de_respuesta.field_c5ad
+    - field.field.node.analisis_de_respuesta.field_c5ap
+    - field.field.node.analisis_de_respuesta.field_origen
+    - field.field.node.analisis_de_respuesta.field_ppc1
+    - field.field.node.analisis_de_respuesta.field_ppc2
+    - field.field.node.analisis_de_respuesta.field_ppc3
+    - field.field.node.analisis_de_respuesta.field_ppc4
+    - field.field.node.analisis_de_respuesta.field_ppc5
+    - field.field.node.analisis_de_respuesta.field_proceso_1
+    - field.field.node.analisis_de_respuesta.field_proceso_10
+    - field.field.node.analisis_de_respuesta.field_proceso_11
+    - field.field.node.analisis_de_respuesta.field_proceso_12
+    - field.field.node.analisis_de_respuesta.field_proceso_13
+    - field.field.node.analisis_de_respuesta.field_proceso_14
+    - field.field.node.analisis_de_respuesta.field_proceso_15
+    - field.field.node.analisis_de_respuesta.field_proceso_16
+    - field.field.node.analisis_de_respuesta.field_proceso_2
+    - field.field.node.analisis_de_respuesta.field_proceso_3
+    - field.field.node.analisis_de_respuesta.field_proceso_4
+    - field.field.node.analisis_de_respuesta.field_proceso_5
+    - field.field.node.analisis_de_respuesta.field_proceso_6
+    - field.field.node.analisis_de_respuesta.field_proceso_7
+    - field.field.node.analisis_de_respuesta.field_proceso_8
+    - field.field.node.analisis_de_respuesta.field_proceso_9
+    - field.field.node.analisis_de_respuesta.field_ptcc1
+    - field.field.node.analisis_de_respuesta.field_ptcc2
+    - field.field.node.analisis_de_respuesta.field_ptcc3
+    - field.field.node.analisis_de_respuesta.field_ptcc4
+    - field.field.node.analisis_de_respuesta.field_ptcc5
+    - field.field.node.analisis_de_respuesta.field_tmp
+    - field.field.node.analisis_de_respuesta.field_total
+    - node.type.analisis_de_respuesta
+  module:
+    - user
+id: node.analisis_de_respuesta.teaser
+targetEntityType: node
+bundle: analisis_de_respuesta
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_c1ad: true
+  field_c1ap: true
+  field_c2ad: true
+  field_c2ap: true
+  field_c3ad: true
+  field_c3ap: true
+  field_c4ad: true
+  field_c4ap: true
+  field_c5ad: true
+  field_c5ap: true
+  field_origen: true
+  field_ppc1: true
+  field_ppc2: true
+  field_ppc3: true
+  field_ppc4: true
+  field_ppc5: true
+  field_proceso_1: true
+  field_proceso_10: true
+  field_proceso_11: true
+  field_proceso_12: true
+  field_proceso_13: true
+  field_proceso_14: true
+  field_proceso_15: true
+  field_proceso_16: true
+  field_proceso_2: true
+  field_proceso_3: true
+  field_proceso_4: true
+  field_proceso_5: true
+  field_proceso_6: true
+  field_proceso_7: true
+  field_proceso_8: true
+  field_proceso_9: true
+  field_ptcc1: true
+  field_ptcc2: true
+  field_ptcc3: true
+  field_ptcc4: true
+  field_ptcc5: true
+  field_tmp: true
+  field_total: true
+  langcode: true

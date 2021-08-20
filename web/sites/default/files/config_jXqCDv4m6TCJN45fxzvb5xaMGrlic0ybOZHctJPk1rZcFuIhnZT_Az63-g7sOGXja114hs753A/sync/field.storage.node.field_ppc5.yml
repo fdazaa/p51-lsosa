@@ -1,0 +1,20 @@
+uuid: e3bb7846-5886-436d-a58d-697d4ba8dd76
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ppc5
+field_name: field_ppc5
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: b0d1291e-737a-490a-8a90-2c4cd21107cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.ventas_operativo
+  module:
+    - user
+id: user_add_role_action.ventas_operativo
+label: 'Añade el rol Ventas - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ventas_operativo

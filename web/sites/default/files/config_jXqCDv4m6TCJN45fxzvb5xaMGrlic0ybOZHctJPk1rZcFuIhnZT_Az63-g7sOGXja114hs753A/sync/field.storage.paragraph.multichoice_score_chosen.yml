@@ -1,16 +1,16 @@
-uuid: bc0d21de-8e8c-4cc4-b84a-37e82e6a443c
+uuid: dca26a7c-e686-443e-a68f-11d2482250e7
 langcode: es
 status: true
 dependencies:
   module:
     - paragraphs
-    - taxonomy
 id: paragraph.multichoice_score_chosen
 field_name: multichoice_score_chosen
 entity_type: paragraph
-type: entity_reference
+type: integer
 settings:
-  target_type: taxonomy_term
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

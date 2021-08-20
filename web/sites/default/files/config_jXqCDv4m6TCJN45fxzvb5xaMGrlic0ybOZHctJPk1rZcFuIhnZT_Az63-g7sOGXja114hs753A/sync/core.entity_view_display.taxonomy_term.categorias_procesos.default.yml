@@ -1,0 +1,39 @@
+uuid: b41a04d7-fb70-4f86-8e6e-cf6ef334af91
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categorias_procesos.field_id_categoria
+    - field.field.taxonomy_term.categorias_procesos.field_id_proceso
+    - taxonomy.vocabulary.categorias_procesos
+  module:
+    - options
+    - text
+id: taxonomy_term.categorias_procesos.default
+targetEntityType: taxonomy_term
+bundle: categorias_procesos
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_id_categoria:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_id_proceso:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true

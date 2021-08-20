@@ -1,0 +1,23 @@
+uuid: cb897367-41e8-44bc-84fb-02ab0bd2e055
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proceso_8
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_proceso_8
+field_name: field_proceso_8
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'PROCESO 8'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

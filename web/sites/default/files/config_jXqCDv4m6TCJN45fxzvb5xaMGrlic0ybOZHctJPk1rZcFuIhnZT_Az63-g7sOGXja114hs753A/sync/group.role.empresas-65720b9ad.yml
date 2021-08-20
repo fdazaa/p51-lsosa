@@ -1,0 +1,17 @@
+uuid: d904e551-55cf-40cc-b16c-4df9bfdc17b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.direccion_tactico
+id: empresas-65720b9ad
+label: 'Dirección - Táctico'
+weight: 25
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

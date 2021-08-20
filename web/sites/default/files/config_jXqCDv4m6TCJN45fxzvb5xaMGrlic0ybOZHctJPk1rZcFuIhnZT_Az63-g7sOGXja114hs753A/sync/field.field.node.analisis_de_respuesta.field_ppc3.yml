@@ -1,0 +1,23 @@
+uuid: cd33286b-8b33-4f06-ac14-75a0475abb49
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ppc3
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_ppc3
+field_name: field_ppc3
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Promedio Procesos Categoria 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

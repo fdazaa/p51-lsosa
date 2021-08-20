@@ -1,0 +1,69 @@
+uuid: 83c23fd2-01ea-4f2a-bbc7-569cd572f1a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_id_proceso
+field_name: field_id_proceso
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: proceso1
+      label: proceso1
+    -
+      value: proceso2
+      label: proceso2
+    -
+      value: proceso3
+      label: proceso3
+    -
+      value: proceso4
+      label: proceso4
+    -
+      value: proceso5
+      label: proceso5
+    -
+      value: proceso6
+      label: proceso6
+    -
+      value: proceso7
+      label: proceso7
+    -
+      value: proceso8
+      label: proceso8
+    -
+      value: proceso9
+      label: proceso9
+    -
+      value: proceso10
+      label: proceso10
+    -
+      value: proceso11
+      label: proceso11
+    -
+      value: proceso12
+      label: proceso12
+    -
+      value: proceso13
+      label: proceso13
+    -
+      value: proceso14
+      label: proceso14
+    -
+      value: proceso15
+      label: proceso15
+    -
+      value: proceso16
+      label: proceso16
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

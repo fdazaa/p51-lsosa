@@ -1,0 +1,9 @@
+uuid: 2cc82a3b-2683-46ad-b008-e895f6f6b825
+langcode: es
+status: true
+dependencies: {  }
+id: compras_estrategico
+label: 'Compras - Estratégico'
+weight: 18
+is_admin: null
+permissions: {  }

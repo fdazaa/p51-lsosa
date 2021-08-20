@@ -1,0 +1,9 @@
+uuid: 68605434-1e16-4fd7-8755-a1b325b14fbd
+langcode: es
+status: true
+dependencies: {  }
+id: operaciones_operativo
+label: 'Operaciones - Operativo'
+weight: 29
+is_admin: null
+permissions: {  }

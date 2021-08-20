@@ -1,0 +1,23 @@
+uuid: 4f4d92a8-aa82-4595-9cbc-b509f447bd1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proceso_11
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_proceso_11
+field_name: field_proceso_11
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'PROCESO 11'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

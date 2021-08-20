@@ -1,0 +1,23 @@
+uuid: 138ca9b6-db78-4cb4-a9b0-06dc1e98f832
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c5ap
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c5ap
+field_name: field_c5ap
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 5 AP'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

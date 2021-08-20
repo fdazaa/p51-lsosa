@@ -1,0 +1,23 @@
+uuid: 41f084ba-72e7-4704-bed1-d1d05ef22f0d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proceso_9
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_proceso_9
+field_name: field_proceso_9
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'PROCESO 9'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

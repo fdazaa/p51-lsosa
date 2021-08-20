@@ -41,7 +41,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -123,7 +123,7 @@ display:
           relationship: qid
           group_type: group
           admin_label: ''
-          label: 'Adopción y Apropiación'
+          label: Formulario
           exclude: false
           alter:
             alter_text: false
@@ -253,7 +253,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Date finished'
+          label: 'Fecha de finalización'
           exclude: false
           alter:
             alter_text: false
@@ -361,7 +361,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Score
+          text: Ponderado
           output_url_as_text: false
           absolute: false
           entity_type: quiz_result
@@ -708,7 +708,7 @@ display:
   page_3:
     display_plugin: page
     id: page_3
-    display_title: 'Score taken forn answer'
+    display_title: 'Ponderado obtenido para la respuesta'
     position: 3
     display_options:
       display_extenders: {  }
@@ -724,7 +724,7 @@ display:
       path: user/%user/quiz-result-score
       menu:
         type: tab
-        title: 'Score form attempts'
+        title: 'Ponderación de Intentos de formulario'
         description: ''
         expanded: false
         parent: ''

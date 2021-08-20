@@ -1,0 +1,25 @@
+uuid: 816b3c16-03c9-428c-9375-53af1cc4c44e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.invitation_status
+    - group.content_type.empresas-group_invitation
+id: group_content.empresas-group_invitation.invitation_status
+field_name: invitation_status
+entity_type: group_content
+bundle: empresas-group_invitation
+label: 'Invitation status'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

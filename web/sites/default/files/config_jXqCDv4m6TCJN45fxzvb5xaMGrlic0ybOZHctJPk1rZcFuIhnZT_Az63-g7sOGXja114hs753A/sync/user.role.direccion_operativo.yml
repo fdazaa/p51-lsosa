@@ -1,0 +1,9 @@
+uuid: 63c94358-d8c9-4b25-a407-3846c60c8f06
+langcode: es
+status: true
+dependencies: {  }
+id: direccion_operativo
+label: 'Dirección - Operativo'
+weight: 26
+is_admin: null
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: fe621094-2281-4cbe-8eb1-47863c6d8269
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.finanzas_tactico
+  module:
+    - user
+id: user_remove_role_action.finanzas_tactico
+label: 'Elimina el rol Finanzas - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: finanzas_tactico

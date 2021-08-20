@@ -1,0 +1,9 @@
+uuid: 5cb5d9cd-0683-473b-b7db-f5590933ab8e
+langcode: es
+status: true
+dependencies: {  }
+id: finanzas_operativo
+label: 'Finanzas - Operativo'
+weight: 23
+is_admin: null
+permissions: {  }

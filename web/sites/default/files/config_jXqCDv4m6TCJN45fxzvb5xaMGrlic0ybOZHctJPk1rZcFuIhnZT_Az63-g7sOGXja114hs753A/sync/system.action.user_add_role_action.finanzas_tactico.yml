@@ -1,0 +1,14 @@
+uuid: 17d7a300-872e-49c8-948c-51e5aa7c8e1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.finanzas_tactico
+  module:
+    - user
+id: user_add_role_action.finanzas_tactico
+label: 'Añade el rol Finanzas - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: finanzas_tactico

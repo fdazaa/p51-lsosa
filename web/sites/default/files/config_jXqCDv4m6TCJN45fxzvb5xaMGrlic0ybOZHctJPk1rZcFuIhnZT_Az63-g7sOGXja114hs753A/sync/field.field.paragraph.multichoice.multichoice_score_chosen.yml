@@ -1,11 +1,10 @@
-uuid: ed6372ac-57a0-4c5e-9f48-369f3f1bc33c
+uuid: 64a4dea1-44bb-4957-bad3-8da36c3a440e
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.paragraph.multichoice_score_chosen
     - paragraphs.paragraphs_type.multichoice
-    - taxonomy.vocabulary.score
 id: paragraph.multichoice.multichoice_score_chosen
 field_name: multichoice_score_chosen
 entity_type: paragraph
@@ -17,13 +16,8 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:taxonomy_term'
-  handler_settings:
-    target_bundles:
-      score: score
-    sort:
-      field: name
-      direction: asc
-    auto_create: false
-    auto_create_bundle: ''
-field_type: entity_reference
+  min: 10
+  max: 60
+  prefix: ''
+  suffix: ''
+field_type: integer

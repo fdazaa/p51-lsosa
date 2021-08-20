@@ -1,0 +1,14 @@
+uuid: 17a5a7da-a82c-4211-a1c7-56ab3fd35948
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.rh_operativo
+  module:
+    - user
+id: user_add_role_action.rh_operativo
+label: 'Añade el rol RH - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: rh_operativo

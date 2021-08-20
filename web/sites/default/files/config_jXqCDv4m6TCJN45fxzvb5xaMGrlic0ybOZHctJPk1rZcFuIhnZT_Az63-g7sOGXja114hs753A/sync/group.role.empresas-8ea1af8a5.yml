@@ -1,0 +1,17 @@
+uuid: f98eecb6-a326-4fe6-aed4-33ccfb52960e
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.compras_operativo
+id: empresas-8ea1af8a5
+label: 'Compras - Operativo'
+weight: 20
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

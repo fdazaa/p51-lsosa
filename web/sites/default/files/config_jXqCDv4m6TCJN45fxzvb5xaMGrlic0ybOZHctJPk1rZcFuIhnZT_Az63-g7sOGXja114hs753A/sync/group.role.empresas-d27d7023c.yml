@@ -1,0 +1,17 @@
+uuid: f38b12a5-86b8-4c68-ba08-6c74f0dc3539
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.ventas_estrategico
+id: empresas-d27d7023c
+label: 'Ventas - Estratégico'
+weight: 15
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

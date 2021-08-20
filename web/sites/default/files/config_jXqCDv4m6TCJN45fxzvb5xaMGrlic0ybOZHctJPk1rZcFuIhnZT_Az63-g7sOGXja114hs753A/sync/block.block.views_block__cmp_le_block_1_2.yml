@@ -1,0 +1,42 @@
+uuid: 73a8d2ac-7beb-4b2f-869a-da60a3d54ead
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.cmp_le
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - tietheme
+id: views_block__cmp_le_block_1_2
+theme: tietheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:cmp_le-block_1'
+settings:
+  id: 'views_block:cmp_le-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /mis-formularios
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      ventas_estrategico: ventas_estrategico
+      compras_estrategico: compras_estrategico
+      finanzas_estrategico: finanzas_estrategico
+      direccion_estrategico: direccion_estrategico
+      operaciones_estrategico: operaciones_estrategico
+      rh_estrategico: rh_estrategico
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

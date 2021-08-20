@@ -1,0 +1,20 @@
+uuid: d9404048-6bf4-41c7-8bc6-b8e07bee615f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ptcc2
+field_name: field_ptcc2
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

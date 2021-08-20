@@ -1,0 +1,9 @@
+uuid: a0f9a2fb-e783-479f-a3e0-511e4a43af59
+langcode: es
+status: true
+dependencies: {  }
+id: rh_estrategico
+label: 'RH - Estratégico'
+weight: 30
+is_admin: null
+permissions: {  }

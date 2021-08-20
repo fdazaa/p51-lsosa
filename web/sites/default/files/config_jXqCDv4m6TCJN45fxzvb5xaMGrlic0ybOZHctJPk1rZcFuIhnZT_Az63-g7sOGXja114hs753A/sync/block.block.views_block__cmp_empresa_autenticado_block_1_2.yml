@@ -1,0 +1,29 @@
+uuid: 3f8c4e73-1e0a-4a39-a499-e8c45e1f910c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.cmp_empresa_autenticado
+  module:
+    - system
+    - views
+  theme:
+    - tietheme
+id: views_block__cmp_empresa_autenticado_block_1_2
+theme: tietheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:cmp_empresa_autenticado-block_1'
+settings:
+  id: 'views_block:cmp_empresa_autenticado-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /empresa
+    negate: false

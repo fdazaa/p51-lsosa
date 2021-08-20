@@ -1,0 +1,23 @@
+uuid: 6a61e13f-4aa1-41eb-9512-dba7ae3748fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tmp
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_tmp
+field_name: field_tmp
+entity_type: node
+bundle: analisis_de_respuesta
+label: TMP
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

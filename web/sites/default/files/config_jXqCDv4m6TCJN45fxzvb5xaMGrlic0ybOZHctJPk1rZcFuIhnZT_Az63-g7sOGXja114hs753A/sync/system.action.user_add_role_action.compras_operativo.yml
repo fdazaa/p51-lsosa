@@ -1,0 +1,14 @@
+uuid: a3fa3402-af50-416b-9d95-1eae145e78da
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.compras_operativo
+  module:
+    - user
+id: user_add_role_action.compras_operativo
+label: 'Añade el rol Compras - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: compras_operativo

@@ -1,0 +1,29 @@
+uuid: d9a6f4d1-48b9-475a-b0c6-6146aeaf5d4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.indicadores
+  module:
+    - system
+    - views
+  theme:
+    - tietheme
+id: views_block__indicadores_block_1_2
+theme: tietheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:indicadores-block_1'
+settings:
+  id: 'views_block:indicadores-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /indicadores
+    negate: false

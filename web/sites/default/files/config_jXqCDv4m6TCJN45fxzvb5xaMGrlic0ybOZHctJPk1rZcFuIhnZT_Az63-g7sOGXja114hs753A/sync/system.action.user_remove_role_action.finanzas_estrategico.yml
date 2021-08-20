@@ -1,0 +1,14 @@
+uuid: 9413f723-122e-4324-817a-6d3119b96df4
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.finanzas_estrategico
+  module:
+    - user
+id: user_remove_role_action.finanzas_estrategico
+label: 'Elimina el rol Finanzas - Estratégico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: finanzas_estrategico

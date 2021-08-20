@@ -1,0 +1,36 @@
+uuid: 398647d9-ed8f-4229-a93f-32da1e7930f2
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_id_categoria
+field_name: field_id_categoria
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: categoria1
+      label: categoria1
+    -
+      value: categoria2
+      label: categoria2
+    -
+      value: categoria3
+      label: categoria3
+    -
+      value: categoria4
+      label: categoria4
+    -
+      value: categoria5
+      label: categoria5
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

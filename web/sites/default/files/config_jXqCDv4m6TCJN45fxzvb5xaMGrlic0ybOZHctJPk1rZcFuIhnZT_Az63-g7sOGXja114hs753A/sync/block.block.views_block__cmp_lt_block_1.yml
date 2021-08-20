@@ -26,12 +26,17 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /pruebas
+    pages: /mis-formularios
     negate: false
   user_role:
     id: user_role
     roles:
-      lt: lt
+      ventas_tactico: ventas_tactico
+      compras_tactico: compras_tactico
+      finanzas_tactico: finanzas_tactico
+      direccion_tactico: direccion_tactico
+      operaciones_tactico: operaciones_tactico
+      rh_tactico: rh_tactico
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

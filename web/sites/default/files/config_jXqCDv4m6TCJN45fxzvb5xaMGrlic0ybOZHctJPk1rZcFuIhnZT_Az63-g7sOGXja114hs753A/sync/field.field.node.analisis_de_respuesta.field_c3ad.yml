@@ -1,0 +1,23 @@
+uuid: e080573d-5058-48f3-bf5e-42a21e80f50f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c3ad
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c3ad
+field_name: field_c3ad
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 3 AD'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

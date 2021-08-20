@@ -1,0 +1,14 @@
+uuid: f38d69e0-dd9e-4880-879a-4d06b2bde6b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.rh_tactico
+  module:
+    - user
+id: user_remove_role_action.rh_tactico
+label: 'Elimina el rol RH - Táctico al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: rh_tactico

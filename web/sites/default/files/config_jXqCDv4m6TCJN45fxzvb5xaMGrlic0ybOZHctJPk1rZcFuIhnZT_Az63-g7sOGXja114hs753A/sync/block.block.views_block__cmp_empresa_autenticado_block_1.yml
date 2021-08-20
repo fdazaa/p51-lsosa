@@ -33,11 +33,6 @@ visibility:
     roles:
       administrator: administrator
       admin_sitio: admin_sitio
-      ventas: ventas
-      compras: compras
-      operaciones: operaciones
-      finanzas: finanzas
-      rh: rh
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

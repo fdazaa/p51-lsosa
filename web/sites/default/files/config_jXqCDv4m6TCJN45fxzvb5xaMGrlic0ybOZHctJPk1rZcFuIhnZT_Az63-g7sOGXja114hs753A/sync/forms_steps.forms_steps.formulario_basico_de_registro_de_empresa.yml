@@ -1,0 +1,61 @@
+uuid: 0bd37d75-d2d0-48b6-a551-3cf0469a5b0f
+langcode: es
+status: true
+dependencies: {  }
+id: formulario_basico_de_registro_de_empresa
+label: 'Formulario Básico de registro de Empresa'
+description: 'Se genera un formulario básico de registro de empresa'
+progress_steps_links_saved_only: false
+progress_steps_links_saved_only_next: false
+redirection_policy: internal
+redirection_target: /pruebas
+steps:
+  datos_basicos_de_la_empresa:
+    label: 'Datos basicos de la Empresa'
+    weight: 0
+    entity_type: group
+    entity_bundle: empresas
+    form_mode: group.datos_basicos_de_la_empresa
+    url: /registro-empresa-1
+    submitLabel: null
+    hideDelete: 0
+    deleteLabel: null
+    cancelLabel: null
+    displayPrevious: 0
+  datos_de_la_persona_encargada_del_proceso:
+    label: 'Datos de la persona encargada del proceso'
+    weight: 3
+    entity_type: group
+    entity_bundle: empresas
+    form_mode: group.datos_de_la_persona_encargada_del_proceso
+    url: /registro-empresa-4
+    submitLabel: null
+    hideDelete: 0
+    deleteLabel: null
+    cancelLabel: null
+    displayPrevious: 0
+  datos_del_representante_legal:
+    label: 'Datos del Representante legal'
+    weight: 2
+    entity_type: group
+    entity_bundle: empresas
+    form_mode: group.datos_del_representante_legal
+    url: /registro-empresa-3
+    submitLabel: null
+    hideDelete: 0
+    deleteLabel: null
+    cancelLabel: null
+    displayPrevious: 0
+  ubicacion_de_la_empresa:
+    label: 'Ubicación de la empresa'
+    weight: 1
+    entity_type: group
+    entity_bundle: empresas
+    form_mode: group.ubicacion_de_la_empresa
+    url: /registro-empresa-2
+    submitLabel: null
+    hideDelete: 0
+    deleteLabel: null
+    cancelLabel: null
+    displayPrevious: 0
+progress_steps: {  }

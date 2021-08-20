@@ -1,0 +1,17 @@
+uuid: dda6b1c6-c1b6-4c99-be5b-34f79e6f9540
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.type.empresas
+  enforced:
+    config:
+      - user.role.compras_estrategico
+id: empresas-5cd547678
+label: 'Compras - Estratégico'
+weight: 18
+internal: true
+audience: outsider
+group_type: empresas
+permissions_ui: false
+permissions: {  }

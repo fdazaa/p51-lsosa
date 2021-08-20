@@ -1,0 +1,14 @@
+uuid: 8743d267-5b8c-4768-bf1e-4ba953521647
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.compras_operativo
+  module:
+    - user
+id: user_remove_role_action.compras_operativo
+label: 'Elimina el rol Compras - Operativo al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: compras_operativo

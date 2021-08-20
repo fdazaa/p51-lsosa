@@ -1,0 +1,23 @@
+uuid: a82c5abf-ad06-45fc-b0fc-d4774e8d0d24
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_total
+field_name: field_total
+entity_type: node
+bundle: analisis_de_respuesta
+label: Total
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

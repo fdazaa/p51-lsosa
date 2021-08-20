@@ -1,0 +1,23 @@
+uuid: c1ebf590-8abb-4b21-95b8-337d49fefd48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_c5ad
+    - node.type.analisis_de_respuesta
+id: node.analisis_de_respuesta.field_c5ad
+field_name: field_c5ad
+entity_type: node
+bundle: analisis_de_respuesta
+label: 'Categoria 5 AD'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

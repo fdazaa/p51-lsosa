@@ -1,0 +1,27 @@
+uuid: ed147fce-a422-4cc3-93a2-cf855d413ca2
+langcode: es
+status: true
+dependencies:
+  config:
+    - group.content_type.group_content_type_0b89a4774c92a
+  module:
+    - reference_table_formatter
+id: group_content.group_content_type_0b89a4774c92a.default
+targetEntityType: group_content
+bundle: group_content_type_0b89a4774c92a
+mode: default
+content:
+  entity_id:
+    type: entity_reference_table
+    weight: 0
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      show_entity_label: false
+      empty_cell_value: ''
+      hide_header: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  uid: true
